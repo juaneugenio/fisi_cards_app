@@ -1,0 +1,62 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 9px rgba(0,0,0,0.06);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#topics-nav {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#topics-nav button {
+  padding: 8px 18px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#topics-nav button.active,
+#topics-nav button:hover {
+  background: #326acd;
+}
+
+.flashcard {
+  background: #e3eaf5;
+  border-radius: 8px;
+  padding: 26px 20px;
+  min-height: 90px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: box-shadow 0.2s;
+  position: relative;
+}
+
+.flashcard.flipped {
+  background: #fbe5b4;
+}
+
+.flashcard {
+  user-select: none;
+}
