@@ -27,18 +27,29 @@ function renderFlashcards() {
   if (!topicObj) return;
 
   topicObj.cards.forEach(card => {
+    // Estructura para el flip 3D:
     const cardDiv = document.createElement('div');
     cardDiv.className = 'flashcard';
-    cardDiv.textContent = card.front;
+
+    const cardInner = document.createElement('div');
+    cardInner.className = 'flashcard-inner';
+
+    const frontDiv = document.createElement('div');
+    frontDiv.className = 'flashcard-front';
+    frontDiv.textContent = card.front;
+
+    const backDiv = document.createElement('div');
+    backDiv.className = 'flashcard-back';
+    backDiv.textContent = card.back;
+
+    cardInner.appendChild(frontDiv);
+    cardInner.appendChild(backDiv);
+    cardDiv.appendChild(cardInner);
+
     cardDiv.addEventListener('click', function () {
-      if (cardDiv.classList.contains('flipped')) {
-        cardDiv.textContent = card.front;
-        cardDiv.classList.remove('flipped');
-      } else {
-        cardDiv.textContent = card.back;
-        cardDiv.classList.add('flipped');
-      }
+      cardDiv.classList.toggle('flipped');
     });
+
     flashcardsContainer.appendChild(cardDiv);
   });
 }

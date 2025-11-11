@@ -2,42 +2,38 @@ html {
   font-size: 16px;
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fa;
+  background: #27313f;
   margin: 0;
   padding: 0;
   min-height: 100vh;
 }
-
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;   /* si quieres todo arriba, usa center para centrar */
+  justify-content: flex-start;
   align-items: center;
   width: 90vw;
   max-width: 34rem;
   min-height: 70vh;
   margin: 3vh auto 0 auto;
-  background: #fff;
+  background: #b36060;
   padding: 1.75rem 2rem;
   border-radius: 1rem;
   box-shadow: 0 2px 9px rgba(0,0,0,0.07);
   overflow-x: hidden;
 }
-
 h1 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   width: 100%;
+  color: aliceblue;
 }
-
 #topics-nav {
   display: flex;
   gap: 1rem;
@@ -46,7 +42,6 @@ h1 {
   width: 100%;
   flex-wrap: wrap;
 }
-
 #topics-nav button {
   padding: 0.5rem 1.2rem;
   background: #4a90e2;
@@ -57,12 +52,10 @@ h1 {
   cursor: pointer;
   transition: background 0.18s;
 }
-
 #topics-nav button.active,
 #topics-nav button:hover {
   background: #093177;
 }
-
 #flashcards-container {
   width: 100%;
   display: flex;
@@ -70,31 +63,63 @@ h1 {
   align-items: center;
 }
 
+/* Tarjeta Flip 3D */
 .flashcard {
-  background: #e3eaf5;
-  border-radius: 0.75rem;
-  padding: 1.5rem 1.25rem;
+  perspective: 1000px;
+  width: 100%;
+  max-width: 26rem;
   min-height: 5.5rem;
   margin-bottom: 1.1rem;
-  cursor: pointer;
-  text-align: center;
-  font-size: 1.1rem;
-  transition: box-shadow 0.18s, background 0.2s;
-  position: relative;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
   user-select: none;
+}
+
+.flashcard-inner {
+  position: relative;
   width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4,0.2,0.2,1);
+  transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 26rem;
+  min-height: 5.5rem;
 }
 
-.flashcard.flipped {
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+/* Lados de la carta */
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  width: 100%;
+  min-height: 5.5rem;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1.25rem;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+}
+
+.flashcard-front {
+  background: #fcfcfc;
+  color: #333;
+}
+.flashcard-back {
   background: #fbe5b4;
+  color: #432;
+  transform: rotateY(180deg);
 }
 
+/* Responsive */
 @media (max-width: 600px) {
   .container {
     max-width: 100vw;
@@ -102,9 +127,13 @@ h1 {
   }
   .flashcard {
     min-height: 4rem;
-    font-size: 1rem;
-    padding: 1rem 0.8rem;
     max-width: 100%;
   }
+  .flashcard-front,
+  .flashcard-back,
+  .flashcard-inner {
+    min-height: 4rem;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+  }
 }
-
