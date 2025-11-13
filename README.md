@@ -21,10 +21,14 @@ This project provides a simple, web-based flashcard application designed to help
 ## How to Clone and Run the Project
 
 1. **Clone the Repository**
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
 
-text
+- via HTTP
+
+```bash
+git clone https://github.com/juaneugenio/fisi_cards_app.git
+cd your-repo
+```
+
 
 2. **Open the Project in VSCode (or your preferred editor)**
 
@@ -38,18 +42,25 @@ text
 
 - Clone the repository as described above.
 - Create a new branch for your feature or bugfix:
-git checkout -b your-branch-name
 
-text
+```bash
+git checkout -b your-branch-name
+```
+
+
 - Make your changes and commit them:
+```bash
 git add .
 git commit -m "Describe your changes"
+```
 
-text
+
 - Push your branch:
+```bash
 git push origin your-branch-name
+```
 
-text
+
 - Submit a Pull Request (PR) through GitHub.
 - The repository owner will review and, if appropriate, approve and merge your PR.
 
