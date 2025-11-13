@@ -1,0 +1,32 @@
+# Editor files
+.vscode/
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node.js (npm/yarn dependencies, if used)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment files
+.env
+
+# Build/output (if using TypeScript, Sass, or any build tools)
+dist/
+build/
+out/
+
+# Temporary and swap files
+*.swp
+*.swo
+
+# Test and coverage
+coverage/
+*.test.js
+*.spec.js
+
+# Personal log files
+*.log

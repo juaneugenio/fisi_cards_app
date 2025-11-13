@@ -63,7 +63,7 @@ h1 {
   align-items: center;
 }
 
-/* Tarjeta Flip 3D */
+/* 3D Flip effect */
 .flashcard {
   perspective: 1000px;
   width: 100%;
@@ -90,7 +90,7 @@ h1 {
   transform: rotateY(180deg);
 }
 
-/* Lados de la carta */
+/* Front and Back */
 .flashcard-front,
 .flashcard-back {
   position: absolute;
@@ -146,12 +146,6 @@ h1 {
 #login-form {
   display: flex;
   flex-direction: column;
-  /* gap: 0.95rem; */
-  /* margin-top: 1.3rem; */
-  /* padding: 2rem 2.2rem 2rem 2.2rem;
-  background: #f5f5fc;
-  border-radius: 1rem; 
-  box-shadow: 0 3px 18px rgba(50,80,200,0.08), 0 0.5px 1px rgba(0,0,0,0.03); */
   align-items: center;
   max-width: 24rem;
 }

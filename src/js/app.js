@@ -4,10 +4,10 @@ import { whitelist } from './data/whitelist.js';
 const topicsNav = document.getElementById('topics-nav');
 const flashcardsContainer = document.getElementById('flashcards-container');
 
-// === CAMBIO: Duración de sesión (12 horas en ms) ===
-const SESSION_LENGTH = 12 * 60 * 60 * 1000; // 12 horas
+// === Session lasts 12 hours (in ms), after that user must log in again ===
+const SESSION_LENGTH = 12 * 60 * 60 * 1000; // 12 hours
 
-// === FUNCION: Mostrar formulario de ingreso ===
+// === FUNCTION: Log in Form ===
 function showLoginForm() {
   document.body.innerHTML = `
     <div class="container">
@@ -43,7 +43,7 @@ function showLoginForm() {
   };
 }
 
-// === FUNCION: Renderiza los tópicos ===
+// === FUNCTION: Renders Topics ===
 let currentTopic = flashcardsData[0].topic;
 
 function renderTopics() {
@@ -68,7 +68,7 @@ function renderFlashcards() {
   if (!topicObj) return;
 
   topicObj.cards.forEach(card => {
-    // Estructura para el flip 3D
+    // 3D flip Structure
     const cardDiv = document.createElement('div');
     cardDiv.className = 'flashcard';
 
@@ -95,14 +95,14 @@ function renderFlashcards() {
   });
 }
 
-// === CAMBIO: Validar tiempo de sesión antes de mostrar la app ===
+// === CHANGE: Validate session time before displaying the app ===
 const authed = sessionStorage.getItem("authed");
 const loginTime = sessionStorage.getItem("loginTime");
 
 if (
   !authed ||
   !loginTime ||
-  (Date.now() - parseInt(loginTime, 10)) > SESSION_LENGTH // Si pasaron más de 12 horas
+  (Date.now() - parseInt(loginTime, 10)) > SESSION_LENGTH // If more than 12 hours have passed
 ) {
   sessionStorage.removeItem("authed");
   sessionStorage.removeItem("loginTime");
