@@ -4,10 +4,12 @@ import { whitelist } from './data/whitelist.js';
 const topicsNav = document.getElementById('topics-nav');
 const flashcardsContainer = document.getElementById('flashcards-container');
 
-// === Session lasts 12 hours (in ms), after that user must log in again ===
+const modalOverlay = document.getElementById('image-modal-overlay');
+const modalImg = document.getElementById('image-modal-img');
+
 const SESSION_LENGTH = 12 * 60 * 60 * 1000; // 12 hours
 
-// === FUNCTION: Log in Form ===
+// === Log in Form ===
 function showLoginForm() {
   document.body.innerHTML = `
     <div class="container">
@@ -17,21 +19,19 @@ function showLoginForm() {
         This app is intended exclusively for educational and study purposes. Access is restricted to authorized users who possess a valid access code. All materials, information, and content provided within this app are for personal study only and must not be used for illegal, commercial, or unauthorized activities.<br>
         By using this app, each user accepts full responsibility for their individual actions. The creator of this app is not liable for misuse or violations of these terms by users.
       </div>
-      <p style="color: #f6efefff;" >Please enter your username to access.</p>
+      <p style="color: #f6efefff;" >Type your key name to access.</p>
       <form id="login-form" autocomplete="off">
         <label for="key"></label>
         <input id="key" type="text" required autocomplete="off" class="input-field" />
         <button type="submit" class="btn-login">Log in</button>
       </form>
       <div id="login-msg" style="color:yellow; margin-top:1rem"></div>
-      
     </div>
   `;
   document.getElementById('login-form').onsubmit = function(e) {
     e.preventDefault();
     const keyValue = document.getElementById('key').value.trim();
     if (whitelist.includes(keyValue)) {
-      // === CAMBIO: Guardar timestamp del login ===
       sessionStorage.setItem("authed", "yes");
       sessionStorage.setItem("loginTime", Date.now().toString());
       location.reload();
@@ -43,9 +43,8 @@ function showLoginForm() {
   };
 }
 
-// === FUNCTION: Renders Topics ===
+// === Render Topics ===
 let currentTopic = flashcardsData[0].topic;
-
 function renderTopics() {
   topicsNav.innerHTML = "";
   flashcardsData.forEach(({topic}) => {
@@ -61,6 +60,37 @@ function renderTopics() {
   });
 }
 
+// === Image Modal Logic ===
+function openImageModal(src, alt) {
+  modalImg.src = src;
+  modalImg.alt = alt || "";
+  modalOverlay.style.display = "flex";
+  // Slight delay to allow CSS transition
+  setTimeout(() => modalOverlay.classList.add('active'), 10);
+  document.body.style.overflow = "hidden"; // prevent background scroll
+
+  // Esc key closes modal
+  document.addEventListener("keydown", escModal);
+}
+// Remove modal and cleanup
+function closeImageModal() {
+  modalOverlay.classList.remove('active');
+  setTimeout(() => {
+    modalOverlay.style.display = "none";
+    modalImg.src = "";
+    document.body.style.overflow = "";
+  }, 310);
+  document.removeEventListener("keydown", escModal);
+}
+function escModal(e) {
+  if (e.key === "Escape") closeImageModal();
+}
+modalOverlay.addEventListener("click", function(e) {
+  if (e.target === modalOverlay) closeImageModal();
+  // Only close if clicking on overlay, not on image itself
+});
+
+// === Render Flashcards ===
 function renderFlashcards() {
   const topicObj = flashcardsData.find(t => t.topic === currentTopic);
   flashcardsContainer.innerHTML = "";
@@ -75,30 +105,59 @@ function renderFlashcards() {
     const cardInner = document.createElement('div');
     cardInner.className = 'flashcard-inner';
 
+    // Front side
     const frontDiv = document.createElement('div');
     frontDiv.className = 'flashcard-front';
-    frontDiv.textContent = card.front;
 
+    const frontText = document.createElement('span');
+    frontText.textContent = card.front;
+    frontDiv.appendChild(frontText);
+
+    // Back side
     const backDiv = document.createElement('div');
     backDiv.className = 'flashcard-back';
-    backDiv.textContent = card.back;
+
+    // Añadir texto al back
+    const backText = document.createElement('span');
+    backText.textContent = card.back;
+    backDiv.appendChild(backText);
+
+    // Imagen en el back (modal feature)
+    if (card.img && card.img.trim() !== "") {
+      const imgElem = document.createElement('img');
+      imgElem.src = card.img;
+      imgElem.alt = card.front;
+      imgElem.className = 'flashcard-img';
+      imgElem.tabIndex = 0; // accessibility: focusable
+      // Evita que el click en la imagen active el flip
+      imgElem.addEventListener('click', function(event) {
+        event.stopPropagation();
+        openImageModal(card.img, card.front);
+      });
+      imgElem.addEventListener('touchstart', function(event) {
+        event.stopPropagation();
+        openImageModal(card.img, card.front);
+      });
+      backDiv.appendChild(imgElem);
+    }
 
     cardInner.appendChild(frontDiv);
     cardInner.appendChild(backDiv);
     cardDiv.appendChild(cardInner);
 
-    cardDiv.addEventListener('click', function () {
-      cardDiv.classList.toggle('flipped');
+    // Flip event (solo si no fue en imagen)
+    cardDiv.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('flashcard-img')) {
+        cardDiv.classList.toggle('flipped');
+      }
     });
-
     flashcardsContainer.appendChild(cardDiv);
   });
 }
 
-// === CHANGE: Validate session time before displaying the app ===
+// === Validate session time before displaying the app ===
 const authed = sessionStorage.getItem("authed");
 const loginTime = sessionStorage.getItem("loginTime");
-
 if (
   !authed ||
   !loginTime ||
