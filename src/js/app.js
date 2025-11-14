@@ -104,76 +104,80 @@ modalOverlay.addEventListener("click", function (e) {
 
 // === Render Flashcards ===
 function renderFlashcards() {
-  const topicObj = flashcardsData.find((t) => t.topic === currentTopic);
+  const topicObj = flashcardsData.find(t => t.topic === currentTopic);
   flashcardsContainer.innerHTML = "";
 
   if (!topicObj) return;
 
-  topicObj.cards.forEach((card) => {
-    // 3D flip Structure
-    const cardDiv = document.createElement("div");
-    cardDiv.className = "flashcard";
+  topicObj.cards.forEach(card => {
+    // Crear estructura de la flashcard
+    const cardDiv = document.createElement('div');
+    cardDiv.className = 'flashcard';
 
-    const cardInner = document.createElement("div");
-    cardInner.className = "flashcard-inner"; // Front side
+    const cardInner = document.createElement('div');
+    cardInner.className = 'flashcard-inner';
 
-    const frontDiv = document.createElement("div");
-    frontDiv.className = "flashcard-front";
+    // Front side
+    const frontDiv = document.createElement('div');
+    frontDiv.className = 'flashcard-front';
 
-    const frontText = document.createElement("span");
+    const frontText = document.createElement('span');
     frontText.textContent = card.front;
-    frontDiv.appendChild(frontText); // Back side
+    frontDiv.appendChild(frontText);
 
-    const backDiv = document.createElement("div");
-    backDiv.className = "flashcard-back"; // Añadir texto al back
+    // Back side
+    const backDiv = document.createElement('div');
+    backDiv.className = 'flashcard-back';
 
-    const backText = document.createElement("span");
+    const backText = document.createElement('span');
     backText.textContent = card.back;
-    backDiv.appendChild(backText); // Imagen en el back (modal feature)
+    backDiv.appendChild(backText);
+
+    // Imagen en el back (modal feature)
+    let imgElem = null;
 
     if (card.img && card.img.trim() !== "") {
-      const imgElem = document.createElement("img");
+      imgElem = document.createElement('img');
       imgElem.src = card.img;
       imgElem.alt = card.front;
-      imgElem.className = "flashcard-img";
+      imgElem.className = 'flashcard-img';
       imgElem.tabIndex = 0; // accessibility: focusable
-      imgElem.addEventListener("click", function (event) {
+
+      // Abrir modal al hacer click o tap
+      imgElem.addEventListener('click', function(event) {
         event.stopPropagation();
         openImageModal(card.img, card.front);
       });
-      imgElem.addEventListener("touchstart", function (event) {
+      imgElem.addEventListener('touchstart', function(event) {
         event.stopPropagation();
         openImageModal(card.img, card.front);
-      }); // Cuando la imagen cargue, recalcula altura por si la imagen altera el tamaño
-      imgElem.addEventListener("load", function () {
-        ajustarAltura(
-          cardDiv,
-          cardInner,
-          frontDiv,
-          backDiv,
-          cardDiv.classList.contains("flipped")
-        );
       });
+
+      // Reajustar altura al cargar imagen
+      imgElem.addEventListener('load', function() {
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, cardDiv.classList.contains('flipped'));
+      });
+
       backDiv.appendChild(imgElem);
     }
 
+    // Montar estructura
     cardInner.appendChild(frontDiv);
     cardInner.appendChild(backDiv);
-    cardDiv.appendChild(cardInner); // Al renderizar, ajusta inicial según front
+    cardDiv.appendChild(cardInner);
+    flashcardsContainer.appendChild(cardDiv);
 
-    ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false); // Flip event - ajusta altura dinámicamente
+    // Calcular altura inicial según el front (visible)
+    ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false);
 
-    cardDiv.addEventListener("click", function (e) {
-      if (!e.target.classList.contains("flashcard-img")) {
-        // Determina el estado a cambiar: si va a girar o volver al front
-        const flippedNext = !cardDiv.classList.contains("flipped");
-        // Ajusta la altura según el estado futuro
-        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext);
-        cardDiv.classList.toggle("flipped");
+    // Evento flip sincronizado
+    cardDiv.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('flashcard-img')) {
+        const flippedNext = !cardDiv.classList.contains('flipped');
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext); // Ajuste justo antes del flip
+        cardDiv.classList.toggle('flipped');
       }
     });
-
-    flashcardsContainer.appendChild(cardDiv);
   });
 }
 

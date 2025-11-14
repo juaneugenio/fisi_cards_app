@@ -22,6 +22,11 @@ export const flashcardsData = [
         front: "¿Qué es una lista en Python?Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.",
         back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.",
       },
+      {
+        img: "", // Si no tiene imagen, puedes dejar vacío o borrar la linea
+        front: "¿Para qué sirve una máscara de subred?",
+        back: "Permite definir qué parte de la dirección IP corresponde a la red y cuál a los hosts.",
+      },
       
     ],
   },
