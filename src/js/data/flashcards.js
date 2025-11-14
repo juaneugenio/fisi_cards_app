@@ -4,7 +4,7 @@ export const flashcardsData = [
     cards: [
       {
         img: "../src/img/test1.jpg",
-        front: "¿Qué es una dirección IP?",
+        front: "¿Qué es una dirección IP?Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.",
         back: "Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.",
       },
       {
@@ -19,14 +19,10 @@ export const flashcardsData = [
     cards: [
       {
         img: "",
-        front: "¿Qué es una lista en Python?",
-        back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
+        front: "¿Qué es una lista en Python?Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.",
+        back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.Es un identificador único para cada dispositivo en una red que utiliza el protocolo IP.",
       },
-      {
-        img: "",
-        front: "¿Cómo creas una función en Python?",
-        back: "Usando la palabra clave 'def', por ejemplo: def mi_funcion():",
-      },
+      
     ],
   },
   {

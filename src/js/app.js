@@ -1,13 +1,24 @@
-import { flashcardsData } from './data/flashcards.js';
-import { whitelist } from './data/whitelist.js';
+import { flashcardsData } from "./data/flashcards.js";
+import { whitelist } from "./data/whitelist.js";
 
-const topicsNav = document.getElementById('topics-nav');
-const flashcardsContainer = document.getElementById('flashcards-container');
+const topicsNav = document.getElementById("topics-nav");
+const flashcardsContainer = document.getElementById("flashcards-container");
 
-const modalOverlay = document.getElementById('image-modal-overlay');
-const modalImg = document.getElementById('image-modal-img');
+const modalOverlay = document.getElementById("image-modal-overlay");
+const modalImg = document.getElementById("image-modal-img");
 
 const SESSION_LENGTH = 12 * 60 * 60 * 1000; // 12 hours
+
+/*  */
+// Función global para ajustar la altura del card y del inner según la cara visible
+function ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flipped) {
+  // Medimos ambas caras
+  const frontHeight = frontDiv.offsetHeight;
+  const backHeight = backDiv.offsetHeight; // Usamos la altura según el estado flipped
+  const tarjetaHeight = flipped ? backHeight : frontHeight;
+  cardDiv.style.height = tarjetaHeight + "px";
+  cardInner.style.height = tarjetaHeight + "px";
+}
 
 // === Log in Form ===
 function showLoginForm() {
@@ -28,15 +39,16 @@ function showLoginForm() {
       <div id="login-msg" style="color:yellow; margin-top:1rem"></div>
     </div>
   `;
-  document.getElementById('login-form').onsubmit = function(e) {
+  document.getElementById("login-form").onsubmit = function (e) {
     e.preventDefault();
-    const keyValue = document.getElementById('key').value.trim();
+    const keyValue = document.getElementById("key").value.trim();
     if (whitelist.includes(keyValue)) {
       sessionStorage.setItem("authed", "yes");
       sessionStorage.setItem("loginTime", Date.now().toString());
       location.reload();
     } else {
-      document.getElementById('login-msg').textContent = "Incorrect or unauthorized username";
+      document.getElementById("login-msg").textContent =
+        "Incorrect or unauthorized username";
       sessionStorage.removeItem("authed");
       sessionStorage.removeItem("loginTime");
     }
@@ -47,10 +59,10 @@ function showLoginForm() {
 let currentTopic = flashcardsData[0].topic;
 function renderTopics() {
   topicsNav.innerHTML = "";
-  flashcardsData.forEach(({topic}) => {
-    const btn = document.createElement('button');
+  flashcardsData.forEach(({ topic }) => {
+    const btn = document.createElement("button");
     btn.textContent = topic;
-    btn.classList.toggle('active', topic === currentTopic);
+    btn.classList.toggle("active", topic === currentTopic);
     btn.onclick = () => {
       currentTopic = topic;
       renderTopics();
@@ -66,7 +78,7 @@ function openImageModal(src, alt) {
   modalImg.alt = alt || "";
   modalOverlay.style.display = "flex";
   // Slight delay to allow CSS transition
-  setTimeout(() => modalOverlay.classList.add('active'), 10);
+  setTimeout(() => modalOverlay.classList.add("active"), 10);
   document.body.style.overflow = "hidden"; // prevent background scroll
 
   // Esc key closes modal
@@ -74,7 +86,7 @@ function openImageModal(src, alt) {
 }
 // Remove modal and cleanup
 function closeImageModal() {
-  modalOverlay.classList.remove('active');
+  modalOverlay.classList.remove("active");
   setTimeout(() => {
     modalOverlay.style.display = "none";
     modalImg.src = "";
@@ -85,72 +97,82 @@ function closeImageModal() {
 function escModal(e) {
   if (e.key === "Escape") closeImageModal();
 }
-modalOverlay.addEventListener("click", function(e) {
+modalOverlay.addEventListener("click", function (e) {
   if (e.target === modalOverlay) closeImageModal();
   // Only close if clicking on overlay, not on image itself
 });
 
 // === Render Flashcards ===
 function renderFlashcards() {
-  const topicObj = flashcardsData.find(t => t.topic === currentTopic);
+  const topicObj = flashcardsData.find((t) => t.topic === currentTopic);
   flashcardsContainer.innerHTML = "";
 
   if (!topicObj) return;
 
-  topicObj.cards.forEach(card => {
+  topicObj.cards.forEach((card) => {
     // 3D flip Structure
-    const cardDiv = document.createElement('div');
-    cardDiv.className = 'flashcard';
+    const cardDiv = document.createElement("div");
+    cardDiv.className = "flashcard";
 
-    const cardInner = document.createElement('div');
-    cardInner.className = 'flashcard-inner';
+    const cardInner = document.createElement("div");
+    cardInner.className = "flashcard-inner"; // Front side
 
-    // Front side
-    const frontDiv = document.createElement('div');
-    frontDiv.className = 'flashcard-front';
+    const frontDiv = document.createElement("div");
+    frontDiv.className = "flashcard-front";
 
-    const frontText = document.createElement('span');
+    const frontText = document.createElement("span");
     frontText.textContent = card.front;
-    frontDiv.appendChild(frontText);
+    frontDiv.appendChild(frontText); // Back side
 
-    // Back side
-    const backDiv = document.createElement('div');
-    backDiv.className = 'flashcard-back';
+    const backDiv = document.createElement("div");
+    backDiv.className = "flashcard-back"; // Añadir texto al back
 
-    // Añadir texto al back
-    const backText = document.createElement('span');
+    const backText = document.createElement("span");
     backText.textContent = card.back;
-    backDiv.appendChild(backText);
+    backDiv.appendChild(backText); // Imagen en el back (modal feature)
 
-    // Imagen en el back (modal feature)
     if (card.img && card.img.trim() !== "") {
-      const imgElem = document.createElement('img');
+      const imgElem = document.createElement("img");
       imgElem.src = card.img;
       imgElem.alt = card.front;
-      imgElem.className = 'flashcard-img';
+      imgElem.className = "flashcard-img";
       imgElem.tabIndex = 0; // accessibility: focusable
-      // Evita que el click en la imagen active el flip
-      imgElem.addEventListener('click', function(event) {
+      imgElem.addEventListener("click", function (event) {
         event.stopPropagation();
         openImageModal(card.img, card.front);
       });
-      imgElem.addEventListener('touchstart', function(event) {
+      imgElem.addEventListener("touchstart", function (event) {
         event.stopPropagation();
         openImageModal(card.img, card.front);
+      }); // Cuando la imagen cargue, recalcula altura por si la imagen altera el tamaño
+      imgElem.addEventListener("load", function () {
+        ajustarAltura(
+          cardDiv,
+          cardInner,
+          frontDiv,
+          backDiv,
+          cardDiv.classList.contains("flipped")
+        );
       });
       backDiv.appendChild(imgElem);
     }
 
     cardInner.appendChild(frontDiv);
     cardInner.appendChild(backDiv);
-    cardDiv.appendChild(cardInner);
+    cardDiv.appendChild(cardInner); // Al renderizar, ajusta inicial según front
 
-    // Flip event (solo si no fue en imagen)
-    cardDiv.addEventListener('click', function(e) {
-      if (!e.target.classList.contains('flashcard-img')) {
-        cardDiv.classList.toggle('flipped');
+    ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false); // Flip event - ajusta altura dinámicamente
+
+    cardDiv.addEventListener("click", function (e) {
+      if (!e.target.classList.contains("flashcard-img")) {
+        // Determina el estado a cambiar: si va a girar o volver al front
+        const flippedNext = !cardDiv.classList.contains("flipped");
+        // Ajusta la altura según el estado futuro
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext);
+        cardDiv.classList.toggle("flipped");
       }
     });
+
     flashcardsContainer.appendChild(cardDiv);
   });
 }
@@ -161,7 +183,7 @@ const loginTime = sessionStorage.getItem("loginTime");
 if (
   !authed ||
   !loginTime ||
-  (Date.now() - parseInt(loginTime, 10)) > SESSION_LENGTH // If more than 12 hours have passed
+  Date.now() - parseInt(loginTime, 10) > SESSION_LENGTH // If more than 12 hours have passed
 ) {
   sessionStorage.removeItem("authed");
   sessionStorage.removeItem("loginTime");
