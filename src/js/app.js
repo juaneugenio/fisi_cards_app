@@ -110,59 +110,69 @@ function renderFlashcards() {
   if (!topicObj) return;
 
   topicObj.cards.forEach(card => {
-    // Crear estructura de la flashcard
+    // Crear la estructura de la tarjeta
     const cardDiv = document.createElement('div');
     cardDiv.className = 'flashcard';
 
     const cardInner = document.createElement('div');
     cardInner.className = 'flashcard-inner';
 
-    // --- INFO DE LA TARJETA (tema y número), para front y back ---
+    // Info de la tarjeta (tema y número)
     const cardInfo = document.createElement('div');
     cardInfo.className = 'card-info';
     cardInfo.innerHTML = `<b>Karte ${card.cardNumber}</b> | ${topicObj.topic}`;
 
-    // FRONT SIDE
+    // FRONT
     const frontDiv = document.createElement('div');
     frontDiv.className = 'flashcard-front';
-
-    // Añadir info tema+número antes del contenido principal
     frontDiv.appendChild(cardInfo);
 
+    // ---- Añadimos el contenido del front (puede tener imagen HTML) ----
     const frontText = document.createElement('span');
-    frontText.innerHTML = card.front;
+    frontText.innerHTML = card.front; // usa innerHTML para admitir HTML (img/formatos)
     frontDiv.appendChild(frontText);
 
-    // BACK SIDE
+    // ---- Detecta imagen en el front y añade zoom ----
+    const frontImg = frontDiv.querySelector('.flashcard-img');
+    if (frontImg) {
+      frontImg.addEventListener('click', function(event) {
+        event.stopPropagation();
+        openImageModal(frontImg.src, frontImg.alt || '');
+      });
+      frontImg.addEventListener('touchstart', function(event) {
+        event.stopPropagation();
+        openImageModal(frontImg.src, frontImg.alt || '');
+      });
+    }
+
+    // BACK
     const backDiv = document.createElement('div');
     backDiv.className = 'flashcard-back';
-
-    // Añadir info tema+número en el back (usamos un clone)
+    // info de la tarjeta también en back
     const cardInfoBack = cardInfo.cloneNode(true);
     backDiv.appendChild(cardInfoBack);
 
+    // ----- Contenido del back (texto, imagen, formato) -----
     const backText = document.createElement('span');
     backText.innerHTML = card.back;
     backDiv.appendChild(backText);
 
-    // IMAGEN EN EL BACK si existe
-    let imgElem = null;
+    // Imagen en el back (si existe)
     if (card.img && card.img.trim() !== "") {
-      imgElem = document.createElement('img');
+      const imgElem = document.createElement('img');
       imgElem.src = card.img;
       imgElem.alt = card.front;
       imgElem.className = 'flashcard-img';
       imgElem.tabIndex = 0;
+
+      // Zoom en imagen de back
       imgElem.addEventListener('click', function(event) {
         event.stopPropagation();
-        openImageModal(card.img, card.front);
+        openImageModal(imgElem.src, imgElem.alt || '');
       });
       imgElem.addEventListener('touchstart', function(event) {
         event.stopPropagation();
-        openImageModal(card.img, card.front);
-      });
-      imgElem.addEventListener('load', function() {
-        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, cardDiv.classList.contains('flipped'));
+        openImageModal(imgElem.src, imgElem.alt || '');
       });
       backDiv.appendChild(imgElem);
     }
@@ -173,19 +183,21 @@ function renderFlashcards() {
     cardDiv.appendChild(cardInner);
     flashcardsContainer.appendChild(cardDiv);
 
-    // Ajuste inicial de altura según el front
+    // Ajuste inicial de altura según el front (si usas la función ajustarAltura)
     ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false);
 
-    // Evento flip sincronizado (AJUSTA ALTURA y luego hace el giro)
+    // Evento de flip
     cardDiv.addEventListener('click', function(e) {
+      // No debe flippear si haces clic en la imagen que abre zoom
       if (!e.target.classList.contains('flashcard-img')) {
         const flippedNext = !cardDiv.classList.contains('flipped');
-        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext); // <- Sucede a la vez que el flip
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext);
         cardDiv.classList.toggle('flipped');
       }
     });
   });
 }
+
 
 // === Validate session time before displaying the app ===
 const authed = sessionStorage.getItem("authed");

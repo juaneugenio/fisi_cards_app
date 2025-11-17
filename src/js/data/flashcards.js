@@ -6,13 +6,13 @@ export const flashcardsData = [
         cardNumber: 1,
         img: "../src/img/test1.jpg",
         front: "¿Qué es una dirección <b>IP?</b>",
-        back: "Es un <b>identificador único</b> para cada dispositivo en una red que utiliza el protocolo IP.",
+        back: "<b>Grafische Werkzeuge:</b><br> - Netzwerkmanager (Debian, Rocky Linux, SUSE) <br> - nmtui (Rocky Linux), Wicd (Debian), YaST (SUSE) <br><br> <b>Console:</b> <br> - ifconfig <br> - ip addr show <br>- ipa",
       },
       {
         cardNumber: 2,
         img: "",
         front: "¿Para qué sirve una máscara de subred?",
-        back: "Permite definir qué parte de la dirección IP corresponde a la red y cuál a los hosts.",
+        back: '<pre><code>netsh interface ip set address name="LAN-Verbindung" address=192.168.0.1 mask=255.255.255.0 gateway=192.168.0.254</code></pre>',
       },
     ],
   },
@@ -22,7 +22,8 @@ export const flashcardsData = [
       {
         cardNumber: 1,
         img: "",
-        front: "¿Qué es una lista en Python? Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
+        front:
+          'Was bedeutet das Gütesiegel <b>„Geprüfte Sicherheit"</b>? <br><img src="../src/img/img-196.jpg" alt="img-196" class="flashcard-img">',
         back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
       },
       {
