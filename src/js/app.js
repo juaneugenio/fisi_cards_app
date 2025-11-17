@@ -117,33 +117,42 @@ function renderFlashcards() {
     const cardInner = document.createElement('div');
     cardInner.className = 'flashcard-inner';
 
-    // Front side
+    // --- INFO DE LA TARJETA (tema y número), para front y back ---
+    const cardInfo = document.createElement('div');
+    cardInfo.className = 'card-info';
+    cardInfo.innerHTML = `<b>Karte ${card.cardNumber}</b> | ${topicObj.topic}`;
+
+    // FRONT SIDE
     const frontDiv = document.createElement('div');
     frontDiv.className = 'flashcard-front';
 
+    // Añadir info tema+número antes del contenido principal
+    frontDiv.appendChild(cardInfo);
+
     const frontText = document.createElement('span');
-    frontText.textContent = card.front;
+    frontText.innerHTML = card.front;
     frontDiv.appendChild(frontText);
 
-    // Back side
+    // BACK SIDE
     const backDiv = document.createElement('div');
     backDiv.className = 'flashcard-back';
 
+    // Añadir info tema+número en el back (usamos un clone)
+    const cardInfoBack = cardInfo.cloneNode(true);
+    backDiv.appendChild(cardInfoBack);
+
     const backText = document.createElement('span');
-    backText.textContent = card.back;
+    backText.innerHTML = card.back;
     backDiv.appendChild(backText);
 
-    // Imagen en el back (modal feature)
+    // IMAGEN EN EL BACK si existe
     let imgElem = null;
-
     if (card.img && card.img.trim() !== "") {
       imgElem = document.createElement('img');
       imgElem.src = card.img;
       imgElem.alt = card.front;
       imgElem.className = 'flashcard-img';
-      imgElem.tabIndex = 0; // accessibility: focusable
-
-      // Abrir modal al hacer click o tap
+      imgElem.tabIndex = 0;
       imgElem.addEventListener('click', function(event) {
         event.stopPropagation();
         openImageModal(card.img, card.front);
@@ -152,29 +161,26 @@ function renderFlashcards() {
         event.stopPropagation();
         openImageModal(card.img, card.front);
       });
-
-      // Reajustar altura al cargar imagen
       imgElem.addEventListener('load', function() {
         ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, cardDiv.classList.contains('flipped'));
       });
-
       backDiv.appendChild(imgElem);
     }
 
-    // Montar estructura
+    // Estructura final
     cardInner.appendChild(frontDiv);
     cardInner.appendChild(backDiv);
     cardDiv.appendChild(cardInner);
     flashcardsContainer.appendChild(cardDiv);
 
-    // Calcular altura inicial según el front (visible)
+    // Ajuste inicial de altura según el front
     ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false);
 
-    // Evento flip sincronizado
+    // Evento flip sincronizado (AJUSTA ALTURA y luego hace el giro)
     cardDiv.addEventListener('click', function(e) {
       if (!e.target.classList.contains('flashcard-img')) {
         const flippedNext = !cardDiv.classList.contains('flipped');
-        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext); // Ajuste justo antes del flip
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext); // <- Sucede a la vez que el flip
         cardDiv.classList.toggle('flipped');
       }
     });
