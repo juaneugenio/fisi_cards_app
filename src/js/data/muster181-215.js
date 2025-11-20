@@ -129,13 +129,115 @@ cards: [
   {
     cardNumber: 199,
     img: "",
-    front: "Was sollte man beim <b>Verschrotten von Datenträgern</b> unbedingt beachten?",
+    front:
+      "Was sollte man beim <b>Verschrotten von Datenträgern</b> unbedingt beachten?",
     back: "Alle Daten sind <b>vor der Verschrottung eines Datenträgers</b> durch technische Verfahren, wie zum Beispiel durch mechanische, magnetische oder thermische Verfahren <em>nach DIN 66399</em> sicher zu löschen. <br>Anschließend sind die Datenträger umwelt- und fachgerecht durch ein zertifiziertes Entsorgungsunternehmen zu entsorgen.",
   },
   {
     cardNumber: 200,
     img: "",
-    front: "Was bedeutet der Begriff <b>MFA (Multi-Factor-Authentication)</b> und wo kommt sie zum Einsatz?",
+    front:
+      "Was bedeutet der Begriff <b>MFA (Multi-Factor-Authentication)</b> und wo kommt sie zum Einsatz?",
     back: "Die <b>Multi-Factor-Authentication (MFA)</b> ist eine erweiterte Form der Zugangsberechtigung, die durch mehrere unabhängige Merkmale (Faktoren) überprüft wird und erst nach Eingabe eines starken Passworts sowie der Eingabe einer Nummer (via SMS oder App) oder Angabe einer Zertifikatsdatei erteilt wird. <br>Einsatzbereiche sind:<br><br>- Online-Banking <br>- Debit- oder Kreditkartenzahlung <br>- Online-Ausweisfunktion des Personalausweises <br>- Absicherung jeglicher öffentlich zugänglicher Onlinezugänge",
+  },
+  {
+    cardNumber: 201,
+    img: "",
+    front:
+      "Beschreibe den Begriff <b>Datensicherheit</b> und nenne deren Schutzziele.",
+    back: "<b>Datensicherheit</b>, oftmals auch <em>Informationssicherheit</em> genannt, beinhaltet alle technischen und nicht-technischen Maßnahmen zur Sicherstellung der 3 Schutzziele <b>Vertraulichkeit, Verfügbarkeit und Integrität</b>.<br>Ein weiteres Schutzziel ist noch die Authentizität. Hier geht es um die Eigenschaften der Echtheit, Überprüfbarkeit und Vertrauenswürdigkeit eines Objekts.<br>Datensicherheit oder Informationssicherheit unterscheidet nicht nach Art der Daten (siehe Datenschutz, wo es um personenbezogene Daten geht).<br><b>Es geht hier in erster Linie um den Schutz vor Gefahren/Bedrohungen bzw. der Vermeidung von wirtschaftlichen Schäden sowie der Minimierung von Risiken im IT-Bereich.</b>",
+  },
+  {
+    cardNumber: 202,
+    img: "",
+    front: "Worin unterscheiden sich <b>Datensicherheit und Datenschutz</b>?",
+    back: "Die Datensicherheit bzw. Informationssicherheit verfolgt die <b>3 Schutzziele Vertraulichkeit, Verfügbarkeit und Integrität sowie außerdem die Authentizität</b>. Hier wird nicht nach der Art der Daten (z. B. personenbezogen o. Ä.) unterschieden. <br>Der <b>Datenschutz</b> verfolgt das Ziel, <b>personenbezogene Daten</b> zu schützen sowie die Informationspflichten und Rechte der Personen, von denen Daten erhoben werden, zu gewährleisten.",
+  },
+  {
+    cardNumber: 203,
+    img: "",
+    front:
+      "Was versteht man im Datenschutz unter <b>technischorganisatorischen Maßnahmen</b>, kurz <b>TOM</b>?",
+    back: "<b>§ 25 Abs. 2 DSGVO:</b><br><br>Der Verantwortliche trifft geeignete technische und organisatorische Maßnahmen, die sicherstellen, dass durch Voreinstellung grundsätzlich nur personenbezogene Daten, deren Verarbeitung für den jeweiligen bestimmten Verarbeitungszweck erforderlich ist, verarbeitet werden. <br>Diese Verpflichtung gilt für die Menge der erhobenen personenbezogenen Daten, den Umfang ihrer Verarbeitung, ihre Speicherfrist und ihre Zugänglichkeit. Solche Maßnahmen müssen insbesondere sicherstellen, dass personenbezogene Daten durch Voreinstellungen nicht ohne Eingreifen der Person einer unbestimmten Zahl von natürlichen Personen zugänglich gemacht werden.",
+  },
+  {
+    cardNumber: 204,
+    img: "",
+    front:
+      "Durch welche <b>konkreten Maßnahmen</b> können technisch organisatorischen Maßnahmen (TOM) <b>DSGVO-konform</b> umgesetzt werden?",
+    back: "<br>- Zutrittskontrolle:</b> Unbefugten ist der Zutritt zu DV-Anlagen zu verwehren.<br><b>- Zugangskontrolle:</b> Unbefugte sollen keinen Zugang zu DV-Anlagen haben.<br><b>- Zugriffskontrolle, Zugriffsberechtigung:</b> Durch ein Rechte- und Rollenmanagement können nur berechtigte Nutzer personenbezogene Daten einsehen. Der Zugriff wird protokolliert. Unbefugte Dritte werden ausgeschlossen und können sensible Daten nicht lesen, kopieren, verändern oder löschen.<br><b>- Weitergabekontrolle:</b> Sicherstellung, dass personenbezogene Daten beim Transport oder bei der Speicherung nicht durch Dritte gelesen, kopiert, verändert oder entfernt werden können.<br><b>- Eingabekontrolle:</b> Gewährleistung, dass nachträglich überprüft und festgestellt werden kann, ob Daten verändert oder entfernt worden sind.<br><b>- Auftragskontrolle:</b> Personenbezogene Daten werden nur nach der vertraglichen Regel der Auftragsverarbeitung verarbeitet.<br><b>- Verfügbarkeitskontrolle:</b> Personenbezogene Daten werden vor Verlust oder Zerstörung geschützt.<br><b>- Trennungsgebot:</b> Personenbezogene Daten werden ihrem Zweck nach getrennt verarbeitet und gespeichert.",
+  },
+  {
+    cardNumber: 205,
+    img: "",
+    front:
+      "Nenne die wesentlichen <b>Vorteile einer ISO/IEC 27001 Zertifizierung</b> für Unternehmen.",
+    back: "Die internationale <b>Norm ISO/IEC 27001</b> beschreibt die Anforderungen an ein funktionsfähiges <b>Informationssicherheits-Managementsystem (ISMS)</b>. Die Anforderungen geben vor, wie ein ISMS in Unternehmen zu errichten, umzusetzen und kontinuierlich weiterzuentwickeln ist.<br>Eine erfolgreiche Zertifizierung trägt dazu bei, IT-Risiken zu minimieren, I T-Sicherheitsverfahren zu etablieren sowie die Qualität der IT-Systeme nachhaltig zu optimieren.<br>Weitere Vorteile sind:<br><br>- IT-Risiken, mögliche Schäden und Folgekosten abschätzen bzw. minimieren.<br>- Wettbewerbsvorteil durch anerkannten internationalen Standard.<br>- Steigerung des Vertrauens gegenüber Partnern, Kunden sowie der Öffentlichkeit.<br>- Compliance-Anforderungen werden sichergestellt.<br>- Systematisches Aufdecken von Schwachstellen.",
+  },
+  {
+    cardNumber: 206,
+    img: "",
+    front:
+      "In der Informationssicherheit kommt es neben Sicherheits- und Datenschutzaspekten auch auf die Datenminimierung an.<br>Welches sind die <b>Ziele bei der Datenminimierung</b>?",
+    back: '<b>Datenminimierung</b> und Datensparsamkeit sind grundlegende Regeln im Bereich des Datenschutzes. Diese Regel besagt, dass bei der Datenverarbeitung nur so viele personenbezogene Daten gesammelt werden, wie für die jeweiligen Verarbeitungszwecke unbedingt notwendig sind.<br>Es gilt hier der Grundsatz: „So viele Daten wie nötig, so wenige Daten wie möglich".<br>Betroffene sollen dadurch vor einer übermäßigen Speicherung personenbezogener Daten geschützt werden.',
+  },
+  {
+    cardNumber: 207,
+    img: "",
+    front:
+      "Der <b>Datenschutz</b> ist auf europäischer Ebene in Verordnungen in der DSGVO beschrieben.<br>Welche <b>Rechte</b> hat eine Person betreffend ihrer <b>personenbezogenen Daten</b>?",
+    back: 'In Kapitel 3 der <b>DSGVO</b> sind folgende <b>Vorschriften</b> enthalten:<br><b>- Informationspflicht und Recht auf Auskunft zu personenbezogenen Daten</b> <br>• Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person<br>• Informationspflicht, wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben wurden<br>• Auskunftsrecht der betroffenen Person<br><br><b>- Recht auf Berichtigung und Löschung</b><br>• Recht auf Berichtigung<br>• Recht auf Löschung („Recht auf Vergessenwerden")<br>• Recht auf Einschränkung der Verarbeitung<br>• Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten oder der Einschränkung der Verarbeitung<br>• Recht auf Datenübertragbarkeit<br><br><b>- Widerspruchsrecht und automatisierte Entscheidungsfindung im Einzelfall</b>',
+  },
+  {
+    cardNumber: 208,
+    img: "",
+    front: "Was ist eine <b>PKI (Public Key Infrastructure)</b>?",
+    back: "Mit einer <b>Public-Key-Infrastruktur</b> (PKI, englisch Public Key Infrastructure) wird ein kryptologisches System bezeichnet, welches innerhalb einer Infrastruktur digitale Zertifikate ausstellen, verteilen und prüfen kann. Zum Einsatz kommt ein Asymmetrisches Kryptosystem, welches zur Absicherung des Datenverkehrs innerhalb eines Netzwerks dient und das die Daten digital signiert und verschlüsselt.<br>Zu den Bestandteilen einer PKI gehören unter anderem die Zertifizierungsstellen (CAs), untergeordnete Registrierungsstellen, digitale Zertifikate, Verzeichnisdienste für Zertifikate, Zertifikatssperrlisten sowie Validierungsservices. Es gibt einstufige und mehrstufige Modelle einer Public Key Infrastructure (PKI).",
+  },
+  {
+    cardNumber: 209,
+    img: "",
+    front: "Was versteht man unter einem <b>digitalen Zertifikat</b>?",
+    back: "Als <b>digitales Zertifikat</b> wird ein digitaler Datensatz bezeichnet, der mit Hilfe von kryptografischen Schlüsselpaaren beispielsweise die Authentizität von Webseiten, Einzelpersonen oder Organisationen überprüfen kann.<br><b>Ein typisches digitales Zertifikat basiert in der Regel auf dem X.509 Standard (Public-Key-Zertifikat)</b>.<br>Das digitale Zertifikat besteht unter anderem aus einem öffentlichen Schlüssel und einem privaten Schlüssel und soll die Schutzziele der Datensicherheit, wie Vertraulichkeit sowie Authentizität gewährleisten.",
+  },
+  {
+    cardNumber: 210,
+    img: "",
+    front: "Was ist eine <b>SPI (Stateful Packet Inspection) Firewall</b>?",
+    back: "Im Gegensatz zur klassischen Firewall (paketorientiert), nutzt eine <b>Stateful Packet Inspection Firewall</b> eine zustandsorientierte Paketüberprüfung, bei der jedes Datenpaket auf der Vermittlungsschicht (3. Schicht des OSI-Modells) einer bestimmten aktiven Sitzung zugeordnet wird und der Verbindungsstatus in dynamischen Zustandstabellen zwischengespeichert wird.<br>Mit Hilfe des Zustands der Verbindungen werden bei TCP die SYN-, ACK-, FIN- und RST-Bits ausgewertet und über die Weiterleitung von Datenpaketen entschieden. Die eigentlich zustandslosen Datenpakete UDP (User Datagram Protocol) können auch stateful behandelt werden.",
+  },
+  {
+    cardNumber: 211,
+    img: "",
+    front: "Was versteht man unter dem Begriff <b>Endpoint-Security</b>?",
+    back: "Als <b>Endpoint-Security-Management</b> werden alle Maßnahmen und Richtlinien bezeichnet, bei denen Endgeräte, die auf ein Netzwerk zugreifen, vor schädlichen Angriffen bzw. Zugriffen seitens Dritter geschützt werden.<br><br>Zu den Maßnahmen zählen unter anderem sowohl die Anwendungsisolation von E-Mail- und Office-Programmen als auch Überwachung bzw. Verwaltung von externen Datenträgern, die über eine Art Whitelist geregelt wird.",
+  },
+  {
+    cardNumber: 212,
+    img: "",
+    front:
+      "Welche Anwendungen oder Verfahren verwenden <b>kryptografische Hashfunktionen</b>?",
+    back: "Bei folgenden Anwendungen oder Verfahren kommt es zum Einsatz von kryptografischen <b>Hashfunktionen:</b><br><br>- Integritätsprüfungen Erzeugung von Prüfsummen Erzeugung von Sitzungsschlüsseln Generatoren für Einmal-Passwörter Verfahren zur Authentifizierung mit digitalen Signaturen Speichern von Passwörtern",
+  },
+  {
+    cardNumber: 213,
+    img: "",
+    front:
+      "Nenne Einsatzbereiche und Verfahren von <b>symmetrischen Schlüsseln</b>.",
+    back: '<img src="../src/img/img-213.jpg" alt="img-213" class="flashcard-img">',
+  },
+  {
+    cardNumber: 214,
+    img: "",
+    front:
+      'Ergänze die fehlenden Werte in der Tabelle symmetrischer und asymmetrischer Verschlüsslung.<br><br><img src="../src/img/img-214-a.jpg" alt="img-214-a" class="flashcard-img">',
+    back: '<img src="../src/img/img-214-b.jpg" alt="img-214-b" class="flashcard-img">',
+  },
+  {
+    cardNumber: 215,
+    img: "",
+    front:
+      "Erläutere den <b>Unterschied</b> zwischen einem <b>differentiellen und inkrementellen Backup</b>.",
+    back: "<b>Differentielles Backup</b><br><br>Ein differentielles Backup ist eine Datensicherungsform bei der, ausgehend von einem Vollbackup, alle Dateien kopiert werden, die seit der letzten vollständigen Sicherung verändert wurden oder neu hinzugekommen sind.<br>Beim vollständigen Wiederherstellen der Daten benötigt man zuerst das letzte Vollbackup und danach das letzte differentielle Backup.<br><br><b>Inkrementelles Backup<b/><br><br>Ein inkrementelles Backup ist eine Datensicherungsform bei der, ausgehend von einem Vollbackup, nur die Dateien, die seit der letzten inkrementellen Sicherung verändert wurden oder neu hinzugekommen sind, kopiert werden.<br>Beim vollständigen Wiederherstellen der Daten benötigt man zunächst das letzte Vollbackup und danach in der richtigen Reihenfolge die jeweiligen inkrementellen Backups.",
   },
 ];
