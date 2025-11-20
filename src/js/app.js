@@ -1,5 +1,5 @@
-import { flashcardsData } from "./data/flashcards.js";
-import { whitelist } from "./data/whitelist.js";
+import { flashcardsData } from "/fisi_cards_app/src/js/"./data/flashcards.js";
+import { whitelist } from "./"/fisi_cards_app/src/js/data/whitelist.js";
 
 const topicsNav = document.getElementById("topics-nav");
 const flashcardsContainer = document.getElementById("flashcards-container");
