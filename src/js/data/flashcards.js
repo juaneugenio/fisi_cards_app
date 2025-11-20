@@ -282,24 +282,24 @@ export const flashcardsData = [
       },
       {
         cardNumber: 213,
-        img: "",
+        img: "../src/img/img-213.jpg",
         front:
           "Nenne Einsatzbereiche und Verfahren von <b>symmetrischen Schlüsseln</b>.",
-        back: '<img src="../src/img/img-213.jpg" alt="img-213" class="flashcard-img">',
+        back: "",
       },
       {
         cardNumber: 214,
-        img: "",
+        img: "../src/img/img-214-b.jpg",
         front:
           'Ergänze die fehlenden Werte in der Tabelle symmetrischer und asymmetrischer Verschlüsslung.<br><br><img src="../src/img/img-214-a.jpg" alt="img-214-a" class="flashcard-img">',
-        back: '<img src="../src/img/img-214-b.jpg" alt="img-214-b" class="flashcard-img">',
+        back: "",
       },
       {
         cardNumber: 215,
         img: "",
         front:
           "Erläutere den <b>Unterschied</b> zwischen einem <b>differentiellen und inkrementellen Backup</b>.",
-        back: "<b>Differentielles Backup</b><br><br>Ein differentielles Backup ist eine Datensicherungsform bei der, ausgehend von einem Vollbackup, alle Dateien kopiert werden, die seit der letzten vollständigen Sicherung verändert wurden oder neu hinzugekommen sind.<br>Beim vollständigen Wiederherstellen der Daten benötigt man zuerst das letzte Vollbackup und danach das letzte differentielle Backup.<br><br><b>Inkrementelles Backup<b/><br><br>Ein inkrementelles Backup ist eine Datensicherungsform bei der, ausgehend von einem Vollbackup, nur die Dateien, die seit der letzten inkrementellen Sicherung verändert wurden oder neu hinzugekommen sind, kopiert werden.<br>Beim vollständigen Wiederherstellen der Daten benötigt man zunächst das letzte Vollbackup und danach in der richtigen Reihenfolge die jeweiligen inkrementellen Backups.",
+        back: "<b>Differentielles Backup</b><br>Ein differentielles Backup ist eine Datensicherungsform bei der, ausgehend von einem Vollbackup, alle Dateien kopiert werden, die seit der letzten vollständigen Sicherung verändert wurden oder neu hinzugekommen sind.<br>Beim vollständigen Wiederherstellen der Daten benötigt man zuerst das letzte Vollbackup und danach das letzte differentielle Backup.<br><br><b>Inkrementelles Backup</b><br>Ein inkrementelles Backup ist eine Datensicherungsform bei der, ausgehend von einem Vollbackup, nur die Dateien, die seit der letzten inkrementellen Sicherung verändert wurden oder neu hinzugekommen sind, kopiert werden.<br>Beim vollständigen Wiederherstellen der Daten benötigt man zunächst das letzte Vollbackup und danach in der richtigen Reihenfolge die jeweiligen inkrementellen Backups.",
       },
     ],
   },
