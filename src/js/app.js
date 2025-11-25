@@ -6,6 +6,8 @@ const flashcardsContainer = document.getElementById("flashcards-container");
 
 const modalOverlay = document.getElementById("image-modal-overlay");
 const modalImg = document.getElementById("image-modal-img");
+const modalClose = document.getElementById("image-modal-close");
+let lastFocused = null;
 
 const SESSION_LENGTH = 12 * 60 * 60 * 1000; // 12 hours
 
@@ -76,10 +78,12 @@ function renderTopics() {
 function openImageModal(src, alt) {
   modalImg.src = src;
   modalImg.alt = alt || "";
+  lastFocused = document.activeElement;
   modalOverlay.style.display = "flex";
   // Slight delay to allow CSS transition
   setTimeout(() => modalOverlay.classList.add("active"), 10);
   document.body.style.overflow = "hidden"; // prevent background scroll
+  if (modalClose) modalClose.focus();
 
   // Esc key closes modal
   document.addEventListener("keydown", escModal);
@@ -91,6 +95,9 @@ function closeImageModal() {
     modalOverlay.style.display = "none";
     modalImg.src = "";
     document.body.style.overflow = "";
+    if (lastFocused && typeof lastFocused.focus === "function") {
+      lastFocused.focus();
+    }
   }, 310);
   document.removeEventListener("keydown", escModal);
 }
@@ -101,6 +108,11 @@ modalOverlay.addEventListener("click", function (e) {
   if (e.target === modalOverlay) closeImageModal();
   // Only close if clicking on overlay, not on image itself
 });
+if (modalClose) {
+  modalClose.addEventListener("click", function () {
+    closeImageModal();
+  });
+}
 
 // === Render Flashcards ===
 function renderFlashcards() {
@@ -135,6 +147,10 @@ function renderFlashcards() {
     // ---- Detecta imagen en el front y añade zoom ----
     const frontImg = frontDiv.querySelector('.flashcard-img');
     if (frontImg) {
+      frontImg.loading = 'lazy';
+      frontImg.addEventListener('load', function() {
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false);
+      });
       frontImg.addEventListener('click', function(event) {
         event.stopPropagation();
         openImageModal(frontImg.src, frontImg.alt || '');
@@ -164,6 +180,12 @@ function renderFlashcards() {
       imgElem.alt = card.front;
       imgElem.className = 'flashcard-img';
       imgElem.tabIndex = 0;
+      imgElem.loading = 'lazy';
+
+      imgElem.addEventListener('load', function() {
+        const flippedNow = cardDiv.classList.contains('flipped');
+        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNow);
+      });
 
       // Zoom en imagen de back
       imgElem.addEventListener('click', function(event) {

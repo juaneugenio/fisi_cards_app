@@ -4,7 +4,7 @@ export const flashcardsData = [
     cards: [
       {
         cardNumber: 1,
-        img: "../src/img/test1.jpg",
+        img: "src/img/test1.jpg",
         front: "¿Qué es una dirección <b>IP?</b>",
         back: "<b>Grafische Werkzeuge:</b><br> - Netzwerkmanager (Debian, Rocky Linux, SUSE) <br> - nmtui (Rocky Linux), Wicd (Debian), YaST (SUSE) <br><br> <b>Console:</b> <br> - ifconfig <br> - ip addr show <br>- ipa",
       },
@@ -23,7 +23,7 @@ export const flashcardsData = [
         cardNumber: 1,
         img: "",
         front:
-          'Was bedeutet das Gütesiegel <b>„Geprüfte Sicherheit"</b>? <br><img src="../src/img/img-196.jpg" alt="img-196" class="flashcard-img">',
+          'Was bedeutet das Gütesiegel <b>„Geprüfte Sicherheit"</b>? <br><img src="src/img/img-196.jpg" alt="img-196" class="flashcard-img">',
         back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
       },
       {
@@ -79,7 +79,7 @@ export const flashcardsData = [
         cardNumber: 184,
         img: "",
         front:
-          'Welche Aussagen sind zutreffend, wenn ein Netzwerkadapter folgende Informationen anzeigt?<br><br> <img src="../src/img/img-184.jpg" alt="img-184" class="flashcard-img">',
+          'Welche Aussagen sind zutreffend, wenn ein Netzwerkadapter folgende Informationen anzeigt?<br><br> <img src="src/img/img-184.jpg" alt="img-184" class="flashcard-img">',
         back: "Folgende Aussagen sind zutreffend:<br><br> - es handelt sich um ein windowsbasiertes Betriebssystem <br>- der Netzwerkadapter hat keine statische IPv4-Adresse <br>- die Eigenschaften des Internetprotokolls, Version 4 (TCP/lPv4) wollen die IP-Adresse automatisch beziehen <br>- ein DHCP-Request des Netzwerkadapters wurde nicht beantwortet <br>- DHCP Server ist zurzeit nicht erreichbar <br>- laut der Internet Assigned Numbers Authority (IANA) wird das Feature Automatic Private IP Addressing (APIPA) aktiviert <br>- es wurde in dem <b>APIPA Adressbereich 169.254.1.0 - 169.254.254.255</b> eine zufällige IPv4 Adresse mit einer <em>/16 Subnetzmaske</em> erzeugt",
       },
       {
@@ -164,14 +164,14 @@ export const flashcardsData = [
         cardNumber: 196,
         img: "",
         front:
-          'Was bedeutet das Gütesiegel <b>„Geprüfte Sicherheit"</b>? <br><img src="../src/img/img-196.jpg" alt="img-196" class="flashcard-img">',
+          'Was bedeutet das Gütesiegel <b>„Geprüfte Sicherheit"</b>? <br><img src="src/img/img-196.jpg" alt="img-196" class="flashcard-img">',
         back: 'Das Gütesiegel <b>„Geprüfte Sicherheit" (GS)</b> wird seit 1977 von der Deutschen Gesetzlichen Unfallversicherung e.V. (DGUV) für Produkte ausgestellt, die die Anforderungen des Produktsicherheitsgesetzes (ProdSG) erfüllen.<br>Mit dem <b>Gütesiegel</b> „Geprüfte Sicherheit (GS)" soll vor allem sichergestellt werden, dass Produkte einer Prüfung durch eine zugelassene, unabhängige Prüf- und Zertifizierungsstelle unterzogen wurden.',
       },
       {
         cardNumber: 197,
         img: "",
         front:
-          'Was steckt hinter dem Zeichen <b>„Blauer Engel"</b>? <br><img src="../src/img/img-197.jpg" alt="img-197" class="flashcard-img">',
+          'Was steckt hinter dem Zeichen <b>„Blauer Engel"</b>? <br><img src="src/img/img-197.jpg" alt="img-197" class="flashcard-img">',
         back: 'Der <b>Blaue Engel</b> ist das Umweltzeichen der Bundesregierung.<br> <em>„Unabhängig und glaubwürdig setzt er anspruchsvolle Maßstäbe für umweltfreundliche Produkte und Dienstleistungen. Der Blaue Engel ist die Orientierung beim nachhaltigen Einkauf."</em> <br> (Quelle: https://www.blauer-engel.de/de, Abgerufen am 01.08.2021) <br><br> Das Umweltzeichen wird immer dann verliehen, wenn Produkte und Dienstleistungen umweltfreundlicher sind als vergleichbare, konventionelle Produkte und Dienstleistungen.<br>Die Vergaberegeln legt das Bundesministerium für Umwelt, Naturschutz und nukleare Sicherheit (BMU) als Zeicheninhaber fest.',
       },
       {
@@ -282,16 +282,16 @@ export const flashcardsData = [
       },
       {
         cardNumber: 213,
-        img: "../src/img/img-213.jpg",
+        img: "src/img/img-213.jpg",
         front:
           "Nenne Einsatzbereiche und Verfahren von <b>symmetrischen Schlüsseln</b>.",
         back: "",
       },
       {
         cardNumber: 214,
-        img: "../src/img/img-214-b.jpg",
+        img: "src/img/img-214-b.jpg",
         front:
-          'Ergänze die fehlenden Werte in der Tabelle symmetrischer und asymmetrischer Verschlüsslung.<br><br><img src="../src/img/img-214-a.jpg" alt="img-214-a" class="flashcard-img">',
+          'Ergänze die fehlenden Werte in der Tabelle symmetrischer und asymmetrischer Verschlüsslung.<br><br><img src="src/img/img-214-a.jpg" alt="img-214-a" class="flashcard-img">',
         back: "",
       },
       {

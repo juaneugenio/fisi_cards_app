@@ -2,17 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flashcards App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Responsive flashcards app for study with image zoom and topics navigation.">
+  <title>Flashcards Study App</title>
   <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
   <div class="container">
     <h1>Flashcards App</h1>
-    <nav id="topics-nav"></nav>
+    <nav id="topics-nav" aria-label="Topics"></nav>
     <main id="flashcards-container"></main>
   </div>
+  
+  <noscript>
+    <div class="container" style="background:#2e2c2c;color:#f6efef;padding:1rem;border-radius:0.6rem;">
+      JavaScript ei required for this app.
+    </div>
+  </noscript>
+
   <!-- Modal overlay for flashcard image zoom -->
-  <div id="image-modal-overlay" class="image-modal-overlay" style="display:none;">
+  <div id="image-modal-overlay" class="image-modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-label="Zoomed Image">
+    <button id="image-modal-close" class="image-modal-close" aria-label="Close">×</button>
     <img id="image-modal-img" class="image-modal-img" src="" alt="Zoom">
   </div>
   <script type="module" src="./src/js/app.js"></script>

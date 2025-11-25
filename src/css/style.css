@@ -193,11 +193,11 @@ h1 {
   max-width: 100%;
   height: auto;
   max-height: 220px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 0.65rem;
   margin: 0.75rem 0 0 0;
   box-shadow: 0 1px 9px rgba(80, 80, 80, 0.11);
-  object-fit: cover;
+  background: #ffffff;
 }
 
 /* ==== IMAGE ZOOM MODAL ==== */
@@ -259,15 +259,39 @@ pre {
   height: auto;
   object-fit: contain;
 }
+.image-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+.image-modal-close:focus {
+  outline: 2px solid #4a90e2;
+}
 /* Mobile: imagen se adapta al ancho de visor */
 @media (max-width: 600px) {
+  .container {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    padding: 1rem 1rem;
+  }
   .flashcard {
     width: 97vw;
     min-height: 180px;
   }
   .flashcard-img {
     max-width: 98vw;
-    max-height: 110px;
+    max-height: 160px;
   }
   .image-modal-img {
     max-width: 99vw;
@@ -280,6 +304,9 @@ pre {
     max-width: 34rem;
     padding: 1.5rem 1.5rem;
     margin: 3vh auto 0 auto;
+  }
+  .flashcard-img {
+    max-height: 240px;
   }
   h1 {
     font-size: 1.5rem;
@@ -320,6 +347,9 @@ pre {
     max-width: 36rem;
     padding: 1.75rem 2rem;
   }
+  .flashcard-img {
+    max-height: 280px;
+  }
   h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -348,6 +378,9 @@ pre {
 @media (min-width: 1024px) {
   .container {
     max-width: 40rem;
+  }
+  .flashcard-img {
+    max-height: 320px;
   }
 }
 
