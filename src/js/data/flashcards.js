@@ -20,17 +20,112 @@ export const flashcardsData = [
     topic: "Informieren und Beraten von Kunden und Kundinnen",
     cards: [
       {
-        cardNumber: 1,
+        cardNumber: 37,
         img: "",
         front:
-          'Was bedeutet das Gütesiegel <b>„Geprüfte Sicherheit"</b>? <br><img src="src/img/img-196.jpg" alt="img-196" class="flashcard-img">',
-        back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
+          "Welche Bedingungen und welche Haftungsregeln gelten bei einer offenen Handelsgesellschaft - OHG?",
+        back: "Eine <b>OHG</b> kann gegründet werden, wenn sich mindestens zwei oder mehr Personen zum Zweck eines <b>vollkaufmännischen Handelsgewerbes</b> im Sinne von §1 Abs. 1 HGB (Handelsgesetzbuch) zusammenschließen.<br><br> Es gilt, dass alle Gesellschafter persönlich, unbegrenzt und ungeschränkt für alle Verbindlichkeiten der Gesellschaft haften.",
       },
       {
-        cardNumber: 2,
+        cardNumber: 38,
         img: "",
-        front: "¿Para qué sirve una máscara de subred?",
-        back: "Permite definir qué parte de la dirección IP corresponde a la red y cuál a los hosts.",
+        front:
+          "Ein Betriebsergebnis errechnet sich aus den Umsatzerlösen minus den Umsatzkosten. Welche Sachverhalte können das Betriebsergebnis positiv beeinflussen?",
+        back: "Um das <b>Betriebsergebnis</b> positiv zu verändern, gibt es folgende Möglichkeiten:<br><br> - Wareneinkauf optimieren (Rabatte aushandeln) <br>- Herstellungskosten senken (z. B. Einsatz von günstigen Vorprodukten) <br>- allgemeine Verwaltungskosten minimieren (durch Einsatz von Software) <br>- Reduzierung der Werbekosten (Nutzung von Social Media) <br>- Personalkosten reduzieren (durch Steigerung der Produktivität) <br>- Fixkosten mindern (z. B. Nutzung von Fahrzeug-Leasing statt Kauf)",
+      },
+      {
+        cardNumber: 39,
+        img: "",
+        front:
+          "Unternehmen richten ihre Produkte und Dienstleistungen mit Hilfe von Marketingmaßnahmen nach den Kundenwünschen aus. <br><br>Welchem Zweck dienen in diesem Zusammenhang Kundenbefragungen?",
+        back: "Durch <b>Kundenbefragungen</b> können zentrale Punkte wie Kundenzufriedenheit, Trends, das Image des Unternehmens, die Marktposition, die Kundenbindung sowie der Erfolg von Werbemaßnahmen beantwortet werden.",
+      },
+      {
+        cardNumber: 40,
+        img: "",
+        front:
+          "In der Kundenkommunikation, im Speziellen während der Fehleranalyse im Telefonsupport, sind Fragen von besonderer Bedeutung.<br> Unterscheide bitte geschlossene und offene Fragen.",
+        back: "<b>Geschlossene Fragen:</b><br> Ja-oder-Nein Fragen, z. B .: „Haben Sie den PC schon einmal neu gestartet?“ <br><br><b>Offene Fragen:</b><br> W-Fragen - Wer, Wie, Was, Wieso, Warum, Wo, Weshalb, Wann ... , z. B .: „Welche Fehlermeldung wurde Ihnen beim Programmabbruch angezeigt?“",
+      },
+      {
+        cardNumber: 41,
+        img: "",
+        front:
+          "Das Controlling im Unternehmen wird als eine Funktion des Managements gesehen, dessen zentrale Aufgabe die Planung, Steuerung sowie die Kontrolle aller Unternehmensbereiche ist.<br><br> Wozu dient dabei eine ABC-Analyse?",
+        back: "Die <b>ABC-Analyse</b> stellt ein betriebswirtschaftliches Analyseverfahren dar, welches bestimmte Prozesse oder Objekte in Klassen A, B und C einstuft. Dabei wird von A bis C in absteigender Reihenfolge eine Bedeutung zugeordnet.<br><br> Bei der ABC-Analyse vergleicht man beispielsweise, welche Kunden für den Hauptumsatz des Unternehmens verantwortlich sind und somit in Klasse A eingestuft werden. Kunden, welche am wenigsten zum Umsatz beitragen, kommen in die Klasse C. In Klasse B kommen die Kunden, die nur durchschnittlich zum Umsatzerfolg beitragen.<br><br> Somit erhalten wir eine Art Ranking über den Umsatzerfolg, ähnlich dem Pareto-Prinzip (80/20-Regel).",
+      },
+      {
+        cardNumber: 42,
+        img: "",
+        front: "Was versteht man unter dem Begriff Cross-Selling?",
+        back: "Als <b>Cross-Selling</b> (deutsch: Querverkauf) wird im Bereich des Marketings das Bemühen eines Händlers bezeichnet, <b>zusätzlich</b> zu einem nachgefragten oder angebotenen Artikel weitere <b>passende Produkte oder Services</b> anzubieten, immer mit dem Ziel, einen höheren Umsatz zu erzielen und sowohl die Kundenbindung als auch die Kundenzufriedenheit zu erhöhen.",
+      },
+      {
+        cardNumber: 43,
+        img: "",
+        front:
+          "Ergänze nach dem Vier-Ohren-Modell (Sachebene, Appell, Selbstoffenbarung und Beziehung) die folgenden Aussagen eines Kunden gegenüber eines Vertriebsmitarbeiters.<br><br> Der Kunde sagt: <br>1. Sie müssen pünktlich liefern! <br>2. Ich bin mit Ihnen nicht zufrieden. <br>3. Sie haben nicht pünktlich geliefert. <br>4. Ich kontrolliere Ihre Leistungen sehr genau.",
+        back: "Folgende Aspekte möchte der Kunde nach dem Vier-Ohren-Modell vermitteln:<br><br> Appell - 1. Sie müssen pünktlich liefern! <br>Beziehung - 2. Ich bin mit Ihnen nicht zufrieden.<br> Sachebene - 3. Sie haben nicht pünktlich geliefert. <br>Selbstoffenbarung - 4. Ich kontrolliere Ihre Leistungen sehr genau.",
+      },
+      {
+        cardNumber: 44,
+        img: "",
+        front:
+          "Welche Regeln sollte man im telefonischen Kundensupport beachten?",
+        back: "Folgende Regeln sind allgemeiner Natur und sollten beim telefonischen Support Beachtung finden:<br><br> - Vermeide Worte und Ausdrücke, die den Kunden reizen könnten <br>- Höre dem Gesprächspartner aktiv zu <br>- Lass Kunden immer ausreden und unterbrich sie nicht <br>- Widersprich nie bei einem Einwand oder einer Beschwerde <br>- Hinterfrage mit den W-Fragen (wann, wie, wo, warum ... )",
+      },
+      {
+        cardNumber: 45,
+        img: "",
+        front:
+          "Beschreibe den Begriff Pre-Sales-Angebot und nenne 3 Beispiele.",
+        back: "Unter dem Begriff <b>Pre-Sales-Angebot</b> sind alle Dienstleistungen zu verstehen, die dem potenziellen Kunden im Rahmen der Geschäftsanbahnung oder beim Vertragsabschluss angeboten werden. Dieser Service ist in der Regel unentgeltlich und dient der Kunden- und Auftragsgewinnung. Beispiele hierfür können sein:<br><br> - Kostenlose Probefahrt beim Fahrzeugkauf <br>- Kostenlose Informationsveranstaltungen <br>- Kostenlose Kataloge oder Probeprodukte",
+      },
+      {
+        cardNumber: 46,
+        img: "",
+        front:
+          "Webinare, auch Online-Schulungen genannt, werden in zunehmendem Maße genutzt.<br> Welche Vor- und Nachteile bieten Webinare?",
+        back: "<b>Vorteile:</b><br> - es entstehen keine Reisekosten <br>- Kurse sind individuell kurzfristig planbar <br>- eine Vielzahl an Teilnehmern ist erreichbar <br>- Trainingsumgebung kann optimal an die Bedürfnisse angepasst werden <br>- Webinare können aufgezeichnet werden für Wiederholungen<br><br> <b>Nachteile:</b> - setzt eine funktionierende technische Ausstattung und eine Internetverbindung voraus <br>- Umsetzung von praxisbezogenen Übungen nicht immer möglich <br>- die Stimmung der Teilnehmer ist nur schwer zu erfassen <br>- keine gemeinsamen Aktivitäten der Teilnehmer (Pausen, Mittagessen oder Abendessen) <br>- eventuell hohe Zeitverschiebung führt zu ungünstigen Webinarzeiten",
+      },
+      {
+        cardNumber: 47,
+        img: "Ja",
+        front:
+          'Nenne die englischen Bezeichnungen der einzelnen Schichten im OSI-Referenzmodell.<br><br><img src="src/img/img-47.jpg" alt="img-47" class="flashcard-img">',
+        back: "",
+      },
+      {
+        cardNumber: 48,
+        img: "",
+        front: "Was ist eine Nutzwertanalyse?",
+        back: "Die <b>Nutzwertanalyse</b> stellt im Allgemeinen eine Entscheidungshilfe dar, wenn es um komplexe Handlungsalternativen geht.Mittels eines Punktwertverfahrens, eines Punktbewertungsverfahrens oder eines Scoring-Modells werden verschiedene Bewertungskriterien erstellt und mehrere Produkte oder Services miteinander verglichen. Die Nutzwertanalyse dient zur Entscheidungsfindung bei komplexen Problemen.<br><br> Der Bewertungsmaßstab kann individuell, zum Beispiel als eine 4 Punkte Skala mit: 1 = gering, 2 = mittel, 3 = hoch, 4 = sehr hoch, festgelegt werden.",
+      },
+      {
+        cardNumber: 49,
+        img: "",
+        front:
+          "Unternehmen müssen ihre Produkte am Markt anbieten. Dazu benötigen sie einen Vertriebspartner oder ein Vertriebsnetz. <br><br>Nenne Vor- und Nachteile eines direkten Vertriebs.",
+        back: "Beim <b>direkten Vertrieb</b> bietet der Anbieter seine Produkte oder seine Dienstleistungen unmittelbar an die Endabnehmer bzw. Endverbraucher an.<br><br> <b>Vorteile:</b><br> - die Gewinnspanne ist höher (Provisionen für Zwischenhändler entfallen) <br>- Endverbraucher haben kurze Kommunikations- und Vertriebswege <br>- Vertriebsmitarbeitende sind eigene Mitarbeitende und können aktiv und schnell neue Produkte anbieten <br>- engere Kundenbindung durch persönliche Kundenkommunikation<br><br> <b>Nachteile:</b><br> - eigenes Vertriebsnetz bindet viel Kapital <br>- personalintensiv, hohe Fixkosten <br>- Massendistribution nur bedingt umsetzbar<br><br> Hinweis: Der direkte Vertrieb (Unternehmen --> Kunde) ist der Gegensatz zum indirekten Vertrieb (Unternehmen --> Zwischenhändler --> Kunde).",
+      },
+      {
+        cardNumber: 50,
+        img: "",
+        front:
+          "Mit welchen Maßnahmen kann man die Kundenzufriedenheit erhöhen?",
+        back: "<b>Kundenzufriedenheit</b> ist für viele Unternehmen wichtig, um die Kundenbindung zu erhöhen und eine Umsatzsteigerung zu erreichen. Zufriedene Kunden kehren oft zurück und empfehlen das Produkt oder die Dienstleistung weiter.<br><br> Die Kundenzufriedenheit unterliegt daher einer ständigen Optimierung. Dazu zählt auch eine Verbesserung der Customer Experience, also der Erfahrungen, die der Kunde mit dem Unternehmen macht.<br><br> Folgende Maßnahmen sind geeignet:<br> - Gewährung von Rabatten (im Rahmen von Aktionen) <br>- Teilnahme an Sonderaktionen (Lotterie) <br>- Einladung zu Hausmessen oder Festen <br>- Feedback einholen durch Umfragen <br>- Social Media, Einrichtung von Bewertungsportalen <br>- Qualitätsversprechen unbedingt einhalten <br>- etc.",
+      },
+      {
+        cardNumber: 51,
+        img: "",
+        front: "Welchem Zweck dient ein Angebotsvergleich?",
+        back: "Der <b>Angebotsvergleich</b> bildet die wesentliche Grundlage für eine zukünftige Kaufentscheidung. Man vergleicht normalerweise mindestens 2 oder mehr Angebote von verschiedenen Lieferanten, Unternehmen sowie Dienstleistern.<br><br> Im Zuge der Kaufentscheidung werden Kriterien miteinander verglichen, wie z. B .:<br> - niedrigster Preis <br>- Qualität der Produkte/Dienstleistungen <br>- Finanzierungsangebote <br>- Kundenservice <br>- Garantie und Gewährleistung <br>- Rabattangebote <br>- Lieferservice <br>- Liefertreue <br>- Lieferzeit <br>- Liefermenge",
+      },
+      {
+        cardNumber: 52,
+        img: "",
+        front: "Was ist bei der Außerbetriebnahme von IT-Systemen zu beachten?",
+        back: "Vor der <b>Außerbetriebnahme von IT-Systemen</b> ist folgendes zu beachten:<br><br> - rechtzeitige Ankündigung der Maßnahme an das Personal oder den Kunden <br>- Bereitstellung von Alternativ- und Backupsystemen <br>- Datenarchivierung unter Beachtung des Datenschutzes (Aufbewahrungsfristen beachten) <br>- mögliche Migration der Kundendaten auf neues IT-System <br>- Schulung des Personals oder des Kunden, wenn es Neuerungen auf dem neuen IT-System gibt <br>- Validierung der migrierten Daten, bevor altes IT-System außer Betrieb genommen wird <br>- Fachgerechte Vernichtung und Entsorgung der Datenträger durch zertifiziertes Unternehmen, nach z. B. DoD 5220.22-M-Standard <br>- Fachgerechte Entsorgung oder Wiederaufbereitung der IT-Hardware",
       },
     ],
   },
@@ -38,16 +133,138 @@ export const flashcardsData = [
     topic: "Beurteilen marktgängiger IT-Systeme und Lösungen",
     cards: [
       {
-        cardNumber: 1,
+        cardNumber: 53,
         img: "",
-        front: "¿Qué es una lista en Python?",
-        back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
+        front:
+          "Worin besteht in der Virtualisierung von Hostsystemen der Unterschied zwischen dem <em>Hypervisor Typ 1 und Typ 2?</em>",
+        back: "Der <b>Hypervisor Typ 1</b>, auch native oder bare-metal Hypervisor genannt, setzt direkt auf der Hardware des Hostsystems auf. Daher ist keine vorherige Betriebssystem-Installation notwendig. <br><br>Der <b>Hypervisor Typ 2</b>, auch hosted Hypervisor genannt, benötigt ein lauffähiges vollwertiges Betriebssystem, um auf diesem Hostsystem auf die Gerätetreiber des Betriebssystems bzw. auf die Hardware des Hostsystems zuzugreifen.<br><br> Bei beiden Hypervisor-Typen gilt die Voraussetzung, dass die Hardware bzw. das BIOS/UEFI des Hostsystems die Virtualisierung, bei Intel CPU (intel-VT) oder bei AMD CPU (AMD-V) unterstützt.",
       },
       {
-        cardNumber: 2,
+        cardNumber: 54,
         img: "",
-        front: "¿Cómo creas una función en Python?",
-        back: "Usando la palabra clave 'def', por ejemplo: def mi_funcion():",
+        front: "Welche Funktionen bietet eine Dockingstation für Notebooks?",
+        back: "Eine <b>Dockingstation</b> (englisch to dock „andocken“, oder auch „koppeln“) wird verwendet, wenn mobile Geräte, wie zum Beispiel Notebooks oder PDAs, mit einem festen Netz verbunden werden sollen.<br><br> Dockingstationen für Notebooks werden auch als Portreplikatoren eingesetzt, sodass vorhandene Ports an die Dockingstation „durchgereicht“ werden. Des Weiteren werden auch zusätzliche Schnittstellen wie PS/2, Seriell- und Parallelport, DVI, DisplayPort, HDMI, Sound oder Firewire, welche im mobilen Gerät selbst aus Platzgründen fehlen, an der Dockingstation bereitgestellt.<br><br> Häufig verfügen die modernen Dockingstationen über die Möglichkeit 2x HDMI, 2x DVI oder 2x DisplayPort zu nutzen.",
+      },
+      {
+        cardNumber: 55,
+        img: "",
+        front:
+          "Welche Video-Schnittstellen sind für 4K und 8K Auflösung geeignet?",
+        back: "Nicht geeignet:<br> <b>HDMI 1.4</b> hat eine maximale Übertragungsrate von 10,2 GBit/s - max. Auflösung Full-HD <br><br>Geeignet: <br><b>HDMI 2.0</b> hat eine maximale Übertragungsrate von 18,0 GBit/s - max. Auflösung 4K<br> <b>HDMI 2.1</b> hat eine maximale Übertragungsrate von 38,4 GBit/s - max. Auflösung 8K<br><b>DisplayPort 1.3</b> hat eine maximale Übertragungsrate von 25,9 GBit/s - max. Auflösung 8K <br><b>DisplayPort 1.4</b> hat eine maximale Übertragungsrate von 32,4 GBit/s - max. Auflösung 8K",
+      },
+      {
+        cardNumber: 56,
+        img: "",
+        front: "Welche technischen Merkmale hat ein Notebook?",
+        back: "Ein Notebook hat folgende Bestandteile:<ul> - teilweise Anschluss für Dockingstation</ul> <ul>- teilweise Mini-PCI-Express Slot</ul> <ul>- teilweise 4-in-1 Kartenlesegerät</ul> <ul>- teilweise integriertes Bluetooth, WLAN und WWAN</ul> <ul>- eigenes Display</ul> <ul>- externe Schnittstellen wie USB, HDMI, DisplayPort/mini DisplayPort, VGA, Firewire</ul> <ul>- integrierte Lautsprecher und Mikrofone</ul> <ul>- teilweise Videokamera</ul> <ul>- Akku </ul><ul>- externes Netzteil</ul> <ul>- interne Netzwerkkarte</ul>",
+      },
+      {
+        cardNumber: 57,
+        img: "Ja",
+        front: "Erläutern Sie den Begriff „Logische Prozessoren“.",
+        back: 'Als logische Prozessoren werden virtuelle Prozessoren bezeichnet, die durch Technologien wie Hyper-Threading-Technologie (HTT) oder Simultaneous Multithreading (SMT) unterstützt werden.<br> Eine CPU kann mehrere logische Prozessoren haben, die parallele Operationen ausführen, um die CPU-Auslastung zu verbessern und deren Leistungsfähigkeit zu steigern. Um die Vorteile des Multithreading zu nutzen, müssen die Anwendungen dieses auch unterstützen.<br> Wie im Bild zu sehen hat die CPU 24 Kerne und zusätzlich 32 logische Prozessoren.<br> <img src="src/img/img-57.jpg" alt="img-57" class="flashcard-img"></i>',
+      },
+      {
+        cardNumber: 58,
+        img: "",
+        front:
+          "Welchen Vorteil bringt der Einsatz von Dual-Channel-Technik bei Speichermodulen?",
+        back: "Mithilfe der <b>Dual-Channel-Technik</b> kann der Speichercontroller des Prozessors die Daten auf zwei Arbeitsspeichermodule gleichzeitig aufteilen und somit parallel schreiben und lesen. Dadurch verdoppelt sich die Datenrate.<br> Voraussetzung ist, dass die eingebauten Speichermodule baugleich sind, eine identische Modulkapazität besitzen sowie paarweise verteilt werden.",
+      },
+      {
+        cardNumber: 59,
+        img: "",
+        front: "Was verbirgt sich hinter Bezeichnung UHD 4K?",
+        back: "<b>UHD (Ultra High Definition) 4K</b> bezeichnet ein digitales Videoformat der International Telecommunication Union (ITU) für Ultra High Definition Television (UHDTV oder Ultra HDTV) sowie Ultra High Definition Video (UHDV). <br><br>UHD 4K wird heute auch als UHD-1 bezeichnet und lehnt sich am Cinema 4K (4096 × 2160 Pixel) an. Die Hersteller spezifizieren jedoch ihre Geräte mit 3840 x 2160 Pixeln heute oftmals auch als UHD 4K.",
+      },
+      {
+        cardNumber: 60,
+        img: "Ja",
+        front:
+          "Unternehmen, die ein Rechenzentrum betreiben, setzen vermehrt auf die Vorteile der Virtualisierung. In diesem Zusammenhang wird oftmals der Begriff des Thin-Clients benutzt. Was versteht man unter einem Thin-Client?",
+        back: "Allgemein kann man einen <b>Thin-Client</b> (englisch dünner, schlanker bzw. magerer Client) als einen Computer bezeichnen, welcher über ein Netzwerk Ressourcen nutzt, die ihm ein Server bereitstellt. <br><br>Die virtuelle Desktop-Infrastruktur (VDI) setzt primär Thin-Clients ein und setzt damit konsequent auf die Vorteile der Virtualisierung des kompletten Rechenzentrums. Thin-Clients oder manchmal auch als Zero-Clients bezeichnet, siehe Bild, sind lüfterlose Geräte welche über USB, einen Netzwerkanschluss, Audio- und Displayanschlüsse verfügen. Die persönliche Benutzeroberfläche, die Konfiguration, Zugriffe auf Verzeichnisse und installierte Programme werden vom Server zur Verfügung gestellt. Thin- Clients sind umwelt- und ressourcenschonend und haben eine geringe Leistungsaufnahme.",
+      },
+      {
+        cardNumber: 61,
+        img: "",
+        front:
+          "Welche IT-Komponenten sind Ein- oder Ausgabegeräte? Ordne richtig zu!<br><br> a) Drucker <br>b) Scanner <br>c) Maus <br>d) Display <br>e) Touchpad",
+        back: "<b>Eingabegeräte:</b><br><br> b) Scanner <br>c) Maus <br>e) Touchpad <br><br><b>Ausgabegeräte:</b><br><br> a) Drucker <br>d) Display",
+      },
+      {
+        cardNumber: 62,
+        img: "Ja",
+        front: "Welche Schnittstellen sind auf dem Bild zu sehen?",
+        back: "Folgende Schnittstellen sind zu sehen: DisplayPort, DVI, VGA, USB-Typ B und 2x USB Typ A.",
+      },
+      {
+        cardNumber: 63,
+        img: "",
+        front:
+          "Nenne Vorteile des USB-C Anschlusses gegenüber den USB-Typen A und B.",
+        back: "<b>Vorteile von USB-C</b>:<br><br> - Reversible Steckrichtung <br>- Höhere Leistungsfähigkeit <br>- Kompaktes Design <br>- Schnellere Ladezeiten <br>- Bidirektionale Stromversorgung <br>- Zukunftssicherheit",
+      },
+      {
+        cardNumber: 64,
+        img: "",
+        front:
+          "Nenne die verschiedenen Cloud-Formen, die durch Cloud Computing angeboten werden.",
+        back: "<b>Public Cloud</b> - die öffentliche Rechnerwolke: Stellt Zugang zu abstrahierten IT-Infrastrukturen für die breite Öffentlichkeit über das Internet bereit.<br> <b>Private Cloud</b> - die private Rechnerwolke: Stellt ausschließlich für eine Organisation oder ein Unternehmen den Zugang in eine Cloud-Umgebung bereit. <br><b>Hybrid Cloud</b> - die hybride Rechnerwolke: Ist eine Kombination aus Public und Private Cloud. <br><b>Community Cloud</b> - die gemeinschaftliche Rechnerwolke: Stellt Zugang zu abstrahierten IT-Infrastrukturen wie bei der Public Cloud bereit, jedoch nur für bestimmte Nutzergruppen (wie städtische Behörden, Universitäten, Firmen mit ähnlichen Interessen, Forschungsgemeinschaften, Genossenschaften, usw.).<br><br> Weiterhin gibt es Mischformen der oben genannten Cloud-Typen:<br> <b>Virtual Private Cloud</b> - eine private Rechnerwolke auf öffentlich-zugänglichen IT-Infrastrukturen<br><b>Multi Cloud:</b> Sie bündelt die verschiedenen Cloud-Computing-Dienste",
+      },
+      {
+        cardNumber: 65,
+        img: "",
+        front: "Was versteht man unter dem Begriff Green-IT?",
+        back: "Unter <b>Green-IT</b> versteht man alle Bestrebungen, die Nutzung von Informations- und Kommunikationstechnik (luK) über deren gesamten Lebenszyklus hinweg umwelt- und ressourcenschonend zu gestalten.<br><br> Darunter fallen folgende Aspekte:<br><br> - Optimierung des Ressourcenverbrauchs während des Herstellungsprozesses, des Betriebs und der Entsorgung der Geräte <br>- Ressourceneinsparung durch den Einsatz von Virtualisierungstechniken <br>- Einsatz von Videokonferenzen (dadurch weniger Dienstreisen) <br>- Einsatz von Stromsparmodi",
+      },
+      {
+        cardNumber: 66,
+        img: "",
+        front:
+          "Erkläre den Begriff des Servicemodells Infrastructure as a Service (laaS).",
+        back: "<b>Infrastructure as a Service</b>, auch Foundation genannt, ist im Wesentlichen ein Ersatz für traditionelle Rechenzentren. Der Benutzer greift hier typischerweise auf bestehende Dienste innerhalb seiner Cloud zu, verwaltet aber seine eigenen Recheninstanzen selbst.",
+      },
+      {
+        cardNumber: 67,
+        img: "",
+        front:
+          "Nenne die Vorteile des Servicemodells PaaS (Platform as a Service).",
+        back: "Folgende Vorteile ergeben sich bei der Nutzung des Servicemodells <b>PaaS</b>: <br><br>- Reduzierter Programmieraufwand, da mit den PaaS-Entwicklungstools sich der Zeitaufwand für das Schreiben von Code für neue Apps reduziert. <br>- Zusätzliche Entwicklungsmöglichkeiten, ohne dass neue Mitarbeitende eingestellt werden müssen. Entwicklungsteams können neue Funktionen mit Hilfe der PaaS-Komponenten nutzen, ohne diese selbst entwickeln zu müssen. <br>- Einfachere Entwicklung für mehrere Plattformen, teilweise werden Entwicklungsoptionen für mehrere Plattformen wie Computer, Mobilgeräte und Browser vom Provider angeboten. <br>- Kostengünstige Nutzung der Tools. <br>- Effiziente Verwaltung des Anwendungslebenszyklus.",
+      },
+      {
+        cardNumber: 68,
+        img: "",
+        front:
+          "Erkläre den Cloud Computing Begriff Software as a Service (SaaS).",
+        back: "<b>Software as a Service</b> beschreibt ein Cloud-Konzept, bei dem Software nicht länger als Lizenz an einen Benutzer verkauft wird, sondern ihm gleich als Service in der Cloud zur Verfügung gestellt wird. Der Zugriff auf die Software wird bei einigen Cloudanbietern via Webbrowser gewährleistet.",
+      },
+      {
+        cardNumber: 69,
+        img: "",
+        front:
+          "Moderne Storage-Systeme sind mit Hilfe von Glasfaser und dem Fibre-Channel Protokoll an einen Dateiserver oder virtualisierte Server angebunden. Bei diesen Anbindungen ist die Rede vom Host-Bus-Adapter. <br><br>Was ist ein Host-Bus-Adapter?",
+        back: "Als <b>Host-Bus-Adapter (HBA)</b> bezeichnet man eine Netzwerkhardware, welche in einem Server installiert ist, um damit ein oder mehrere Datenspeichergeräte (Storage) zu erreichen. <br><br>Der Begriff HBA wird oftmals im Zusammenhang mit den Bus- Systemen SCSI, ATA (IDE), SATA und Fibre Channel verwendet, gilt aber prinzipiell auch für eine Netzwerkkarte im weiteren Sinne. Im Datenspeicher-Umfeld wird mit Hilfe des HBA via SCSI, iSCSI, Fibre Channel oder Ethernet mit dem Host-System kommuniziert.",
+      },
+      {
+        cardNumber: 70,
+        img: "",
+        front:
+          "Eine unterbrechungsfreie Stromversorgung (USV) wird nach der USV-Klassifizierung nach IEC 62040-3 in 3 Klassen unterteilt. <br>Nenne die 3 Klassen und erkläre deren Wirkungsweise stichpunktartig.",
+        back: "<b>Klasse 1: VFI (Voltage and Frequency Independent from mains supply)</b><br> Schützt vor den Folgen eines Stromausfalls, Unterspannung, Überspannung als auch vor Frequenzschwankungen sowie vor Oberschwingungen.<br><br> <b>Klasse 2: VI (Voltage Independent from mains supply)</b> Schützt vor den Folgen eines Stromausfalls, vor Unterspannung und vor Überspannung.<br><br> <b>Klasse 3: VFD (Voltage and Frequency Dependent on mains supply)</b> Schützt vor den Folgen eines Stromausfalls, jedoch mit einer Verzögerung von bis zu 10 Millisekunden (ms)",
+      },
+      {
+        cardNumber: 71,
+        img: "",
+        front:
+          "IT-Infrastrukturen werden heute 24/7 (24 Stunden pro Tag und 7 Tage die Woche) betrieben. Welche Aufgabe übernimmt in diesem Zusammenhang eine USV?",
+        back: "Eine <b>unterbrechungsfreie Stromversorgung (USV)</b> soll die elektrische Versorgung der systemrelevanten IT-Komponenten 24/7 sicherstellen sowie Störungen im Stromnetz zeitlich überbrücken. <br>Des Weiteren schützt eine USV, je nach Klassifizierung, die angeschlossenen IT-Komponenten vor folgenden Störungen: <br><br>- kompletter Stromausfall <br>- vor Unterspannung <br>- vor Überspannung <br>- vor Frequenzabweichung <br>- vor Oberschwingungen",
+      },
+      {
+        cardNumber: 72,
+        img: "",
+        front:
+          "Welche Aufgabe übernimmt ein Datenbankmanagementsystem, kurz DBMS?",
+        back: "Ein Datenbankmanagementsystem übernimmt folgende Aufgaben: <br><br>- Speicherung, Veränderung und Löschung von Daten <br>- Verwaltung der Metadaten <br>- Gewährleistung der Datensicherheit und des Datenschutzes <br>- trifft Vorkehrungen zur Datenintegrität <br>- stellt den Mehrbenutzerbetrieb durch das Transaktionskonzept sicher <br>- unterstützt die Optimierung von Abfragen <br>- ermöglicht Triggern und Stored Procedures <br>- Bereitstellung von Informationen über Technik und Betrieb",
       },
     ],
   },
