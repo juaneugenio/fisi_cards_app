@@ -155,10 +155,6 @@ function renderFlashcards() {
         event.stopPropagation();
         openImageModal(frontImg.src, frontImg.alt || '');
       });
-      frontImg.addEventListener('touchstart', function(event) {
-        event.stopPropagation();
-        openImageModal(frontImg.src, frontImg.alt || '');
-      });
     }
 
     // BACK
@@ -189,10 +185,6 @@ function renderFlashcards() {
 
       // Zoom en imagen de back
       imgElem.addEventListener('click', function(event) {
-        event.stopPropagation();
-        openImageModal(imgElem.src, imgElem.alt || '');
-      });
-      imgElem.addEventListener('touchstart', function(event) {
         event.stopPropagation();
         openImageModal(imgElem.src, imgElem.alt || '');
       });
