@@ -1,4 +1,15 @@
 /* ==== GLOBAL STYLES ==== */
+:root {
+  --bg-body: #27313f;
+  --bg-container: #b36060;
+  --text-header: aliceblue;
+  --primary-color: #346cac;
+  --primary-hover: #093177;
+  --card-front-bg: #fcfcfc;
+  --card-back-bg: #fbe5b4;
+  --text-main: #333;
+}
+
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -10,7 +21,7 @@ html {
 }
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #27313f;
+  background: var(--bg-body);
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -27,7 +38,7 @@ body {
   max-width: none;
   min-height: 70vh;
   margin: 0 auto 0 auto;
-  background: #b36060;
+  background: var(--bg-container);
   padding: 1rem 1rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.07);
@@ -39,7 +50,7 @@ h1 {
   margin-bottom: 1rem;
   font-size: 1.25rem;
   width: 100%;
-  color: aliceblue;
+  color: var(--text-header);
 }
 
 /* ===== NAVIGATION ===== */
@@ -53,7 +64,7 @@ h1 {
 }
 #topics-nav button {
   padding: 0.4rem 0.8rem;
-  background: #346cac;
+  background: var(--primary-color);
   color: #fff;
   border: none;
   border-radius: 0.5rem;
@@ -63,7 +74,7 @@ h1 {
 }
 #topics-nav button.active,
 #topics-nav button:hover {
-  background: #093177;
+  background: var(--primary-hover);
 }
 
 /* ===== FLASHCARDS CONTAINER ===== */
@@ -92,6 +103,11 @@ h1 {
   z-index: 1;
   position: relative;
 
+}
+/* Accesibilidad: Indicador visual de foco para navegación por teclado */
+.flashcard:focus {
+  outline: 3px solid #8ab4f8;
+  outline-offset: 2px;
 }
 .flashcard:hover {
   box-shadow: 0 6px 32px rgba(65, 80, 130, 0.18);
@@ -160,8 +176,8 @@ h1 {
 
 }
 .flashcard-front {
-  background: #fcfcfc;
-  color: #333;
+  background: var(--card-front-bg);
+  color: var(--text-main);
 }
 .flashcard-front span {
   width: 100%;
@@ -172,7 +188,7 @@ h1 {
 
 }
 .flashcard-back {
-  background: #fbe5b4;
+  background: var(--card-back-bg);
   color: #432;
   transform: rotateY(180deg);
 }

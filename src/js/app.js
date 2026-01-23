@@ -125,6 +125,8 @@ function renderFlashcards() {
     // Crear la estructura de la tarjeta
     const cardDiv = document.createElement('div');
     cardDiv.className = 'flashcard';
+    cardDiv.tabIndex = 0; // Hace que la tarjeta sea enfocable con Tab
+    cardDiv.setAttribute('role', 'button'); // Semántica para lectores de pantalla
 
     const cardInner = document.createElement('div');
     cardInner.className = 'flashcard-inner';
@@ -200,13 +202,35 @@ function renderFlashcards() {
     // Ajuste inicial de altura según el front (si usas la función ajustarAltura)
     ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, false);
 
-    // Evento de flip
+    // Función auxiliar para voltear
+    const toggleFlip = () => {
+      const flippedNext = !cardDiv.classList.contains('flipped');
+
+      // Si vamos a voltear para ver el reverso, cerramos cualquier otra tarjeta abierta
+      if (flippedNext) {
+        document.querySelectorAll('.flashcard.flipped').forEach(otherCard => {
+          otherCard.classList.remove('flipped');
+          const oInner = otherCard.querySelector('.flashcard-inner');
+          const oFront = oInner.querySelector('.flashcard-front');
+          const oBack = oInner.querySelector('.flashcard-back');
+          ajustarAltura(otherCard, oInner, oFront, oBack, false);
+        });
+      }
+
+      ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext);
+      cardDiv.classList.toggle('flipped');
+    };
+
+    // Evento de flip (Click)
     cardDiv.addEventListener('click', function(e) {
-      // No debe flippear si haces clic en la imagen que abre zoom
-      if (!e.target.classList.contains('flashcard-img')) {
-        const flippedNext = !cardDiv.classList.contains('flipped');
-        ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flippedNext);
-        cardDiv.classList.toggle('flipped');
+      if (!e.target.classList.contains('flashcard-img')) toggleFlip();
+    });
+
+    // Evento de flip (Teclado: Enter o Espacio)
+    cardDiv.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault(); // Evita el scroll con la barra espaciadora
+        toggleFlip();
       }
     });
   });
