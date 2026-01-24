@@ -152,7 +152,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Welche Video-Schnittstellen sind für 4K und 8K Auflösung geeignet?",
-        back: "Nicht geeignet:<br> <b>HDMI 1.4</b> hat eine maximale Übertragungsrate von 10,2 GBit/s - max. Auflösung Full-HD <br><br>Geeignet: <br><b>HDMI 2.0</b> hat eine maximale Übertragungsrate von 18,0 GBit/s - max. Auflösung 4K<br> <b>HDMI 2.1</b> hat eine maximale Übertragungsrate von 38,4 GBit/s - max. Auflösung 8K<br><b>DisplayPort 1.3</b> hat eine maximale Übertragungsrate von 25,9 GBit/s - max. Auflösung 8K <br><b>DisplayPort 1.4</b> hat eine maximale Übertragungsrate von 32,4 GBit/s - max. Auflösung 8K",
+        back: "<b>NICHT GEEIGNET</b>:<br><ul><li><b>HDMI 1.4</b> hat eine maximale Übertragungsrate von 10,2 GBit/s - max. Auflösung Full-HD (1920 x 1080)</li></ul><br><b>GEEIGNET</b>: <ul><li><b>HDMI 2.0</b> hat eine maximale Übertragungsrate von 18,0 GBit/s - max. Auflösung 4K (3840 x 2160)</li><li><b>HDMI 2.1</b> hat eine maximale Übertragungsrate von 38,4 GBit/s - max. Auflösung 8K (7680 x 4320)</li><li><b>DisplayPort 1.3</b> hat eine maximale Übertragungsrate von 25,9 GBit/s - max. Auflösung 8K</li><li><b>DisplayPort 1.4</b> hat eine maximale Übertragungsrate von 32,4 GBit/s - max. Auflösung 8K</li></ul>",
       },
       {
         cardNumber: 56,

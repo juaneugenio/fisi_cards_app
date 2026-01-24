@@ -19,26 +19,25 @@ function ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flipped) {
   const backHeight = backDiv.offsetHeight; // Usamos la altura según el estado flipped
   const tarjetaHeight = flipped ? backHeight : frontHeight;
   cardDiv.style.height = tarjetaHeight + "px";
-  cardInner.style.height = tarjetaHeight + "px";
 }
 
 // === Log in Form ===
 function showLoginForm() {
   document.body.innerHTML = `
     <div class="container">
-      <h2 style="color: #02182B;">Restricted Acces</h2>
-      <div style="margin-bottom:1.4rem; background: #02182B; color: #ffffff; padding:1rem; border-radius:0.6rem; font-size:0.95rem; line-height: 1.5;">
-        <strong>Non-Commercial Educational Use Notice:</strong><br>
+      <h2 style="color: #ffb162;">Restricted Acces</h2>
+      <div style="margin-bottom:1.4rem; background: #1b2632; color: #eee9df; padding:1rem; border-radius:0.6rem; font-size:0.95rem; line-height: 1.5;">
+        <strong style="color: #ffb162;">Non-Commercial Educational Use Notice:</strong><br>
         This app is intended exclusively for educational and study purposes. Access is restricted to authorized users who possess a valid access code. All materials, information, and content provided within this app are for personal study only and must not be used for illegal, commercial, or unauthorized activities.<br>
         By using this app, each user accepts full responsibility for their individual actions. The creator of this app is not liable for misuse or violations of these terms by users.
       </div>
-      <p style="color: #02182B;" >Type your key name to access.</p>
+      <p style="color: #ffb162;" >Type your key name to access.</p>
       <form id="login-form" autocomplete="off">
         <label for="key"></label>
         <input id="key" type="text" required autocomplete="off" class="input-field" />
         <button type="submit" class="btn-login">Log in</button>
       </form>
-      <div id="login-msg" style="color:#D7263D; margin-top:1rem"></div>
+      <div id="login-msg" style="color:#ffb162; margin-top:1rem"></div>
     </div>
   `;
   document.getElementById("login-form").onsubmit = function (e) {
@@ -50,7 +49,7 @@ function showLoginForm() {
       location.reload();
     } else {
       document.getElementById("login-msg").textContent =
-        "Incorrect or unauthorized username";
+        "⚠️ Incorrect or unauthorized username";
       sessionStorage.removeItem("authed");
       sessionStorage.removeItem("loginTime");
     }
