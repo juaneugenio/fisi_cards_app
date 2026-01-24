@@ -1,4 +1,6 @@
 export const flashcardsData = [
+  //img: "src/img/img-214-b.jpg",
+  //<img src="src/img/img-214-a.jpg" alt="img-214-a" class="flashcard-img">
   {
     topic: "Planen, Vorbereiten und Durchführen von Arbeitsaufgaben",
     cards: [
@@ -23,14 +25,14 @@ export const flashcardsData = [
         cardNumber: 37,
         img: "",
         front:
-          "Welche Bedingungen und welche Haftungsregeln gelten bei einer offenen Handelsgesellschaft - OHG?",
+          "Welche Bedingungen und welche Haftungsregeln gelten bei einer offenen <b>Handelsgesellschaft - OHG</b>?",
         back: "Eine <b>OHG</b> kann gegründet werden, wenn sich mindestens zwei oder mehr Personen zum Zweck eines <b>vollkaufmännischen Handelsgewerbes</b> im Sinne von §1 Abs. 1 HGB (Handelsgesetzbuch) zusammenschließen.<br><br> Es gilt, dass alle Gesellschafter persönlich, unbegrenzt und ungeschränkt für alle Verbindlichkeiten der Gesellschaft haften.",
       },
       {
         cardNumber: 38,
         img: "",
         front:
-          "Ein Betriebsergebnis errechnet sich aus den Umsatzerlösen minus den Umsatzkosten. Welche Sachverhalte können das Betriebsergebnis positiv beeinflussen?",
+          "Ein Betriebsergebnis errechnet sich aus den Umsatzerlösen minus den Umsatzkosten.<br><br>Welche Sachverhalte können das Betriebsergebnis positiv beeinflussen?",
         back: "Um das <b>Betriebsergebnis</b> positiv zu verändern, gibt es folgende Möglichkeiten:<ul><li>Wareneinkauf optimieren (Rabatte aushandeln)</li><li>Herstellungskosten senken (z. B. Einsatz von günstigen Vorprodukten)</li><li>allgemeine Verwaltungskosten minimieren (durch Einsatz von Software)</li><li>Reduzierung der Werbekosten (Nutzung von Social Media)</li><li>Personalkosten reduzieren (durch Steigerung der Produktivität)</li><li>Fixkosten mindern (z. B. Nutzung von Fahrzeug-Leasing statt Kauf)</li></ul>",
       },
       {
@@ -44,15 +46,15 @@ export const flashcardsData = [
         cardNumber: 40,
         img: "",
         front:
-          "In der Kundenkommunikation, im Speziellen während der Fehleranalyse im Telefonsupport, sind Fragen von besonderer Bedeutung.<br> Unterscheide bitte geschlossene und offene Fragen.",
-        back: "<b>Geschlossene Fragen:</b><br> Ja-oder-Nein Fragen, z. B .: „Haben Sie den PC schon einmal neu gestartet?“ <br><br><b>Offene Fragen:</b><br> W-Fragen - Wer, Wie, Was, Wieso, Warum, Wo, Weshalb, Wann ... , z. B .: „Welche Fehlermeldung wurde Ihnen beim Programmabbruch angezeigt?“",
+          "In der Kundenkommunikation, im Speziellen während der Fehleranalyse im Telefonsupport, sind Fragen von besonderer Bedeutung.<br><br>Unterscheide bitte geschlossene und offene Fragen.",
+        back: "<b>Geschlossene Fragen:</b><br> <b>Ja-oder-Nein</b> Fragen, z. B.: „Haben Sie den PC schon einmal neu gestartet?“ <br><br><b>Offene Fragen:</b><br> <b>W-Fragen</b>: <em>Wer, Wie, Was, Wieso, Warum, Wo, Weshalb, Wann</em>..., z. B.: „Welche Fehlermeldung wurde Ihnen beim Programmabbruch angezeigt?“",
       },
       {
         cardNumber: 41,
         img: "",
         front:
-          "Das Controlling im Unternehmen wird als eine Funktion des Managements gesehen, dessen zentrale Aufgabe die Planung, Steuerung sowie die Kontrolle aller Unternehmensbereiche ist.<br><br> Wozu dient dabei eine ABC-Analyse?",
-        back: "Die <b>ABC-Analyse</b> stellt ein betriebswirtschaftliches Analyseverfahren dar, welches bestimmte Prozesse oder Objekte in Klassen A, B und C einstuft. Dabei wird von A bis C in absteigender Reihenfolge eine Bedeutung zugeordnet.<br><br> Bei der ABC-Analyse vergleicht man beispielsweise, welche Kunden für den Hauptumsatz des Unternehmens verantwortlich sind und somit in Klasse A eingestuft werden. Kunden, welche am wenigsten zum Umsatz beitragen, kommen in die Klasse C. In Klasse B kommen die Kunden, die nur durchschnittlich zum Umsatzerfolg beitragen.<br><br> Somit erhalten wir eine Art Ranking über den Umsatzerfolg, ähnlich dem Pareto-Prinzip (80/20-Regel).",
+          "Das <b>Controlling</b> im Unternehmen wird als eine <b>Funktion des Managements</b> gesehen, dessen zentrale Aufgabe die Planung, Steuerung sowie die Kontrolle aller Unternehmensbereiche ist.<br><br> Wozu dient dabei eine ABC-Analyse?",
+        back: "Die <b>ABC-Analyse</b> stellt ein betriebswirtschaftliches <b>Analyseverfahren</b> dar, welches bestimmte <b>Prozesse oder Objekte in Klassen A, B und C einstuft</b>. Dabei wird von A bis C in absteigender Reihenfolge eine Bedeutung zugeordnet.<br><br> Bei der ABC-Analyse <b>vergleicht</b> man beispielsweise, <b>welche Kunden für den Hauptumsatz des Unternehmens verantwortlich</b> sind und somit in Klasse A eingestuft werden. Kunden, welche am wenigsten zum Umsatz beitragen, kommen in die Klasse C. In Klasse B kommen die Kunden, die nur durchschnittlich zum Umsatzerfolg beitragen.<br><br> Somit erhalten wir <b>eine Art Ranking über den Umsatzerfolg</b>, ähnlich dem Pareto-Prinzip (80/20-Regel).",
       },
       {
         cardNumber: 42,
@@ -78,42 +80,42 @@ export const flashcardsData = [
         cardNumber: 45,
         img: "",
         front:
-          "Beschreibe den Begriff Pre-Sales-Angebot und nenne 3 Beispiele.",
+          "Beschreibe den Begriff <b>Pre-Sales-Angebot</b> und nenne 3 Beispiele.",
         back: "Unter dem Begriff <b>Pre-Sales-Angebot</b> sind alle Dienstleistungen zu verstehen, die dem potenziellen Kunden im Rahmen der Geschäftsanbahnung oder beim Vertragsabschluss angeboten werden. Dieser Service ist in der Regel unentgeltlich und dient der Kunden- und Auftragsgewinnung. Beispiele hierfür können sein:<ul><li>Kostenlose Probefahrt beim Fahrzeugkauf</li><li>Kostenlose Informationsveranstaltungen</li><li>Kostenlose Kataloge oder Probeprodukte</li></ul>",
       },
       {
         cardNumber: 46,
         img: "",
         front:
-          "Webinare, auch Online-Schulungen genannt, werden in zunehmendem Maße genutzt.<br> Welche Vor- und Nachteile bieten Webinare?",
+          "Webinare, auch Online-Schulungen genannt, werden in zunehmendem Maße genutzt.<br><br>Welche Vor- und Nachteile bieten Webinare?",
         back: "<b>Vorteile:</b><ul><li>es entstehen keine Reisekosten</li><li>Kurse sind individuell kurzfristig planbar</li><li>eine Vielzahl an Teilnehmern ist erreichbar</li><li>Trainingsumgebung kann optimal an die Bedürfnisse angepasst werden</li><li>Webinare können aufgezeichnet werden für Wiederholungen</li></ul><b>Nachteile:</b><ul><li>setzt eine funktionierende technische Ausstattung und eine Internetverbindung voraus</li><li>Umsetzung von praxisbezogenen Übungen nicht immer möglich</li><li>die Stimmung der Teilnehmer ist nur schwer zu erfassen</li><li>keine gemeinsamen Aktivitäten der Teilnehmer (Pausen, Mittagessen oder Abendessen)</li><li>eventuell hohe Zeitverschiebung führt zu ungünstigen Webinarzeiten</li></ul>",
       },
       {
         cardNumber: 47,
-        img: "Ja",
+        img: "src/img/img-47b.jpg",
         front:
-          'Nenne die englischen Bezeichnungen der einzelnen Schichten im OSI-Referenzmodell.<br><br><img src="src/img/img-47.jpg" alt="img-47" class="flashcard-img">',
+          'Nenne die englischen Bezeichnungen der einzelnen Schichten im <b>OSI-Referenzmodell</b>.<br><br><img src="src/img/img-47a.jpg" alt="osi-modell-schichten" class="flashcard-img">',
         back: "",
       },
       {
         cardNumber: 48,
         img: "",
-        front: "Was ist eine Nutzwertanalyse?",
-        back: "Die <b>Nutzwertanalyse</b> stellt im Allgemeinen eine Entscheidungshilfe dar, wenn es um komplexe Handlungsalternativen geht.Mittels eines Punktwertverfahrens, eines Punktbewertungsverfahrens oder eines Scoring-Modells werden verschiedene Bewertungskriterien erstellt und mehrere Produkte oder Services miteinander verglichen. Die Nutzwertanalyse dient zur Entscheidungsfindung bei komplexen Problemen.<br><br> Der Bewertungsmaßstab kann individuell, zum Beispiel als eine 4 Punkte Skala mit: 1 = gering, 2 = mittel, 3 = hoch, 4 = sehr hoch, festgelegt werden.",
+        front: "Was ist eine <b>Nutzwertanalyse</b>?",
+        back: "Die <b>Nutzwertanalyse</b> stellt im Allgemeinen eine <b>Entscheidungshilfe</b> dar, wenn es um komplexe Handlungsalternativen geht.<br>Mittels eines Punktwertverfahrens, eines Punktbewertungsverfahrens oder eines Scoring-Modells werden verschiedene Bewertungskriterien erstellt und mehrere Produkte oder Services miteinander verglichen.<br><b>Die Nutzwertanalyse dient zur Entscheidungsfindung bei komplexen Problemen.</b><br><br> Der Bewertungsmaßstab kann individuell, zum Beispiel als eine <b>4 Punkte Skala</b> mit:<br>1 = <b>gering</b>, 2 = <b>mittel</b>, 3 = <b>hoch</b>, 4 = <b>sehr hoch</b>, festgelegt werden.",
       },
       {
         cardNumber: 49,
         img: "",
         front:
           "Unternehmen müssen ihre Produkte am Markt anbieten. Dazu benötigen sie einen Vertriebspartner oder ein Vertriebsnetz. <br><br>Nenne Vor- und Nachteile eines direkten Vertriebs.",
-        back: "Beim <b>direkten Vertrieb</b> bietet der Anbieter seine Produkte oder seine Dienstleistungen unmittelbar an die Endabnehmer bzw. Endverbraucher an.<br><br> <b>Vorteile:</b><ul><li>die Gewinnspanne ist höher (Provisionen für Zwischenhändler entfallen)</li><li>Endverbraucher haben kurze Kommunikations- und Vertriebswege</li><li>Vertriebsmitarbeitende sind eigene Mitarbeitende und können aktiv und schnell neue Produkte anbieten</li><li>engere Kundenbindung durch persönliche Kundenkommunikation</li></ul><b>Nachteile:</b><ul><li>eigenes Vertriebsnetz bindet viel Kapital</li><li>personalintensiv, hohe Fixkosten</li><li>Massendistribution nur bedingt umsetzbar</li></ul>Hinweis: Der direkte Vertrieb (Unternehmen --> Kunde) ist der Gegensatz zum indirekten Vertrieb (Unternehmen --> Zwischenhändler --> Kunde).",
+        back: "Beim <b>direkten Vertrieb</b> bietet der Anbieter seine Produkte oder seine Dienstleistungen unmittelbar an die Endabnehmer bzw. Endverbraucher an.<br><br> <b>Vorteile:</b><ul><li>die Gewinnspanne ist höher (Provisionen für Zwischenhändler entfallen)</li><li>Endverbraucher haben kurze Kommunikations- und Vertriebswege</li><li>Vertriebsmitarbeitende sind eigene Mitarbeitende und können aktiv und schnell neue Produkte anbieten</li><li>engere Kundenbindung durch persönliche Kundenkommunikation</li></ul><b>Nachteile:</b><ul><li>eigenes Vertriebsnetz bindet viel Kapital</li><li>personalintensiv, hohe Fixkosten</li><li>Massendistribution nur bedingt umsetzbar</li></ul><b>Hinweis</b>:<br>Der <em>direkte Vertrieb</em>: <b><br>Unternehmen ➞ Kunde</b>, ist der Gegensatz zum <em>indirekten Vertrieb</em>:<br><b>Unternehmen ➞ Zwischenhändler ➞ Kunde</b>.",
       },
       {
         cardNumber: 50,
         img: "",
         front:
           "Mit welchen Maßnahmen kann man die Kundenzufriedenheit erhöhen?",
-        back: "<b>Kundenzufriedenheit</b> ist für viele Unternehmen wichtig, um die Kundenbindung zu erhöhen und eine Umsatzsteigerung zu erreichen. Zufriedene Kunden kehren oft zurück und empfehlen das Produkt oder die Dienstleistung weiter.<br><br> Die Kundenzufriedenheit unterliegt daher einer ständigen Optimierung. Dazu zählt auch eine Verbesserung der Customer Experience, also der Erfahrungen, die der Kunde mit dem Unternehmen macht.<br><br> Folgende Maßnahmen sind geeignet:<ul><li>Gewährung von Rabatten (im Rahmen von Aktionen)</li><li>Teilnahme an Sonderaktionen (Lotterie)</li><li>Einladung zu Hausmessen oder Festen</li><li>Feedback einholen durch Umfragen</li><li>Social Media, Einrichtung von Bewertungsportalen</li><li>Qualitätsversprechen unbedingt einhalten</li><li>etc.</li></ul>",
+        back: "<b>Kundenzufriedenheit</b> ist für viele Unternehmen wichtig, um die Kundenbindung zu erhöhen und eine Umsatzsteigerung zu erreichen. Zufriedene Kunden kehren oft zurück und empfehlen das Produkt oder die Dienstleistung weiter.<br><br> Die Kundenzufriedenheit unterliegt daher einer ständigen Optimierung. Dazu zählt auch eine Verbesserung der Customer Experience, also der Erfahrungen, die der Kunde mit dem Unternehmen macht.<br><br> Folgende <b>Maßnahmen</b> sind geeignet:<ul><li>Gewährung von Rabatten (im Rahmen von Aktionen)</li><li>Teilnahme an Sonderaktionen (Lotterie)</li><li>Einladung zu Hausmessen oder Festen</li><li>Feedback einholen durch Umfragen</li><li>Social Media, Einrichtung von Bewertungsportalen</li><li>Qualitätsversprechen unbedingt einhalten</li><li>etc.</li></ul>",
       },
       {
         cardNumber: 51,
@@ -282,7 +284,7 @@ export const flashcardsData = [
         cardNumber: 182,
         img: "",
         front:
-          'Netsh ist ein Kommandozeilenwerkzeug für Netzwerkeinstellungen auf windowsbasierten Computern.<br><br>Wie lautet das Kommando zum Einrichten einer IPv4 Netzwerkadresse <b>192.168.0.1/24</b> mit einem Gateway <b>192.168.0.254</b> für den Netzwerkadapter "LAN-Verbindung"?',
+          '<code>Netsh</code> is a Kommandozeilenwerkzeug für Netzwerkeinstellungen auf windowsbasierten Computern.<br><br>Wie lautet das Kommando zum Einrichten einer IPv4 Netzwerkadresse <code>192.168.0.1/24</code> mit einem Gateway <code>192.168.0.254</code> für den Netzwerkadapter "LAN-Verbindung"?',
         back: '<pre><code>netsh interface ip set address name="LAN-Verbindung" address=192.168.0.1 mask=255.255.255.0 gateway=192.168.0.254</code></pre>',
       },
       {
@@ -297,7 +299,7 @@ export const flashcardsData = [
         img: "",
         front:
           'Welche Aussagen sind zutreffend, wenn ein Netzwerkadapter folgende Informationen anzeigt?<br><br> <img src="src/img/img-184.jpg" alt="img-184" class="flashcard-img">',
-        back: "Folgende Aussagen sind zutreffend:<ul><li>es handelt sich um ein windowsbasiertes Betriebssystem</li><li>der Netzwerkadapter hat keine statische IPv4-Adresse</li><li>die Eigenschaften des Internetprotokolls, Version 4 (TCP/lPv4) wollen die IP-Adresse automatisch beziehen</li><li>ein DHCP-Request des Netzwerkadapters wurde nicht beantwortet</li><li>DHCP Server ist zurzeit nicht erreichbar</li><li>laut der Internet Assigned Numbers Authority (IANA) wird das Feature Automatic Private IP Addressing (APIPA) aktiviert</li><li>es wurde in dem <b>APIPA Adressbereich 169.254.1.0 - 169.254.254.255</b> eine zufällige IPv4 Adresse mit einer <em>/16 Subnetzmaske</em> erzeugt</li></ul>",
+        back: "Folgende Aussagen sind zutreffend:<ul><li>es handelt sich um ein windowsbasiertes Betriebssystem</li><li>der Netzwerkadapter hat keine statische IPv4-Adresse</li><li>die Eigenschaften des Internetprotokolls, Version 4 (TCP/lPv4) wollen die IP-Adresse automatisch beziehen</li><li>ein DHCP-Request des Netzwerkadapters wurde nicht beantwortet</li><li>DHCP Server ist zurzeit nicht erreichbar</li><li>laut der Internet Assigned Numbers Authority (IANA) wird das Feature Automatic Private IP Addressing (APIPA) aktiviert</li><li>es wurde in dem <b>APIPA</b> Adressbereich <code>169.254.1.0 - 169.254.254.255</code> eine zufällige IPv4 Adresse mit einer: <b>/16 Subnetzmaske</b> erzeugt</li></ul>",
       },
       {
         cardNumber: 185,
@@ -336,8 +338,8 @@ export const flashcardsData = [
         cardNumber: 190,
         img: "",
         front:
-          "Es gibt 5 Typen von SQL Kommandos: DDL, DML, DCL, TCL, und DQL.<br> Nenne bitte jeweils mindestens einen ausführbaren SQL-Befehl.",
-        back: "<ul><li><b>Data Definition Language (DDL)</b> -> CREATE, ALTER, DROP, TRUNCATE</li><li><b>Data Manipulation Language (DML)</b> -> INSERT, UPDATE, DELETE</li><li><b>Data Control Language (DCL)</b> -> GRANT, REVOKE</li><li><b>Transaction Control Language (TCL)</b> -> COMMIT, ROLLBACK, SAVEPOINT</li><li><b>Data Query Language (DQL)</b> -> Select</li></ul>",
+          "Es gibt 5 Typen von SQL Kommandos: <br><b>DDL, DML, DCL, TCL</b>, und <b>DQL</b>.<br> Nenne bitte jeweils mindestens einen ausführbaren SQL-Befehl.",
+        back: "<ul><li><b>Data Definition Language (DDL)</b> ➞ CREATE, ALTER, DROP, TRUNCATE</li><li><b>Data Manipulation Language (DML)</b> ➞ INSERT, UPDATE, DELETE</li><li><b>Data Control Language (DCL)</b> ➞ GRANT, REVOKE</li><li><b>Transaction Control Language (TCL)</b> ➞ COMMIT, ROLLBACK, SAVEPOINT</li><li><b>Data Query Language (DQL)</b> ➞ Select</li></ul>",
       },
     ],
   },
