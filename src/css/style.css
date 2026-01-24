@@ -1,13 +1,15 @@
 /* ==== GLOBAL STYLES ==== */
 :root {
   --bg-body: #02182b;
-  --bg-container: #89bd9e;
-  --text-header: #02182b;
+  --bg-container: #264867;
+  --text-header: #F0C987;
   --primary-color: #02182b;
-  --primary-hover: #d7263d;
-  --card-front-bg: #fcfcfc;
+  --primary-hover: #63579e;
+  --card-front-bg: #02182b;
   --card-back-bg: #F0C987;
-  --text-main: #02182B;
+  --text-main: #d5e0ea;
+  --card-info: #967f57;
+  --topics-text: #ffffff;
 }
 
 html {
@@ -49,12 +51,18 @@ body {
 /* ===== HEADER ===== */
 h1 {
   text-align: center;
-  margin-bottom: 1rem;
   font-size: 1.5rem;
   width: 100%;
+  margin-bottom: none;
   color: var(--text-header);
 }
-
+#subheader {
+  text-align: center;
+  margin-top: -1.7rem;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+  color: #9e8b6a;
+}
 /* ===== NAVIGATION ===== */
 #topics-nav {
   display: flex;
@@ -67,7 +75,7 @@ h1 {
 #topics-nav button {
   padding: 0.4rem 0.8rem;
   background: var(--primary-color);
-  color: #fff;
+  color: var(--topics-text);
   border: none;
   border-radius: 0.5rem;
   font-size: 0.9rem;
@@ -120,7 +128,7 @@ h1 {
 .card-info {
   font-size: 0.85rem; /* menor que el cuerpo de la tarjeta */
   font-weight: normal;
-  color: #888888; /* gris suave */
+  color: var(--card-info); /* gris suave */
   margin-bottom: 0.8rem;
   margin-left: 0.08rem;
   letter-spacing: 0.01em;
