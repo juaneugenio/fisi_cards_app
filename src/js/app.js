@@ -26,19 +26,19 @@ function ajustarAltura(cardDiv, cardInner, frontDiv, backDiv, flipped) {
 function showLoginForm() {
   document.body.innerHTML = `
     <div class="container">
-      <h2 style="color: #dec5c5ff;">Restricted Acces</h2>
-      <div style="margin-bottom:1.4rem; background: #2e2c2cff; color: #dec5c5ff; padding:1rem; border-radius:0.6rem; font-size:0.78rem;">
+      <h2 style="color: #02182B;">Restricted Acces</h2>
+      <div style="margin-bottom:1.4rem; background: #02182B; color: #ffffff; padding:1rem; border-radius:0.6rem; font-size:0.78rem;">
         <strong>Non-Commercial Educational Use Notice:</strong><br>
         This app is intended exclusively for educational and study purposes. Access is restricted to authorized users who possess a valid access code. All materials, information, and content provided within this app are for personal study only and must not be used for illegal, commercial, or unauthorized activities.<br>
         By using this app, each user accepts full responsibility for their individual actions. The creator of this app is not liable for misuse or violations of these terms by users.
       </div>
-      <p style="color: #f6efefff;" >Type your key name to access.</p>
+      <p style="color: #02182B;" >Type your key name to access.</p>
       <form id="login-form" autocomplete="off">
         <label for="key"></label>
         <input id="key" type="text" required autocomplete="off" class="input-field" />
         <button type="submit" class="btn-login">Log in</button>
       </form>
-      <div id="login-msg" style="color:yellow; margin-top:1rem"></div>
+      <div id="login-msg" style="color:#D7263D; margin-top:1rem"></div>
     </div>
   `;
   document.getElementById("login-form").onsubmit = function (e) {

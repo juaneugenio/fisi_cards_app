@@ -1,13 +1,13 @@
 /* ==== GLOBAL STYLES ==== */
 :root {
-  --bg-body: #27313f;
-  --bg-container: #b36060;
-  --text-header: aliceblue;
-  --primary-color: #346cac;
-  --primary-hover: #093177;
+  --bg-body: #02182b;
+  --bg-container: #89bd9e;
+  --text-header: #02182b;
+  --primary-color: #02182b;
+  --primary-hover: #d7263d;
   --card-front-bg: #fcfcfc;
-  --card-back-bg: #fbe5b4;
-  --text-main: #333;
+  --card-back-bg: #F0C987;
+  --text-main: #02182B;
 }
 
 html {
@@ -99,40 +99,42 @@ h1 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), height 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition:
+    transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1),
+    height 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
   z-index: 1;
   position: relative;
-
 }
 /* Accesibilidad: Indicador visual de foco para navegación por teclado */
 .flashcard:focus {
-  outline: 3px solid #8ab4f8;
+  outline: 3px solid #0197F6;
   outline-offset: 2px;
 }
 .flashcard:hover {
-  box-shadow: 0 6px 32px rgba(65, 80, 130, 0.18);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 /* card info */
 
 .card-info {
-  font-size: 0.7rem;          /* menor que el cuerpo de la tarjeta */
+  font-size: 0.7rem; /* menor que el cuerpo de la tarjeta */
   font-weight: normal;
-  color: #888888;              /* gris suave */
+  color: #888888; /* gris suave */
   margin-bottom: 0.8rem;
   margin-left: 0.08rem;
   letter-spacing: 0.01em;
-  text-align: left;            /* alinea a la izquierda */
-  align-self: flex-start;      /* asegura la alineación al principio del flex column */
-  padding-left: 0.05em;        /* pequeño extra por si acaso */
+  text-align: left; /* alinea a la izquierda */
+  align-self: flex-start; /* asegura la alineación al principio del flex column */
+  padding-left: 0.05em; /* pequeño extra por si acaso */
   padding-top: 0.05em;
 }
-
 
 .flashcard-inner {
   position: relative;
   width: 100%;
   height: auto;
-  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), height 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition:
+    transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1),
+    height 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
@@ -140,7 +142,6 @@ h1 {
   align-items: center;
   min-height: 4rem;
   box-sizing: border-box;
-
 }
 
 /* Implemented */
@@ -173,7 +174,6 @@ h1 {
   word-wrap: break-word;
   overflow-wrap: break-word;
   height: auto;
-
 }
 .flashcard-front {
   background: var(--card-front-bg);
@@ -185,7 +185,6 @@ h1 {
   margin-bottom: 0.7rem;
   text-align: left;
   word-wrap: break-word;
-
 }
 .flashcard-back {
   background: var(--card-back-bg);
@@ -198,7 +197,6 @@ h1 {
   margin-bottom: 0.7rem;
   text-align: left;
   word-wrap: break-word;
-
 }
 
 /* ==== FLASHCARD IMAGE IN BACK ==== */
@@ -239,7 +237,8 @@ h1 {
 
 /* Code blocks styling  */
 
-pre, code {
+pre,
+code {
   background: #252525;
   color: #cac9e3;
   border-radius: 5px;
@@ -266,7 +265,9 @@ pre {
 .image-modal-img {
   border-radius: 0.8rem;
   box-shadow: 0 8px 38px rgba(0, 0, 0, 0.17);
-  transition: box-shadow 0.18s, transform 0.2s;
+  transition:
+    box-shadow 0.18s,
+    transform 0.2s;
   background: #fff;
   max-width: 95vw;
   max-height: 88vh;
@@ -290,7 +291,7 @@ pre {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 .image-modal-close:focus {
-  outline: 2px solid #4a90e2;
+  outline: 2px solid #0197F6;
 }
 /* Mobile: imagen se adapta al ancho de visor */
 @media (max-width: 600px) {
@@ -420,25 +421,27 @@ pre {
   box-sizing: border-box;
 }
 .input-field:focus {
-  border: 1.5px solid #4a90e2;
+  border: 1.5px solid #0197F6;
   background: #eaf1fb;
 }
 .btn-login {
   padding: 0.65rem 1.8rem;
   border-radius: 0.8rem;
-  background: linear-gradient(90deg, #4a90e2 70%, #326acd 100%);
+  background: linear-gradient(90deg, #0197F6 70%, #02182B 100%);
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 0.02em;
   border: none;
   cursor: pointer;
-  transition: background 0.18s, box-shadow 0.12s;
+  transition:
+    background 0.18s,
+    box-shadow 0.12s;
   box-shadow: 0 1px 6px rgba(90, 90, 200, 0.13);
   margin-top: 1rem;
 }
 .btn-login:hover,
 .btn-login:focus {
-  background: linear-gradient(90deg, #326acd 70%, #093177 100%);
+  background: linear-gradient(90deg, #02182B 70%, #0197F6 100%);
   box-shadow: 0 1.8px 9px rgba(40, 90, 160, 0.13);
 }
