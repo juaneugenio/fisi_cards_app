@@ -4,15 +4,15 @@ export const flashcardsData = [
     cards: [
       {
         cardNumber: 1,
-        img: "src/img/test1.jpg",
-        front: "¿Qué es una dirección <b>IP?</b>",
-        back: "<b>Grafische Werkzeuge:</b><br> - Netzwerkmanager (Debian, Rocky Linux, SUSE) <br> - nmtui (Rocky Linux), Wicd (Debian), YaST (SUSE) <br><br> <b>Console:</b> <br> - ifconfig <br> - ip addr show <br>- ipa",
+        img: "",
+        front: "Was ist eine <b>IP-Addresse?</b>",
+        back: "Eine <b>IP-Adresse</b> (Internet Protocol Address) ist eine <b>eindeutige numerische Kennung</b>, die jedem Gerät in einem Computernetzwerk zugewiesen wird, das das Internetprotokoll zur Kommunikation verwendet. <br><b><em>Sie dient dazu, Geräte zu identifizieren und den Datenverkehr zwischen ihnen zu ermöglichen.</em></b><br><br> Es gibt <b>zwei Haupttypen</b> von IP-Adressen: <b>IPv4 und IPv6</b>.<br> <b>IPv4-Adressen</b> bestehen aus 4 durch Punkte getrennten Zahlenblöcken (Okteten), z. B. 192.168.0.1, während <b>IPv6-Adressen</b> aus 8 durch Doppelpunkte getrennten Hexadezimalblöcken (Hexteten) bestehen, z. B. 2001:0db8:85a3:0000:0000:8a2e:0370:7334<br><br> IP-Adressen können <b>statisch</b> (fest zugewiesen) oder <b>dynamisch</b> (bei jeder Verbindung neu zugewiesen) sein und sind entscheidend für die Kommunikation im Internet und in lokalen Netzwerken.",
       },
       {
         cardNumber: 2,
         img: "",
-        front: "¿Para qué sirve una máscara de subred?",
-        back: '<pre><code>netsh interface ip set address name="LAN-Verbindung" address=192.168.0.1 mask=255.255.255.0 gateway=192.168.0.254</code></pre>',
+        front: "Was ist eine <b>Subnetzmaske?</b>",
+        back: "Eine <b>Subnetzmaske</b> ist eine numerische Kennung, die in Computernetzwerken verwendet wird, um den Netzwerk- und Hostanteil einer IP-Adresse zu unterscheiden. Sie definiert, welche Teile der IP-Adresse das Netzwerk repräsentieren und welche Teile für die Identifikation von Geräten (Hosts) innerhalb dieses Netzwerks verwendet werden.<br><br> Eine Subnetzmaske besteht aus vier durch Punkte getrennten Zahlenblöcken, ähnlich wie eine IPv4-Adresse (z. B. 255.255.255.0). In der Subnetzmaske werden die Bits, die auf 1 gesetzt sind, verwendet, um den Netzwerkanteil der IP-Adresse zu kennzeichnen, während die Bits, die auf 0 gesetzt sind, den Hostanteil darstellen.<br><br> Durch die Verwendung von Subnetzmasken können Netzwerke in kleinere Subnetze unterteilt werden, was die Verwaltung und Sicherheit von Netzwerken verbessert. Sie ermöglichen es auch, die Anzahl der verfügbaren IP-Adressen in einem Netzwerk zu steuern.",
       },
     ],
   },
@@ -31,7 +31,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Ein Betriebsergebnis errechnet sich aus den Umsatzerlösen minus den Umsatzkosten. Welche Sachverhalte können das Betriebsergebnis positiv beeinflussen?",
-        back: "Um das <b>Betriebsergebnis</b> positiv zu verändern, gibt es folgende Möglichkeiten:<br><br> - Wareneinkauf optimieren (Rabatte aushandeln) <br>- Herstellungskosten senken (z. B. Einsatz von günstigen Vorprodukten) <br>- allgemeine Verwaltungskosten minimieren (durch Einsatz von Software) <br>- Reduzierung der Werbekosten (Nutzung von Social Media) <br>- Personalkosten reduzieren (durch Steigerung der Produktivität) <br>- Fixkosten mindern (z. B. Nutzung von Fahrzeug-Leasing statt Kauf)",
+        back: "Um das <b>Betriebsergebnis</b> positiv zu verändern, gibt es folgende Möglichkeiten:<ul><li>Wareneinkauf optimieren (Rabatte aushandeln)</li><li>Herstellungskosten senken (z. B. Einsatz von günstigen Vorprodukten)</li><li>allgemeine Verwaltungskosten minimieren (durch Einsatz von Software)</li><li>Reduzierung der Werbekosten (Nutzung von Social Media)</li><li>Personalkosten reduzieren (durch Steigerung der Produktivität)</li><li>Fixkosten mindern (z. B. Nutzung von Fahrzeug-Leasing statt Kauf)</li></ul>",
       },
       {
         cardNumber: 39,
@@ -64,29 +64,29 @@ export const flashcardsData = [
         cardNumber: 43,
         img: "",
         front:
-          "Ergänze nach dem Vier-Ohren-Modell (Sachebene, Appell, Selbstoffenbarung und Beziehung) die folgenden Aussagen eines Kunden gegenüber eines Vertriebsmitarbeiters.<br><br> Der Kunde sagt: <br>1. Sie müssen pünktlich liefern! <br>2. Ich bin mit Ihnen nicht zufrieden. <br>3. Sie haben nicht pünktlich geliefert. <br>4. Ich kontrolliere Ihre Leistungen sehr genau.",
-        back: "Folgende Aspekte möchte der Kunde nach dem Vier-Ohren-Modell vermitteln:<br><br> Appell - 1. Sie müssen pünktlich liefern! <br>Beziehung - 2. Ich bin mit Ihnen nicht zufrieden.<br> Sachebene - 3. Sie haben nicht pünktlich geliefert. <br>Selbstoffenbarung - 4. Ich kontrolliere Ihre Leistungen sehr genau.",
+          "Ergänze nach dem Vier-Ohren-Modell (<b>Sachebene, Appell, Selbstoffenbarung und Beziehung</b>) die folgenden Aussagen eines Kunden gegenüber eines Vertriebsmitarbeiters.<br><br> Der Kunde sagt: <br>1. Sie müssen pünktlich liefern! <br>2. Ich bin mit Ihnen nicht zufrieden. <br>3. Sie haben nicht pünktlich geliefert. <br>4. Ich kontrolliere Ihre Leistungen sehr genau.",
+        back: "Folgende Aspekte möchte der Kunde nach dem Vier-Ohren-Modell vermitteln:<br><br> <b>Appell - 1</b>: Sie müssen pünktlich liefern! <br><b>Beziehung - 2</b>: Ich bin mit Ihnen nicht zufrieden.<br><b>Sachebene - 3</b>: Sie haben nicht pünktlich geliefert. <br><b>Selbstoffenbarung - 4</b>:Ich kontrolliere Ihre Leistungen sehr genau.",
       },
       {
         cardNumber: 44,
         img: "",
         front:
           "Welche Regeln sollte man im telefonischen Kundensupport beachten?",
-        back: "Folgende Regeln sind allgemeiner Natur und sollten beim telefonischen Support Beachtung finden:<br><br> - Vermeide Worte und Ausdrücke, die den Kunden reizen könnten <br>- Höre dem Gesprächspartner aktiv zu <br>- Lass Kunden immer ausreden und unterbrich sie nicht <br>- Widersprich nie bei einem Einwand oder einer Beschwerde <br>- Hinterfrage mit den W-Fragen (wann, wie, wo, warum ... )",
+        back: "Folgende Regeln sind allgemeiner Natur und sollten beim telefonischen Support Beachtung finden:<ul><li>Vermeide Worte und Ausdrücke, die den Kunden reizen könnten</li><li>Höre dem Gesprächspartner aktiv zu</li><li>Lass Kunden immer ausreden und unterbrich sie nicht</li><li>Widersprich nie bei einem Einwand oder einer Beschwerde</li><li>Hinterfrage mit den W-Fragen (wann, wie, wo, warum ... )</li></ul>",
       },
       {
         cardNumber: 45,
         img: "",
         front:
           "Beschreibe den Begriff Pre-Sales-Angebot und nenne 3 Beispiele.",
-        back: "Unter dem Begriff <b>Pre-Sales-Angebot</b> sind alle Dienstleistungen zu verstehen, die dem potenziellen Kunden im Rahmen der Geschäftsanbahnung oder beim Vertragsabschluss angeboten werden. Dieser Service ist in der Regel unentgeltlich und dient der Kunden- und Auftragsgewinnung. Beispiele hierfür können sein:<br><br> - Kostenlose Probefahrt beim Fahrzeugkauf <br>- Kostenlose Informationsveranstaltungen <br>- Kostenlose Kataloge oder Probeprodukte",
+        back: "Unter dem Begriff <b>Pre-Sales-Angebot</b> sind alle Dienstleistungen zu verstehen, die dem potenziellen Kunden im Rahmen der Geschäftsanbahnung oder beim Vertragsabschluss angeboten werden. Dieser Service ist in der Regel unentgeltlich und dient der Kunden- und Auftragsgewinnung. Beispiele hierfür können sein:<ul><li>Kostenlose Probefahrt beim Fahrzeugkauf</li><li>Kostenlose Informationsveranstaltungen</li><li>Kostenlose Kataloge oder Probeprodukte</li></ul>",
       },
       {
         cardNumber: 46,
         img: "",
         front:
           "Webinare, auch Online-Schulungen genannt, werden in zunehmendem Maße genutzt.<br> Welche Vor- und Nachteile bieten Webinare?",
-        back: "<b>Vorteile:</b><br> - es entstehen keine Reisekosten <br>- Kurse sind individuell kurzfristig planbar <br>- eine Vielzahl an Teilnehmern ist erreichbar <br>- Trainingsumgebung kann optimal an die Bedürfnisse angepasst werden <br>- Webinare können aufgezeichnet werden für Wiederholungen<br><br> <b>Nachteile:</b> - setzt eine funktionierende technische Ausstattung und eine Internetverbindung voraus <br>- Umsetzung von praxisbezogenen Übungen nicht immer möglich <br>- die Stimmung der Teilnehmer ist nur schwer zu erfassen <br>- keine gemeinsamen Aktivitäten der Teilnehmer (Pausen, Mittagessen oder Abendessen) <br>- eventuell hohe Zeitverschiebung führt zu ungünstigen Webinarzeiten",
+        back: "<b>Vorteile:</b><ul><li>es entstehen keine Reisekosten</li><li>Kurse sind individuell kurzfristig planbar</li><li>eine Vielzahl an Teilnehmern ist erreichbar</li><li>Trainingsumgebung kann optimal an die Bedürfnisse angepasst werden</li><li>Webinare können aufgezeichnet werden für Wiederholungen</li></ul><b>Nachteile:</b><ul><li>setzt eine funktionierende technische Ausstattung und eine Internetverbindung voraus</li><li>Umsetzung von praxisbezogenen Übungen nicht immer möglich</li><li>die Stimmung der Teilnehmer ist nur schwer zu erfassen</li><li>keine gemeinsamen Aktivitäten der Teilnehmer (Pausen, Mittagessen oder Abendessen)</li><li>eventuell hohe Zeitverschiebung führt zu ungünstigen Webinarzeiten</li></ul>",
       },
       {
         cardNumber: 47,
@@ -106,26 +106,26 @@ export const flashcardsData = [
         img: "",
         front:
           "Unternehmen müssen ihre Produkte am Markt anbieten. Dazu benötigen sie einen Vertriebspartner oder ein Vertriebsnetz. <br><br>Nenne Vor- und Nachteile eines direkten Vertriebs.",
-        back: "Beim <b>direkten Vertrieb</b> bietet der Anbieter seine Produkte oder seine Dienstleistungen unmittelbar an die Endabnehmer bzw. Endverbraucher an.<br><br> <b>Vorteile:</b><br> - die Gewinnspanne ist höher (Provisionen für Zwischenhändler entfallen) <br>- Endverbraucher haben kurze Kommunikations- und Vertriebswege <br>- Vertriebsmitarbeitende sind eigene Mitarbeitende und können aktiv und schnell neue Produkte anbieten <br>- engere Kundenbindung durch persönliche Kundenkommunikation<br><br> <b>Nachteile:</b><br> - eigenes Vertriebsnetz bindet viel Kapital <br>- personalintensiv, hohe Fixkosten <br>- Massendistribution nur bedingt umsetzbar<br><br> Hinweis: Der direkte Vertrieb (Unternehmen --> Kunde) ist der Gegensatz zum indirekten Vertrieb (Unternehmen --> Zwischenhändler --> Kunde).",
+        back: "Beim <b>direkten Vertrieb</b> bietet der Anbieter seine Produkte oder seine Dienstleistungen unmittelbar an die Endabnehmer bzw. Endverbraucher an.<br><br> <b>Vorteile:</b><ul><li>die Gewinnspanne ist höher (Provisionen für Zwischenhändler entfallen)</li><li>Endverbraucher haben kurze Kommunikations- und Vertriebswege</li><li>Vertriebsmitarbeitende sind eigene Mitarbeitende und können aktiv und schnell neue Produkte anbieten</li><li>engere Kundenbindung durch persönliche Kundenkommunikation</li></ul><b>Nachteile:</b><ul><li>eigenes Vertriebsnetz bindet viel Kapital</li><li>personalintensiv, hohe Fixkosten</li><li>Massendistribution nur bedingt umsetzbar</li></ul>Hinweis: Der direkte Vertrieb (Unternehmen --> Kunde) ist der Gegensatz zum indirekten Vertrieb (Unternehmen --> Zwischenhändler --> Kunde).",
       },
       {
         cardNumber: 50,
         img: "",
         front:
           "Mit welchen Maßnahmen kann man die Kundenzufriedenheit erhöhen?",
-        back: "<b>Kundenzufriedenheit</b> ist für viele Unternehmen wichtig, um die Kundenbindung zu erhöhen und eine Umsatzsteigerung zu erreichen. Zufriedene Kunden kehren oft zurück und empfehlen das Produkt oder die Dienstleistung weiter.<br><br> Die Kundenzufriedenheit unterliegt daher einer ständigen Optimierung. Dazu zählt auch eine Verbesserung der Customer Experience, also der Erfahrungen, die der Kunde mit dem Unternehmen macht.<br><br> Folgende Maßnahmen sind geeignet:<br> - Gewährung von Rabatten (im Rahmen von Aktionen) <br>- Teilnahme an Sonderaktionen (Lotterie) <br>- Einladung zu Hausmessen oder Festen <br>- Feedback einholen durch Umfragen <br>- Social Media, Einrichtung von Bewertungsportalen <br>- Qualitätsversprechen unbedingt einhalten <br>- etc.",
+        back: "<b>Kundenzufriedenheit</b> ist für viele Unternehmen wichtig, um die Kundenbindung zu erhöhen und eine Umsatzsteigerung zu erreichen. Zufriedene Kunden kehren oft zurück und empfehlen das Produkt oder die Dienstleistung weiter.<br><br> Die Kundenzufriedenheit unterliegt daher einer ständigen Optimierung. Dazu zählt auch eine Verbesserung der Customer Experience, also der Erfahrungen, die der Kunde mit dem Unternehmen macht.<br><br> Folgende Maßnahmen sind geeignet:<ul><li>Gewährung von Rabatten (im Rahmen von Aktionen)</li><li>Teilnahme an Sonderaktionen (Lotterie)</li><li>Einladung zu Hausmessen oder Festen</li><li>Feedback einholen durch Umfragen</li><li>Social Media, Einrichtung von Bewertungsportalen</li><li>Qualitätsversprechen unbedingt einhalten</li><li>etc.</li></ul>",
       },
       {
         cardNumber: 51,
         img: "",
         front: "Welchem Zweck dient ein Angebotsvergleich?",
-        back: "Der <b>Angebotsvergleich</b> bildet die wesentliche Grundlage für eine zukünftige Kaufentscheidung. Man vergleicht normalerweise mindestens 2 oder mehr Angebote von verschiedenen Lieferanten, Unternehmen sowie Dienstleistern.<br><br> Im Zuge der Kaufentscheidung werden Kriterien miteinander verglichen, wie z. B .:<br> - niedrigster Preis <br>- Qualität der Produkte/Dienstleistungen <br>- Finanzierungsangebote <br>- Kundenservice <br>- Garantie und Gewährleistung <br>- Rabattangebote <br>- Lieferservice <br>- Liefertreue <br>- Lieferzeit <br>- Liefermenge",
+        back: "Der <b>Angebotsvergleich</b> bildet die wesentliche Grundlage für eine zukünftige Kaufentscheidung. Man vergleicht normalerweise mindestens 2 oder mehr Angebote von verschiedenen Lieferanten, Unternehmen sowie Dienstleistern.<br><br> Im Zuge der Kaufentscheidung werden Kriterien miteinander verglichen, wie z. B .:<ul><li>niedrigster Preis</li><li>Qualität der Produkte/Dienstleistungen</li><li>Finanzierungsangebote</li><li>Kundenservice</li><li>Garantie und Gewährleistung</li><li>Rabattangebote</li><li>Lieferservice</li><li>Liefertreue</li><li>Lieferzeit</li><li>Liefermenge</li></ul>",
       },
       {
         cardNumber: 52,
         img: "",
         front: "Was ist bei der Außerbetriebnahme von IT-Systemen zu beachten?",
-        back: "Vor der <b>Außerbetriebnahme von IT-Systemen</b> ist folgendes zu beachten:<br><br> - rechtzeitige Ankündigung der Maßnahme an das Personal oder den Kunden <br>- Bereitstellung von Alternativ- und Backupsystemen <br>- Datenarchivierung unter Beachtung des Datenschutzes (Aufbewahrungsfristen beachten) <br>- mögliche Migration der Kundendaten auf neues IT-System <br>- Schulung des Personals oder des Kunden, wenn es Neuerungen auf dem neuen IT-System gibt <br>- Validierung der migrierten Daten, bevor altes IT-System außer Betrieb genommen wird <br>- Fachgerechte Vernichtung und Entsorgung der Datenträger durch zertifiziertes Unternehmen, nach z. B. DoD 5220.22-M-Standard <br>- Fachgerechte Entsorgung oder Wiederaufbereitung der IT-Hardware",
+        back: "Vor der <b>Außerbetriebnahme von IT-Systemen</b> ist folgendes zu beachten:<ul><li>rechtzeitige Ankündigung der Maßnahme an das Personal oder den Kunden</li><li>Bereitstellung von Alternativ- und Backupsystemen</li><li>Datenarchivierung unter Beachtung des Datenschutzes (Aufbewahrungsfristen beachten)</li><li>mögliche Migration der Kundendaten auf neues IT-System</li><li>Schulung des Personals oder des Kunden, wenn es Neuerungen auf dem neuen IT-System gibt</li><li>Validierung der migrierten Daten, bevor altes IT-System außer Betrieb genommen wird</li><li>Fachgerechte Vernichtung und Entsorgung der Datenträger durch zertifiziertes Unternehmen, nach z. B. DoD 5220.22-M-Standard</li><li>Fachgerechte Entsorgung oder Wiederaufbereitung der IT-Hardware</li></ul>",
       },
     ],
   },
@@ -156,7 +156,7 @@ export const flashcardsData = [
         cardNumber: 56,
         img: "",
         front: "Welche technischen Merkmale hat ein Notebook?",
-        back: "Ein Notebook hat folgende Bestandteile:<ul> - teilweise Anschluss für Dockingstation</ul> <ul>- teilweise Mini-PCI-Express Slot</ul> <ul>- teilweise 4-in-1 Kartenlesegerät</ul> <ul>- teilweise integriertes Bluetooth, WLAN und WWAN</ul> <ul>- eigenes Display</ul> <ul>- externe Schnittstellen wie USB, HDMI, DisplayPort/mini DisplayPort, VGA, Firewire</ul> <ul>- integrierte Lautsprecher und Mikrofone</ul> <ul>- teilweise Videokamera</ul> <ul>- Akku </ul><ul>- externes Netzteil</ul> <ul>- interne Netzwerkkarte</ul>",
+        back: "Ein Notebook hat folgende Bestandteile:<ul><li>teilweise Anschluss für Dockingstation</li><li>teilweise Mini-PCI-Express Slot</li><li>teilweise 4-in-1 Kartenlesegerät</li><li>teilweise integriertes Bluetooth, WLAN und WWAN</li><li>eigenes Display</li><li>externe Schnittstellen wie USB, HDMI, DisplayPort/mini DisplayPort, VGA, Firewire</li><li>integrierte Lautsprecher und Mikrofone</li><li>teilweise Videokamera</li><li>Akku</li><li>externes Netzteil</li><li>interne Netzwerkkarte</li></ul>",
       },
       {
         cardNumber: 57,
@@ -202,7 +202,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Nenne Vorteile des USB-C Anschlusses gegenüber den USB-Typen A und B.",
-        back: "<b>Vorteile von USB-C</b>:<br><br> - Reversible Steckrichtung <br>- Höhere Leistungsfähigkeit <br>- Kompaktes Design <br>- Schnellere Ladezeiten <br>- Bidirektionale Stromversorgung <br>- Zukunftssicherheit",
+        back: "<b>Vorteile von USB-C</b>:<ul><li>Reversible Steckrichtung</li><li>Höhere Leistungsfähigkeit</li><li>Kompaktes Design</li><li>Schnellere Ladezeiten</li><li>Bidirektionale Stromversorgung</li><li>Zukunftssicherheit</li></ul>",
       },
       {
         cardNumber: 64,
@@ -215,7 +215,7 @@ export const flashcardsData = [
         cardNumber: 65,
         img: "",
         front: "Was versteht man unter dem Begriff Green-IT?",
-        back: "Unter <b>Green-IT</b> versteht man alle Bestrebungen, die Nutzung von Informations- und Kommunikationstechnik (luK) über deren gesamten Lebenszyklus hinweg umwelt- und ressourcenschonend zu gestalten.<br><br> Darunter fallen folgende Aspekte:<br><br> - Optimierung des Ressourcenverbrauchs während des Herstellungsprozesses, des Betriebs und der Entsorgung der Geräte <br>- Ressourceneinsparung durch den Einsatz von Virtualisierungstechniken <br>- Einsatz von Videokonferenzen (dadurch weniger Dienstreisen) <br>- Einsatz von Stromsparmodi",
+        back: "Unter <b>Green-IT</b> versteht man alle Bestrebungen, die Nutzung von Informations- und Kommunikationstechnik (luK) über deren gesamten Lebenszyklus hinweg umwelt- und ressourcenschonend zu gestalten.<br><br> Darunter fallen folgende Aspekte:<ul><li>Optimierung des Ressourcenverbrauchs während des Herstellungsprozesses, des Betriebs und der Entsorgung der Geräte</li><li>Ressourceneinsparung durch den Einsatz von Virtualisierungstechniken</li><li>Einsatz von Videokonferenzen (dadurch weniger Dienstreisen)</li><li>Einsatz von Stromsparmodi</li></ul>",
       },
       {
         cardNumber: 66,
@@ -229,7 +229,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Nenne die Vorteile des Servicemodells PaaS (Platform as a Service).",
-        back: "Folgende Vorteile ergeben sich bei der Nutzung des Servicemodells <b>PaaS</b>: <br><br>- Reduzierter Programmieraufwand, da mit den PaaS-Entwicklungstools sich der Zeitaufwand für das Schreiben von Code für neue Apps reduziert. <br>- Zusätzliche Entwicklungsmöglichkeiten, ohne dass neue Mitarbeitende eingestellt werden müssen. Entwicklungsteams können neue Funktionen mit Hilfe der PaaS-Komponenten nutzen, ohne diese selbst entwickeln zu müssen. <br>- Einfachere Entwicklung für mehrere Plattformen, teilweise werden Entwicklungsoptionen für mehrere Plattformen wie Computer, Mobilgeräte und Browser vom Provider angeboten. <br>- Kostengünstige Nutzung der Tools. <br>- Effiziente Verwaltung des Anwendungslebenszyklus.",
+        back: "Folgende Vorteile ergeben sich bei der Nutzung des Servicemodells <b>PaaS</b>:<ul><li>Reduzierter Programmieraufwand, da mit den PaaS-Entwicklungstools sich der Zeitaufwand für das Schreiben von Code für neue Apps reduziert.</li><li>Zusätzliche Entwicklungsmöglichkeiten, ohne dass neue Mitarbeitende eingestellt werden müssen. Entwicklungsteams können neue Funktionen mit Hilfe der PaaS-Komponenten nutzen, ohne diese selbst entwickeln zu müssen.</li><li>Einfachere Entwicklung für mehrere Plattformen, teilweise werden Entwicklungsoptionen für mehrere Plattformen wie Computer, Mobilgeräte und Browser vom Provider angeboten.</li><li>Kostengünstige Nutzung der Tools.</li><li>Effiziente Verwaltung des Anwendungslebenszyklus.</li></ul>",
       },
       {
         cardNumber: 68,
@@ -257,14 +257,14 @@ export const flashcardsData = [
         img: "",
         front:
           "IT-Infrastrukturen werden heute 24/7 (24 Stunden pro Tag und 7 Tage die Woche) betrieben. Welche Aufgabe übernimmt in diesem Zusammenhang eine USV?",
-        back: "Eine <b>unterbrechungsfreie Stromversorgung (USV)</b> soll die elektrische Versorgung der systemrelevanten IT-Komponenten 24/7 sicherstellen sowie Störungen im Stromnetz zeitlich überbrücken. <br>Des Weiteren schützt eine USV, je nach Klassifizierung, die angeschlossenen IT-Komponenten vor folgenden Störungen: <br><br>- kompletter Stromausfall <br>- vor Unterspannung <br>- vor Überspannung <br>- vor Frequenzabweichung <br>- vor Oberschwingungen",
+        back: "Eine <b>unterbrechungsfreie Stromversorgung (USV)</b> soll die elektrische Versorgung der systemrelevanten IT-Komponenten 24/7 sicherstellen sowie Störungen im Stromnetz zeitlich überbrücken. <br>Des Weiteren schützt eine USV, je nach Klassifizierung, die angeschlossenen IT-Komponenten vor folgenden Störungen:<ul><li>kompletter Stromausfall</li><li>vor Unterspannung</li><li>vor Überspannung</li><li>vor Frequenzabweichung</li><li>vor Oberschwingungen</li></ul>",
       },
       {
         cardNumber: 72,
         img: "",
         front:
           "Welche Aufgabe übernimmt ein Datenbankmanagementsystem, kurz DBMS?",
-        back: "Ein Datenbankmanagementsystem übernimmt folgende Aufgaben: <br><br>- Speicherung, Veränderung und Löschung von Daten <br>- Verwaltung der Metadaten <br>- Gewährleistung der Datensicherheit und des Datenschutzes <br>- trifft Vorkehrungen zur Datenintegrität <br>- stellt den Mehrbenutzerbetrieb durch das Transaktionskonzept sicher <br>- unterstützt die Optimierung von Abfragen <br>- ermöglicht Triggern und Stored Procedures <br>- Bereitstellung von Informationen über Technik und Betrieb",
+        back: "Ein Datenbankmanagementsystem übernimmt folgende Aufgaben:<ul><li>Speicherung, Veränderung und Löschung von Daten</li><li>Verwaltung der Metadaten</li><li>Gewährleistung der Datensicherheit und des Datenschutzes</li><li>trifft Vorkehrungen zur Datenintegrität</li><li>stellt den Mehrbenutzerbetrieb durch das Transaktionskonzept sicher</li><li>unterstützt die Optimierung von Abfragen</li><li>ermöglicht Triggern und Stored Procedures</li><li>Bereitstellung von Informationen über Technik und Betrieb</li></ul>",
       },
     ],
   },
@@ -276,7 +276,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Welche Kommandos oder Werkzeugen kennst du, um unter Linux eine IPv4-Adresse eines Netzwerkadapters anzuzeigen?",
-        back: "<b>Grafische Werkzeuge:</b><br> - Netzwerkmanager (Debian, Rocky Linux, SUSE) <br> - nmtui (Rocky Linux), Wicd (Debian), YaST (SUSE) <br><br> <b>Console:</b> <br> - ifconfig <br> - ip addr show <br>- ipa",
+        back: "<b>Grafische Werkzeuge:</b><ul><li>Netzwerkmanager (Debian, Rocky Linux, SUSE)</li><li>nmtui (Rocky Linux), Wicd (Debian), YaST (SUSE)</li></ul><b>Console:</b><ul><li>ifconfig</li><li>ip addr show</li><li>ipa</li></ul>",
       },
       {
         cardNumber: 182,
@@ -290,14 +290,14 @@ export const flashcardsData = [
         img: "",
         front:
           "Welche Bedingungen müssen beim Einsatz von Arbeitsspeichern im Dual Channel Mode erfüllt sein?",
-        back: "Die Arbeitsspeicher müssen im Dual Channel Mode folgende Bedingungen erfüllen:<br>  - Speichermodule müssen baugleich sein <br>- Speichermodule müssen die gleiche Speicherkapazität besitzen <br>- Speichermodule sollten vom Hersteller für den Einsatz auf dem Motherboard bzw. Prozessor zertifiziert sein <br>- Speichermodule müssen immer paarweise ergänzt bzw. entfernt werden",
+        back: "Die Arbeitsspeicher müssen im Dual Channel Mode folgende Bedingungen erfüllen:<ul><li>Speichermodule müssen baugleich sein</li><li>Speichermodule müssen die gleiche Speicherkapazität besitzen</li><li>Speichermodule sollten vom Hersteller für den Einsatz auf dem Motherboard bzw. Prozessor zertifiziert sein</li><li>Speichermodule müssen immer paarweise ergänzt bzw. entfernt werden</li></ul>",
       },
       {
         cardNumber: 184,
         img: "",
         front:
           'Welche Aussagen sind zutreffend, wenn ein Netzwerkadapter folgende Informationen anzeigt?<br><br> <img src="src/img/img-184.jpg" alt="img-184" class="flashcard-img">',
-        back: "Folgende Aussagen sind zutreffend:<br><br> - es handelt sich um ein windowsbasiertes Betriebssystem <br>- der Netzwerkadapter hat keine statische IPv4-Adresse <br>- die Eigenschaften des Internetprotokolls, Version 4 (TCP/lPv4) wollen die IP-Adresse automatisch beziehen <br>- ein DHCP-Request des Netzwerkadapters wurde nicht beantwortet <br>- DHCP Server ist zurzeit nicht erreichbar <br>- laut der Internet Assigned Numbers Authority (IANA) wird das Feature Automatic Private IP Addressing (APIPA) aktiviert <br>- es wurde in dem <b>APIPA Adressbereich 169.254.1.0 - 169.254.254.255</b> eine zufällige IPv4 Adresse mit einer <em>/16 Subnetzmaske</em> erzeugt",
+        back: "Folgende Aussagen sind zutreffend:<ul><li>es handelt sich um ein windowsbasiertes Betriebssystem</li><li>der Netzwerkadapter hat keine statische IPv4-Adresse</li><li>die Eigenschaften des Internetprotokolls, Version 4 (TCP/lPv4) wollen die IP-Adresse automatisch beziehen</li><li>ein DHCP-Request des Netzwerkadapters wurde nicht beantwortet</li><li>DHCP Server ist zurzeit nicht erreichbar</li><li>laut der Internet Assigned Numbers Authority (IANA) wird das Feature Automatic Private IP Addressing (APIPA) aktiviert</li><li>es wurde in dem <b>APIPA Adressbereich 169.254.1.0 - 169.254.254.255</b> eine zufällige IPv4 Adresse mit einer <em>/16 Subnetzmaske</em> erzeugt</li></ul>",
       },
       {
         cardNumber: 185,
@@ -309,7 +309,7 @@ export const flashcardsData = [
         cardNumber: 186,
         img: "",
         front: "Nenne einige <b>UML-Verhaltensdiagramme</b> sowie deren Zweck.",
-        back: "<b>UML-Verhaltensdiagramme und deren Zweck:</b><br><br> <b>- Aktivitätsdiagramm:</b> Zeigt den Ablauf von Aktivitäten und Prozessen. <br><b>- Zustandsdiagramm:</b> Bildet die Zustände und Zustandsübergänge eines Objekts ab. <br><b>- Use-Case-Diagramm:</b> Wird zur Darstellung von Anwendungsfällen (engl. Use Cases) und deren Beziehungen zu Akteuren verwendet. <br><b>- Sequenzdiagramm:</b> Stellt Interaktionen zwischen Objekten in einer zeitlichen Abfolge dar. <br><b>- Kommunikationsdiagramm:</b> Stellt Interaktionen zwischen Objekten dar, ähnlich wie Sequenzdiagramme, jedoch mit Fokus auf die Beziehungen. <br><b>- Interaktionsübersichtsdiagramm:</b> Dient zur Modellierung von Abläufen und Prozessen und kombiniert Elemente aus Aktivitätsdiagrammen und Interaktionsdiagrammen. <br><b>- Zeitverlaufsdiagramm:</b> Visualisiert die Darstellung von Zustandsänderungen über die Zeit.",
+        back: "<b>UML-Verhaltensdiagramme und deren Zweck:</b><ul><li><b>Aktivitätsdiagramm:</b> Zeigt den Ablauf von Aktivitäten und Prozessen.</li><li><b>Zustandsdiagramm:</b> Bildet die Zustände und Zustandsübergänge eines Objekts ab.</li><li><b>Use-Case-Diagramm:</b> Wird zur Darstellung von Anwendungsfällen (engl. Use Cases) und deren Beziehungen zu Akteuren verwendet.</li><li><b>Sequenzdiagramm:</b> Stellt Interaktionen zwischen Objekten in einer zeitlichen Abfolge dar.</li><li><b>Kommunikationsdiagramm:</b> Stellt Interaktionen zwischen Objekten dar, ähnlich wie Sequenzdiagramme, jedoch mit Fokus auf die Beziehungen.</li><li><b>Interaktionsübersichtsdiagramm:</b> Dient zur Modellierung von Abläufen und Prozessen und kombiniert Elemente aus Aktivitätsdiagrammen und Interaktionsdiagrammen.</li><li><b>Zeitverlaufsdiagramm:</b> Visualisiert die Darstellung von Zustandsänderungen über die Zeit.</li></ul>",
       },
       {
         cardNumber: 187,
@@ -323,7 +323,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Welche allgemeinen Anforderungen werden an ein Datenbanksystem gestellt?",
-        back: "Folgende allgemeine Anforderungen an ein <b>Datenbanksystem </b> sind: <br> - Datenunabhängigkeit <br>- Effizienter Speicherzugriff <br>- Paralleler Datenzugriff <br>- Datenkonsistenz <br>- Gemeinsame Datenbasis <br>- Datenintegrität <br>- Datensicherheit <br>- Wiederherstellungsverfahren <br>- Abfragesprache <br>- Keine/kontrollierte Redundanz",
+        back: "Folgende allgemeine Anforderungen an ein <b>Datenbanksystem </b> sind:<ul><li>Datenunabhängigkeit</li><li>Effizienter Speicherzugriff</li><li>Paralleler Datenzugriff</li><li>Datenkonsistenz</li><li>Gemeinsame Datenbasis</li><li>Datenintegrität</li><li>Datensicherheit</li><li>Wiederherstellungsverfahren</li><li>Abfragesprache</li><li>Keine/kontrollierte Redundanz</li></ul>",
       },
       {
         cardNumber: 189,
@@ -337,7 +337,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Es gibt 5 Typen von SQL Kommandos: DDL, DML, DCL, TCL, und DQL.<br> Nenne bitte jeweils mindestens einen ausführbaren SQL-Befehl.",
-        back: "<b>- Data Definition Language (DDL)</b> -> CREATE, ALTER, DROP, TRUNCATE <br><b>- Data Manipulation Language (DML)</b> -> INSERT, UPDATE, DELETE <br><b>- Data Control Language (DCL)</b> -> GRANT, REVOKE <br><b>- Transaction Control Language (TCL)</b> -> COMMIT, ROLLBACK, SAVEPOINT <br><b>- Data Query Language (DQL)</b> -> Select",
+        back: "<ul><li><b>Data Definition Language (DDL)</b> -> CREATE, ALTER, DROP, TRUNCATE</li><li><b>Data Manipulation Language (DML)</b> -> INSERT, UPDATE, DELETE</li><li><b>Data Control Language (DCL)</b> -> GRANT, REVOKE</li><li><b>Transaction Control Language (TCL)</b> -> COMMIT, ROLLBACK, SAVEPOINT</li><li><b>Data Query Language (DQL)</b> -> Select</li></ul>",
       },
     ],
   },
@@ -349,7 +349,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Dein Ausbildungsbetrieb ist <b>ISO 9001 zertifiziert</b>.<br>Was bedeutet diese Norm für deinen Ausbildungsbetrieb?",
-        back: "Die ISO 9001 Norm legt die Anforderungen für <b>Qualitätsmanagementsysteme</b> fest. Ziel ist die <em>Qualitätssicherung durch stetige Optimierung der Prozesse.</em> <br>Diese Zertifizierung ist weltweit anerkannt. <br><b>ISO 9001 orientiert sich unter anderem an diesen Grundprinzipien:</b><br><br>- Kundenorientierung <br>- Prozessorientierung <br>- stetige Verbesserung <br>- Risikomanagement",
+        back: "Die ISO 9001 Norm legt die Anforderungen für <b>Qualitätsmanagementsysteme</b> fest. Ziel ist die <em>Qualitätssicherung durch stetige Optimierung der Prozesse.</em> <br>Diese Zertifizierung ist weltweit anerkannt. <br><b>ISO 9001 orientiert sich unter anderem an diesen Grundprinzipien:</b><ul><li>Kundenorientierung</li><li>Prozessorientierung</li><li>stetige Verbesserung</li><li>Risikomanagement</li></ul>",
       },
       {
         cardNumber: 192,
@@ -375,7 +375,7 @@ export const flashcardsData = [
         cardNumber: 195,
         img: "",
         front: "Welchen Qualitätskriterien unterliegt Software?",
-        back: "Die <b>Softwarequalitätskriterien</b> werden in verschiedenen Modellen, zum Beispiel in der Norm ISO/IEC 9126, dargestellt. Die <b>Qualitätssicherung (kurz: QS)</b> dient dazu, sicherzustellen, dass die Software den vereinbarten Anforderungen/Kriterien entspricht.<br> Allgemeine Kriterien, die eine Software erfüllen sollte, sind:<br><br>- Funktionalität <br>- Benutzbarkeit <br>- Zuverlässigkeit <br>- Effizienz <br>- Übertragbarkeit <br>- Änderbarkeit",
+        back: "Die <b>Softwarequalitätskriterien</b> werden in verschiedenen Modellen, zum Beispiel in der Norm ISO/IEC 9126, dargestellt. Die <b>Qualitätssicherung (kurz: QS)</b> dient dazu, sicherzustellen, dass die Software den vereinbarten Anforderungen/Kriterien entspricht.<br> Allgemeine Kriterien, die eine Software erfüllen sollte, sind:<ul><li>Funktionalität</li><li>Benutzbarkeit</li><li>Zuverlässigkeit</li><li>Effizienz</li><li>Übertragbarkeit</li><li>Änderbarkeit</li></ul>",
       },
       {
         cardNumber: 196,
@@ -396,7 +396,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Was sollte beim <b>Recyceln von IT-Produkten</b> beachtet werden?",
-        back: "Laut der WEEE-Richtlinie (Waste Electrical and Electronic Equipment), in der die Vorgaben für die Entsorgung von Elektro-Altgeräten (EAG) festlegt sind, gibt es ein grundlegendes Prinzip, welches besagt, dass <em>die Hersteller in der abfallwirtschaftlichen Verantwortung für ihre Produkte während der gesamten Lebensdauer verantwortlich sind.</em><br> Dabei wird in verschiedene Kategorien unterschieden, wie zum Beispiel:<br><br>- Informations- und Kommunikationstechnik-Geräte:<br> Computer, Notebooks, Tablets, Datenspeicher, Monitore, Drucker, Handys, Telefone, Netzteile, TK-Anlagen<br>- Unterhaltungselektronik-Geräte (auch braune Ware genannt):<br> Fernseher, Videorecorder, Digitalkameras, Konsolen, HiFi- Anlagen, Boxen, Radios, CD-/DVD-/Blu-ray-Player <br><br> <b>Merke:</b><em> Elektronische Geräte gehören nicht in den Hausmüll und müssen fachgerecht sowie umweltgerecht entsorgt werden.</em>",
+        back: "Laut der WEEE-Richtlinie (Waste Electrical and Electronic Equipment), in der die Vorgaben für die Entsorgung von Elektro-Altgeräten (EAG) festlegt sind, gibt es ein grundlegendes Prinzip, welches besagt, dass <em>die Hersteller in der abfallwirtschaftlichen Verantwortung für ihre Produkte während der gesamten Lebensdauer verantwortlich sind.</em><br> Dabei wird in verschiedene Kategorien unterschieden, wie zum Beispiel:<ul><li>Informations- und Kommunikationstechnik-Geräte:<br> Computer, Notebooks, Tablets, Datenspeicher, Monitore, Drucker, Handys, Telefone, Netzteile, TK-Anlagen</li><li>Unterhaltungselektronik-Geräte (auch braune Ware genannt):<br> Fernseher, Videorecorder, Digitalkameras, Konsolen, HiFi- Anlagen, Boxen, Radios, CD-/DVD-/Blu-ray-Player</li></ul><b>Merke:</b><em> Elektronische Geräte gehören nicht in den Hausmüll und müssen fachgerecht sowie umweltgerecht entsorgt werden.</em>",
       },
     ],
   },
@@ -415,7 +415,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Was bedeutet der Begriff <b>MFA (Multi-Factor-Authentication)</b> und wo kommt sie zum Einsatz?",
-        back: "Die <b>Multi-Factor-Authentication (MFA)</b> ist eine erweiterte Form der Zugangsberechtigung, die durch mehrere unabhängige Merkmale (Faktoren) überprüft wird und erst nach Eingabe eines starken Passworts sowie der Eingabe einer Nummer (via SMS oder App) oder Angabe einer Zertifikatsdatei erteilt wird. <br>Einsatzbereiche sind:<br><br>- Online-Banking <br>- Debit- oder Kreditkartenzahlung <br>- Online-Ausweisfunktion des Personalausweises <br>- Absicherung jeglicher öffentlich zugänglicher Onlinezugänge",
+        back: "Die <b>Multi-Factor-Authentication (MFA)</b> ist eine erweiterte Form der Zugangsberechtigung, die durch mehrere unabhängige Merkmale (Faktoren) überprüft wird und erst nach Eingabe eines starken Passworts sowie der Eingabe einer Nummer (via SMS oder App) oder Angabe einer Zertifikatsdatei erteilt wird. <br>Einsatzbereiche sind:<ul><li>Online-Banking</li><li>Debit- oder Kreditkartenzahlung</li><li>Online-Ausweisfunktion des Personalausweises</li><li>Absicherung jeglicher öffentlich zugänglicher Onlinezugänge</li></ul>",
       },
       {
         cardNumber: 201,
@@ -443,14 +443,14 @@ export const flashcardsData = [
         img: "",
         front:
           "Durch welche <b>konkreten Maßnahmen</b> können technisch organisatorischen Maßnahmen (TOM) <b>DSGVO-konform</b> umgesetzt werden?",
-        back: "<br>- Zutrittskontrolle:</b> Unbefugten ist der Zutritt zu DV-Anlagen zu verwehren.<br><b>- Zugangskontrolle:</b> Unbefugte sollen keinen Zugang zu DV-Anlagen haben.<br><b>- Zugriffskontrolle, Zugriffsberechtigung:</b> Durch ein Rechte- und Rollenmanagement können nur berechtigte Nutzer personenbezogene Daten einsehen. Der Zugriff wird protokolliert. Unbefugte Dritte werden ausgeschlossen und können sensible Daten nicht lesen, kopieren, verändern oder löschen.<br><b>- Weitergabekontrolle:</b> Sicherstellung, dass personenbezogene Daten beim Transport oder bei der Speicherung nicht durch Dritte gelesen, kopiert, verändert oder entfernt werden können.<br><b>- Eingabekontrolle:</b> Gewährleistung, dass nachträglich überprüft und festgestellt werden kann, ob Daten verändert oder entfernt worden sind.<br><b>- Auftragskontrolle:</b> Personenbezogene Daten werden nur nach der vertraglichen Regel der Auftragsverarbeitung verarbeitet.<br><b>- Verfügbarkeitskontrolle:</b> Personenbezogene Daten werden vor Verlust oder Zerstörung geschützt.<br><b>- Trennungsgebot:</b> Personenbezogene Daten werden ihrem Zweck nach getrennt verarbeitet und gespeichert.",
+        back: "<ul><li><b>Zutrittskontrolle:</b> Unbefugten ist der Zutritt zu DV-Anlagen zu verwehren.</li><li><b>Zugangskontrolle:</b> Unbefugte sollen keinen Zugang zu DV-Anlagen haben.</li><li><b>Zugriffskontrolle, Zugriffsberechtigung:</b> Durch ein Rechte- und Rollenmanagement können nur berechtigte Nutzer personenbezogene Daten einsehen. Der Zugriff wird protokolliert. Unbefugte Dritte werden ausgeschlossen und können sensible Daten nicht lesen, kopieren, verändern oder löschen.</li><li><b>Weitergabekontrolle:</b> Sicherstellung, dass personenbezogene Daten beim Transport oder bei der Speicherung nicht durch Dritte gelesen, kopiert, verändert oder entfernt werden können.</li><li><b>Eingabekontrolle:</b> Gewährleistung, dass nachträglich überprüft und festgestellt werden kann, ob Daten verändert oder entfernt worden sind.</li><li><b>Auftragskontrolle:</b> Personenbezogene Daten werden nur nach der vertraglichen Regel der Auftragsverarbeitung verarbeitet.</li><li><b>Verfügbarkeitskontrolle:</b> Personenbezogene Daten werden vor Verlust oder Zerstörung geschützt.</li><li><b>Trennungsgebot:</b> Personenbezogene Daten werden ihrem Zweck nach getrennt verarbeitet und gespeichert.</li></ul>",
       },
       {
         cardNumber: 205,
         img: "",
         front:
           "Nenne die wesentlichen <b>Vorteile einer ISO/IEC 27001 Zertifizierung</b> für Unternehmen.",
-        back: "Die internationale <b>Norm ISO/IEC 27001</b> beschreibt die Anforderungen an ein funktionsfähiges <b>Informationssicherheits-Managementsystem (ISMS)</b>. Die Anforderungen geben vor, wie ein ISMS in Unternehmen zu errichten, umzusetzen und kontinuierlich weiterzuentwickeln ist.<br>Eine erfolgreiche Zertifizierung trägt dazu bei, IT-Risiken zu minimieren, I T-Sicherheitsverfahren zu etablieren sowie die Qualität der IT-Systeme nachhaltig zu optimieren.<br>Weitere Vorteile sind:<br><br>- IT-Risiken, mögliche Schäden und Folgekosten abschätzen bzw. minimieren.<br>- Wettbewerbsvorteil durch anerkannten internationalen Standard.<br>- Steigerung des Vertrauens gegenüber Partnern, Kunden sowie der Öffentlichkeit.<br>- Compliance-Anforderungen werden sichergestellt.<br>- Systematisches Aufdecken von Schwachstellen.",
+        back: "Die internationale <b>Norm ISO/IEC 27001</b> beschreibt die Anforderungen an ein funktionsfähiges <b>Informationssicherheits-Managementsystem (ISMS)</b>. Die Anforderungen geben vor, wie ein ISMS in Unternehmen zu errichten, umzusetzen und kontinuierlich weiterzuentwickeln ist.<br>Eine erfolgreiche Zertifizierung trägt dazu bei, IT-Risiken zu minimieren, I T-Sicherheitsverfahren zu etablieren sowie die Qualität der IT-Systeme nachhaltig zu optimieren.<br>Weitere Vorteile sind:<ul><li>IT-Risiken, mögliche Schäden und Folgekosten abschätzen bzw. minimieren.</li><li>Wettbewerbsvorteil durch anerkannten internationalen Standard.</li><li>Steigerung des Vertrauens gegenüber Partnern, Kunden sowie der Öffentlichkeit.</li><li>Compliance-Anforderungen werden sichergestellt.</li><li>Systematisches Aufdecken von Schwachstellen.</li></ul>",
       },
       {
         cardNumber: 206,
@@ -464,7 +464,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Der <b>Datenschutz</b> ist auf europäischer Ebene in Verordnungen in der DSGVO beschrieben.<br>Welche <b>Rechte</b> hat eine Person betreffend ihrer <b>personenbezogenen Daten</b>?",
-        back: 'In Kapitel 3 der <b>DSGVO</b> sind folgende <b>Vorschriften</b> enthalten:<br><b>- Informationspflicht und Recht auf Auskunft zu personenbezogenen Daten</b> <br>• Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person<br>• Informationspflicht, wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben wurden<br>• Auskunftsrecht der betroffenen Person<br><br><b>- Recht auf Berichtigung und Löschung</b><br>• Recht auf Berichtigung<br>• Recht auf Löschung („Recht auf Vergessenwerden")<br>• Recht auf Einschränkung der Verarbeitung<br>• Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten oder der Einschränkung der Verarbeitung<br>• Recht auf Datenübertragbarkeit<br><br><b>- Widerspruchsrecht und automatisierte Entscheidungsfindung im Einzelfall</b>',
+        back: 'In Kapitel 3 der <b>DSGVO</b> sind folgende <b>Vorschriften</b> enthalten:<ul><li><b>Informationspflicht und Recht auf Auskunft zu personenbezogenen Daten</b><ul><li>Informationspflicht bei Erhebung von personenbezogenen Daten bei der betroffenen Person</li><li>Informationspflicht, wenn die personenbezogenen Daten nicht bei der betroffenen Person erhoben wurden</li><li>Auskunftsrecht der betroffenen Person</li></ul></li><li><b>Recht auf Berichtigung und Löschung</b><ul><li>Recht auf Berichtigung</li><li>Recht auf Löschung („Recht auf Vergessenwerden")</li><li>Recht auf Einschränkung der Verarbeitung</li><li>Mitteilungspflicht im Zusammenhang mit der Berichtigung oder Löschung personenbezogener Daten oder der Einschränkung der Verarbeitung</li><li>Recht auf Datenübertragbarkeit</li></ul></li><li><b>Widerspruchsrecht und automatisierte Entscheidungsfindung im Einzelfall</b></li></ul>',
       },
       {
         cardNumber: 208,
@@ -495,7 +495,7 @@ export const flashcardsData = [
         img: "",
         front:
           "Welche Anwendungen oder Verfahren verwenden <b>kryptografische Hashfunktionen</b>?",
-        back: "Bei folgenden Anwendungen oder Verfahren kommt es zum Einsatz von kryptografischen <b>Hashfunktionen:</b><br><br>- Integritätsprüfungen Erzeugung von Prüfsummen Erzeugung von Sitzungsschlüsseln Generatoren für Einmal-Passwörter Verfahren zur Authentifizierung mit digitalen Signaturen Speichern von Passwörtern",
+        back: "Bei folgenden Anwendungen oder Verfahren kommt es zum Einsatz von kryptografischen <b>Hashfunktionen:</b><ul><li>Integritätsprüfungen</li><li>Erzeugung von Prüfsummen</li><li>Erzeugung von Sitzungsschlüsseln</li><li>Generatoren für Einmal-Passwörter</li><li>Verfahren zur Authentifizierung mit digitalen Signaturen</li><li>Speichern von Passwörtern</li></ul>",
       },
       {
         cardNumber: 213,

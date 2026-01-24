@@ -27,7 +27,7 @@ function showLoginForm() {
   document.body.innerHTML = `
     <div class="container">
       <h2 style="color: #02182B;">Restricted Acces</h2>
-      <div style="margin-bottom:1.4rem; background: #02182B; color: #ffffff; padding:1rem; border-radius:0.6rem; font-size:0.78rem;">
+      <div style="margin-bottom:1.4rem; background: #02182B; color: #ffffff; padding:1rem; border-radius:0.6rem; font-size:0.95rem; line-height: 1.5;">
         <strong>Non-Commercial Educational Use Notice:</strong><br>
         This app is intended exclusively for educational and study purposes. Access is restricted to authorized users who possess a valid access code. All materials, information, and content provided within this app are for personal study only and must not be used for illegal, commercial, or unauthorized activities.<br>
         By using this app, each user accepts full responsibility for their individual actions. The creator of this app is not liable for misuse or violations of these terms by users.
@@ -142,7 +142,8 @@ function renderFlashcards() {
     frontDiv.appendChild(cardInfo);
 
     // ---- Añadimos el contenido del front (puede tener imagen HTML) ----
-    const frontText = document.createElement('span');
+    const frontText = document.createElement('div');
+    frontText.className = 'flashcard-text';
     frontText.innerHTML = card.front; // usa innerHTML para admitir HTML (img/formatos)
     frontDiv.appendChild(frontText);
 
@@ -167,7 +168,8 @@ function renderFlashcards() {
     backDiv.appendChild(cardInfoBack);
 
     // ----- Contenido del back (texto, imagen, formato) -----
-    const backText = document.createElement('span');
+    const backText = document.createElement('div');
+    backText.className = 'flashcard-text';
     backText.innerHTML = card.back;
     backDiv.appendChild(backText);
 

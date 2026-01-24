@@ -20,7 +20,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
   background: var(--bg-body);
   margin: 0;
   padding: 0;
@@ -48,7 +50,7 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   width: 100%;
   color: var(--text-header);
 }
@@ -116,7 +118,7 @@ h1 {
 /* card info */
 
 .card-info {
-  font-size: 0.7rem; /* menor que el cuerpo de la tarjeta */
+  font-size: 0.85rem; /* menor que el cuerpo de la tarjeta */
   font-weight: normal;
   color: #888888; /* gris suave */
   margin-bottom: 0.8rem;
@@ -164,7 +166,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 0.95rem;
+  font-size: 1.125rem;
+  letter-spacing: 0.015em;
   border-radius: 0.75rem;
   padding: 1rem 0.8rem;
   box-sizing: border-box;
@@ -179,24 +182,26 @@ h1 {
   background: var(--card-front-bg);
   color: var(--text-main);
 }
-.flashcard-front span {
-  width: 100%;
-  display: block;
-  margin-bottom: 0.7rem;
-  text-align: left;
-  word-wrap: break-word;
-}
 .flashcard-back {
   background: var(--card-back-bg);
   color: #432;
   transform: rotateY(180deg);
 }
-.flashcard-back span {
+
+/* Texto y Listas dentro de las tarjetas */
+.flashcard-text {
   width: 100%;
   display: block;
   margin-bottom: 0.7rem;
   text-align: left;
   word-wrap: break-word;
+}
+.flashcard-text ul {
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+.flashcard-text li {
+  margin-bottom: 0.4rem;
 }
 
 /* ==== FLASHCARD IMAGE IN BACK ==== */
@@ -345,7 +350,7 @@ pre {
   .flashcard-back,
   .flashcard-inner {
     min-height: 4.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1.2rem 1rem;
   }
   .input-field {
@@ -387,7 +392,7 @@ pre {
   .flashcard-back,
   .flashcard-inner {
     min-height: 5.5rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 1.5rem 1.25rem;
   }
 }
