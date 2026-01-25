@@ -162,9 +162,9 @@ export const flashcardsData = [
       },
       {
         cardNumber: 57,
-        img: "Ja",
+        img: "src/img/img-57.jpg",
         front: "Erläutern Sie den Begriff „Logische Prozessoren“.",
-        back: 'Als logische Prozessoren werden virtuelle Prozessoren bezeichnet, die durch Technologien wie Hyper-Threading-Technologie (HTT) oder Simultaneous Multithreading (SMT) unterstützt werden.<br> Eine CPU kann mehrere logische Prozessoren haben, die parallele Operationen ausführen, um die CPU-Auslastung zu verbessern und deren Leistungsfähigkeit zu steigern. Um die Vorteile des Multithreading zu nutzen, müssen die Anwendungen dieses auch unterstützen.<br> Wie im Bild zu sehen hat die CPU 24 Kerne und zusätzlich 32 logische Prozessoren.<br> <img src="src/img/img-57.jpg" alt="img-57" class="flashcard-img"></i>',
+        back: 'Als logische Prozessoren werden virtuelle Prozessoren bezeichnet, die durch Technologien wie Hyper-Threading-Technologie (HTT) oder Simultaneous Multithreading (SMT) unterstützt werden.<br> Eine CPU kann mehrere logische Prozessoren haben, die parallele Operationen ausführen, um die CPU-Auslastung zu verbessern und deren Leistungsfähigkeit zu steigern. Um die Vorteile des Multithreading zu nutzen, müssen die Anwendungen dieses auch unterstützen.<br> Wie im Bild zu sehen hat die CPU 24 Kerne und zusätzlich 32 logische Prozessoren.',
       },
       {
         cardNumber: 58,
@@ -181,9 +181,9 @@ export const flashcardsData = [
       },
       {
         cardNumber: 60,
-        img: "Ja",
+        img: "src/img/img-60.jpg",
         front:
-          "Unternehmen, die ein Rechenzentrum betreiben, setzen vermehrt auf die Vorteile der Virtualisierung. In diesem Zusammenhang wird oftmals der Begriff des Thin-Clients benutzt. Was versteht man unter einem Thin-Client?",
+          "Unternehmen, die ein Rechenzentrum betreiben, setzen vermehrt auf die Vorteile der Virtualisierung. In diesem Zusammenhang wird oftmals der Begriff des Thin-Clients benutzt. <br>Was versteht man unter einem Thin-Client?",
         back: "Allgemein kann man einen <b>Thin-Client</b> (englisch dünner, schlanker bzw. magerer Client) als einen Computer bezeichnen, welcher über ein Netzwerk Ressourcen nutzt, die ihm ein Server bereitstellt. <br><br>Die virtuelle Desktop-Infrastruktur (VDI) setzt primär Thin-Clients ein und setzt damit konsequent auf die Vorteile der Virtualisierung des kompletten Rechenzentrums. Thin-Clients oder manchmal auch als Zero-Clients bezeichnet, siehe Bild, sind lüfterlose Geräte welche über USB, einen Netzwerkanschluss, Audio- und Displayanschlüsse verfügen. Die persönliche Benutzeroberfläche, die Konfiguration, Zugriffe auf Verzeichnisse und installierte Programme werden vom Server zur Verfügung gestellt. Thin- Clients sind umwelt- und ressourcenschonend und haben eine geringe Leistungsaufnahme.",
       },
       {
@@ -195,8 +195,8 @@ export const flashcardsData = [
       },
       {
         cardNumber: 62,
-        img: "Ja",
-        front: "Welche Schnittstellen sind auf dem Bild zu sehen?",
+        img: "src/img/img-62b.jpg",
+        front: 'Welche Schnittstellen sind auf dem Bild zu sehen?<br><img src="src/img/img-62a.jpg" alt="anschluesse-pc" class="flashcard-img">',
         back: "Folgende Schnittstellen sind zu sehen: DisplayPort, DVI, VGA, USB-Typ B und 2x USB Typ A.",
       },
       {
