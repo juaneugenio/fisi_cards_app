@@ -164,7 +164,7 @@ export const flashcardsData = [
         cardNumber: 57,
         img: "src/img/img-57.jpg",
         front: "Erläutern Sie den Begriff „Logische Prozessoren“.",
-        back: 'Als logische Prozessoren werden virtuelle Prozessoren bezeichnet, die durch Technologien wie Hyper-Threading-Technologie (HTT) oder Simultaneous Multithreading (SMT) unterstützt werden.<br> Eine CPU kann mehrere logische Prozessoren haben, die parallele Operationen ausführen, um die CPU-Auslastung zu verbessern und deren Leistungsfähigkeit zu steigern. Um die Vorteile des Multithreading zu nutzen, müssen die Anwendungen dieses auch unterstützen.<br> Wie im Bild zu sehen hat die CPU 24 Kerne und zusätzlich 32 logische Prozessoren.',
+        back: "Als logische Prozessoren werden virtuelle Prozessoren bezeichnet, die durch Technologien wie Hyper-Threading-Technologie (HTT) oder Simultaneous Multithreading (SMT) unterstützt werden.<br> Eine CPU kann mehrere logische Prozessoren haben, die parallele Operationen ausführen, um die CPU-Auslastung zu verbessern und deren Leistungsfähigkeit zu steigern. Um die Vorteile des Multithreading zu nutzen, müssen die Anwendungen dieses auch unterstützen.<br> Wie im Bild zu sehen hat die CPU 24 Kerne und zusätzlich 32 logische Prozessoren.",
       },
       {
         cardNumber: 58,
@@ -196,7 +196,8 @@ export const flashcardsData = [
       {
         cardNumber: 62,
         img: "src/img/img-62b.jpg",
-        front: 'Welche Schnittstellen sind auf dem Bild zu sehen?<br><img src="src/img/img-62a.jpg" alt="anschluesse-pc" class="flashcard-img">',
+        front:
+          'Welche Schnittstellen sind auf dem Bild zu sehen?<br><img src="src/img/img-62a.jpg" alt="anschluesse-pc" class="flashcard-img">',
         back: "Folgende Schnittstellen sind zu sehen: DisplayPort, DVI, VGA, USB-Typ B und 2x USB Typ A.",
       },
       {
@@ -526,16 +527,155 @@ export const flashcardsData = [
     topic: "Auftragsabschluss und Leistungserbringung",
     cards: [
       {
-        cardNumber: 1,
+        cardNumber: 216,
         img: "",
-        front: "¿Qué es una lista en Python?",
-        back: "Es una colección ordenada y mutable de elementos que pueden ser de cualquier tipo.",
+        front:
+          "Wie gestaltet sich ein vollständiger <b>Backup-Plan</b> nach dem <b>Großvater-Vater-Sohn-Prinzip</b>?",
+        back: "Beim Großvater-Vater-Sohn-Prinzip geht es um ein Rotations-schema zur Datensicherung auf Speichermedien.<br> Im Rahmen einer 5-Tage Woche kommen dabei 20 Speicher-medien zum Einsatz.<br> <ul><li>4x Sohn-Medien ➞ tägliche Datensicherung (inkrementelles Backup)</li><li>4x Vater-Medien ➞ wöchentliche Datensicherung (Vollbackup)</li><li>12x Großvater-Medien ➞ monatliche Datensicherung (Vollbackup)</li></ul>",
       },
       {
-        cardNumber: 2,
+        cardNumber: 217,
         img: "",
-        front: "¿Cómo creas una función en Python?",
-        back: "Usando la palabra clave 'def', por ejemplo: def mi_funcion():",
+        front: "Unterscheide die Begriffe Malware, Ransomware und Trojaner.",
+        back: "<b>Malware</b> = Schadsoftware oder Schadprogramme. Es handelt sich hier um einen Oberbegriff für die Begriffe wie Adware, Spyware, Viren, Botnets, Trojaner, Würmer, Rootkits und Ransomware.<br> <b>Ransomware</b> = Erpressersoftware. Bei Ransomware werden Daten z. B. auf einem Computer in Geiselhaft genommen, durch bestimmte Verschlüsselungsmethoden verschlüsselt und es wird zur Zahlung eines Lösegeldes (z. B. via Bitcoin) aufgefordert, wenn man diese Daten wieder entschlüsselt haben möchte.<br> <b>Trojaner</b> = Harmlos wirkendes Computerprogramm, welches im Hintergrund ohne Wissen des Anwenders weitere Schadsoftware nachlädt und beispielsweise Backdoorprogramme oder Rootkits installiert.",
+      },
+      {
+        cardNumber: 218,
+        img: "",
+        front:
+          "In der datenverarbeitenden Industrie kommt dem Datenschutz große Bedeutung zu.<br> Welchem Zweck dient das IT-Sicherheitsmanagement?",
+        back: "Das <b>IT-Sicherheitsmanagement</b> beschreibt den permanenten Prozess innerhalb einer Unternehmung oder Organisation zur Gewährleistung der IT-Sicherheit und des Datenschutzes. Es sollen Gefahren oder Bedrohungen für die Informationssicherheit sowie den Datenschutz eines Unternehmens oder einer Organisation verhindert oder abgewehrt werden.",
+      },
+      {
+        cardNumber: 219,
+        img: "",
+        front:
+          "Welche Kriterien muss eine sichere Passwortrichtlinie erfüllen?",
+        back: "Zur Absicherung der Daten bzw. zur Absicherung der Zugriffe auf IT-gestützte Systeme muss eine sichere Passwortrichtlinie folgende Kriterien erfüllen:<ul><li>Mindestlänge des Passworts, z. B. 10-15 Zeichen</li><li>Das Passwort muss aus mindestens einem Groß- und Kleinbuchstaben, einem Sonderzeichen und einer Ziffer bestehen, z. B. 4+D&:(f7<fD0Q</li><li>Es dürfen keine Logindatenbestandteile im Passwort enthalten sein, wie z. B. meyer2012</li><li>Passwortänderung alle 30-90 Tage vollziehen</li><li>Das wiederholte Benutzen von alten Passwörtern ist eingeschränkt</li><li>Loginversuche werden auf maximal 3 Versuche innerhalb einer Minute begrenzt</li><li>Es wird optional eine MFA (Multi-Factor Authentication) angeboten</li><li>Bel mehr Loginversuchen als zulässig, wird das Zugangskonto für 24 Stunden gesperrt</li><li>Wörter aus dem Duden oder ähnlichen Werken sind nicht zugelassen</li></ul>",
+      },
+      {
+        cardNumber: 220,
+        img: "",
+        front:
+          "Erläutere, bezogen auf den Bereich der Entwicklung, den Begriff Security by Design.",
+        back: "Der Begriff <b>Security by Design</b> bedeutet, dass die allgemeinen Sicherheitsanforderungen an Soft und Hardware bereits während der Entwicklungsphase eines Produktes berücksichtigt werden sollen, um spätere Sicherheitslücken auszuschließen. Die nachträgliche Beseitigung von Sicherheitslücken wurde den. Projektfortschritt behindern und die Kosten dafür in die Höhe treiben.",
+      },
+      {
+        cardNumber: 221,
+        img: "src/img/img-221.jpg",
+        front:
+          "Benenne je 2 Vor- und Nachteile des Sicherheitstyps <b>WPA2-Personal und WPA2-Enterprise</b>.",
+        back: "",
+      },
+      {
+        cardNumber: 222,
+        img: "",
+        front:
+          "Welche Sicherheitsmaßnahmen sind beim Einsatz eines E-Mail-Systems zu beachten?",
+        back: "Beim Einsatz eines Mailsystems sind folgende Sicherheitsmaßnahmen zu beachten:<ul><li>E-Mails sollten zentral verschlüsselt und digital signiert werden</li><li>Einsatz von TLS/SSL-Zertifikaten</li><li>POP3 Verbindungen nur über SSL/TLS Port 995 zulassen</li><li>IMAP Verbindungen nur über SSL/TLS Port 993 zulassen</li><li>SMTP Verbindungen nur über SSL/TLS Port 465/587 zulassen</li></ul>",
+      },
+      {
+        cardNumber: 223,
+        img: "",
+        front:
+          "Welche Bedingungen muss ein ergonomischer PC-Arbeitsplatz erfüllen?",
+        back: "Allgemeine Ergonomie Richtlinien sind in der Richtlinie 90/270/EWG geregelt. Diese Richtlinie enthält Mindestvorschriften bezüglich der Arbeit an Bildschirmgeräten.<br> Folgende Bedingungen muss ein ergonomischer PC Arbeitsplatz erfüllen:<ul><li>Die oberste Bildschirmzeile des Monitors ist leicht unterhalb der Sehachse des Mitarbeitenden.</li><li>Der Mindestabstand von 50 cm zum Bildschirm ist zu gewährleisten.</li><li>Der Bildschirm sollte so eingerichtet sein, dass er frei von störenden Reflexionen und Blendungen ist.</li><li>Der Bildschirm muss frei stehen und muss leicht drehbar sowie neigbar sein.</li><li>Arbeitshöhe und Sitzhöhe müssen sich an die Körperhöhe anpassen lassen.</li><li>Ein Winkel von 90° zwischen Ober- und Unterarm sowie Ober- und Unterschenkel ist optimal.</li><li>Genug Bewegungsspielraum für die Beine.</li><li>Eine natürliche Körperhaltung muss möglich sein.</li></ul><br> Des Weiteren gelten die Bestimmungen der Arbeitsstättenverordnung (ArbStättv)",
+      },
+      {
+        cardNumber: 224,
+        img: "",
+        front:
+          "Welche Aussagen trifft die Arbeitsstättenverordnung (ArbStättV) in Bezug auf Bildschirm und Tastatur?",
+        back: "Die <b>Arbeitsstättenverordnung</b> (ArbStättV) enthält im Anhang wesentliche Regelungen zum Einrichten eines Bildschirmarbeitsplatzes.<br> Insbesondere folgende Punkte sind dabei zu beachten:<ul><li>Die Zeichen auf dem Bildschirm müssen scharf, deutlich und ausreichend groß dargestellt sein</li><li>Das Bild muss stabil, flimmerfrel und ohne Verzerrungen dargestellt werden.</li><li>Die Helligkeit sowie der Kontrast des Bildschirms müssen einstellbar sein.</li><li>Der Bildschirmarbeitsplatz muss so eingerichtet sein, dass er frei von störenden Reflexionen und Blendungen ist.</li><li>Das Bildschirmgerät muss frei stehen und leicht drehbar sowie neigbar sein.</li><li>Die Tastatur muss vom Bildschirmgerät getrennt und neigbar sein, damit eine ergonomische Arbeitshaltung eingenommen werden kann.</li><li>Die Tastatur muss eine Auflagemöglichkeit für die Hände bieten.</li><li>Die PC-Tastatur muss eine reflexionsarme Oberfläche besitzen.</li><li>Die Tastaturbeschriftung muss sich vom Untergrund deutlich abheben und bei normaler Arbeitshaltung lesbar sein.</ul>",
+      },
+      {
+        cardNumber: 225,
+        img: "",
+        front:
+          "Was ist der <b>PDCA-Zyklus</b> und aus welchen Schritten besteht er?",
+        back: "Es handelt sich um eine <b>Vorgehensweise</b> im kontinuierlichen Verbesserungsprozess im <b>Qualitätsmanagement</b>.<br> Folgende Schritte gehören zum Zyklus:<ul><li><b>PLAN</b> (Analyse/Planen/Ziele formulieren)</li><li><b>DO</b> (Tun/Durchführen)</li><li><b>CHECK</b> (Überprüfen/Soll-Ist-Vergleich)</li><li><b>ACT</b> (Aktion/Reagieren/Verbessern)</li></ul>",
+      },
+      {
+        cardNumber: 226,
+        img: "",
+        front:
+          "Beschreibe die fünf Punkte der SMART-Methode im Projektmanagement.",
+        back: "Im Projektmanagement wird die SMART-Methode eingesetzt, um Zielsetzungen des Projekts zu definieren.<br> Folgende Bestandteile sind enthalten:<br> <b>S</b>pezifisch: Die Projektziele sind so konkret wie möglich zu formulieren.<br> <b>M</b>essbar: Die Projektziele müssen messbar sein.<br> <b>A</b>ktivierend / <b>A</b>ttraktiv: Projektziele müssen auch Motivation zur Umsetzung machen.<br> <b>R</b>ealistisch: Die Projektziele müssen innerhalb des gesetzten Zeitrahmens auch umsetzbar sein.<br> <b>T</b>erminiert: Die Projektziele müssen zeitlich bindend sein. Welche Aufgaben sind bis wann zu erledigen?",
+      },
+      {
+        cardNumber: 227,
+        img: "",
+        front:
+          "Welche Maßnahmen im Unternehmen haben einen positiven Effekt auf die Arbeitsqualität?",
+        back: "Um die Arbeitsqualität und Mitarbeiterzufriedenheit im Unternehmen zu erhöhen, sind folgende Maßnahmen hilfreich:<ul><li>Einsatz flexibler Arbeitszeitmodelle</li><li>Ermöglichen von Homeoffice</li><li>Weiterbildungs- und Fortbildungsmöglichkeiten anbieten</li><li>Variable Zusatzvergütung für das Erreichen von vereinbarten Zielen</li><li>Gewinnbeteiligung am Erfolg des Unternehmens</li><li>Altersteilzeitangebote für ältere Arbeitnehmer</li></ul>",
+      },
+      {
+        cardNumber: 228,
+        img: "",
+        front:
+          "Mit welchen Maßnahmen kann man im Unternehmen die Produktqualität entscheidend verbessern?",
+        back: "Folgende Maßnahmen können zur Verbesserung der Produktqualität beitragen:<ul><li>Einführung einer permanenten Qualitätssicherung, um gleichbleibend hohe Qualität der Produkte zu gewährleisten</li><li>wiederkehrende Kundenbefragungen zur Qualität der Produkte</li><li>Produktionsprozesse kontinuierlich verbessern</li><li>Mitarbeiterschulungen zum Thema Produktqualität anbieten</li><li>qualitativ hochwertige Ausgangsmaterialien nutzen</li><li>Prozessfehler ermitteln und für Abhilfe sorgen</li></ul>",
+      },
+      {
+        cardNumber: 229,
+        img: "",
+        front:
+          "Welches sind die allgemeinen Kriterien einer Schutzbedarfsanalyse von IT-Systemen?",
+        back: "Folgende Kriterien sind für eine Schutzbedarfsanalyse wichtig:<ul><li>Wie hoch ist das Risiko, dass IT-Infrastrukturen angegriffen werden?</li><li>Welche Objekte müssen in der IT-Infrastruktur besonders abgesichert werden?</li><li>Welchen konkreten Bedrohungsszenarien ist die IT-Infr-struktur ausgesetzt?</li><li>Wie groß sind mögliche Schäden durch Angriffe auf produktive IT-Infrastrukturen?</li><li>Wie hoch ist das aktuelle Gefährdungspotenzial?</li><li>Welche Maßnahmen sind geeignet, die IT-Infrastruktur gegen interne und externe Bedrohungen zu schützen?</li><li>Wie sieht die Kosten-Nutzen Betrachtung bzw. Risikoberechnung aus?</li></ul>",
+      },
+      {
+        cardNumber: 230,
+        img: "",
+        front:
+          "Beschreibe die Schutzbedarfskategorien (normal, hoch, sehr hoch) lt. BSI IT-Grundschutz.",
+        back: "Schutzbedarfskategorie:<br> <b>Normal</b><ul><li>Bei Verstößen gegen Gesetze, Vorschriften oder Verträge drohen nur geringfügige juristische Konsequenzen.</li><li>Der Missbrauch personenbezogener Daten hätte nur minimale Auswirkungen für die Betroffenen und auf das Ansehen bei Kunden und Geschäftspartnern.</li> <li>Der finanzielle Schaden liegt unter 50.000,00 Euro.</li></ul><b>Hoch</b><ul><li>Bei Verstößen gegen Gesetze, Vorschriften oder Verträge drohen schwerwiegende juristische Konsequenzen.</li><li>Der Missbrauch personenbezogener Daten hätte massive Auswirkungen für die Betroffenen und auf das Ansehen bei Kunden und Geschäftspartnern.</li><li>Der finanzielle Schaden kann zwischen 50.000 € und 500.000 € liegen.</li></ul> <b>Sehr hoch</b><ul><li>Bei Verstößen gegen Gesetze, Vorschriften oder Verträge drohen existenzbedrohende juristische Konsequenzen.</li><li>Der Missbrauch personenbezogener Daten hätte existenzbedrohende Auswirkungen auf die Betroffenen und würde das Ansehen bei Kunden und Geschäftspartnern schwer und nachhaltig erschüttern.</li><li>Der finanzielle Schaden liegt über 500.000,00 €.</li></ul>",
+      },
+      {
+        cardNumber: 231,
+        img: "",
+        front:
+          "Welcher Schutzbedarf bzw. welche Schutzziele gelten für einen Router nach BSI IT-Grundschutz?",
+        back: '<img src="src/img/img-231.jpg" alt="schutzziele-router-img" class="flashcard-img">',
+      },
+      {
+        cardNumber: 232,
+        img: "",
+        front:
+          "Welche Maßnahmen sind geeignet, um Schäden an der IT Infrastruktur zu vermeiden bzw. die Sicherheit der IT Systeme zu erhöhen?",
+        back: "Die folgenden Maßnahmen sind geeignet, potenzielle Schäden an der IT-Infrastruktur zu vermeiden:<ul><li>Datenverschlüsselung der Datenträger</li><li>Konzept für Netzwerksegmentierung im Unternehmen, Einsatz von VLANs</li><li>mehrstufiges Firewallkonzept sowie Regeln für die Endpoint Security auf den Clientsystemen</li><li>Rechtekonzept für Mitarbeitende und Administratoren</li><li>regelmäßiges Patchen der IT Systeme</li><li>permanentes Logging und Auditing (Penetrationtest, kurz: Pentest)</li><li>Einsatz einer Passwortrichtlinie sowie einer Multi-Factor-Authentication</li><li>Verfahrensanweisung oder Vier-Augen-Prinzip</li><li>regelmäßige Schulungen der Mitarbeitenden, um das Bewusstsein zu erhöhen bzw. Bedrohungen zu erkennen</li></ul>",
+      },
+      {
+        cardNumber: 233,
+        img: "",
+        front:
+          "Aus welchen Phasen besteht der Sicherheitsprozess laut BSI IT Grundschutz?",
+        back: "Im Rahmen des it Grundschutzes (BSI Standard 100-2) besteht der Sicherheitsprozess aus folgenden Phasen:<br><br> <b>1.</b> Initiierung des Sicherheitsprozesses<ul><li><b>1.1</b> Übernahme der Verantwortung durch die Leitungsebene</li><li><b>1.2</b> Konzeption und Planung des Sicherheitsprozesses</li><li><b>1.3</b> Erstellung der Leitlinie zur Informationssicherheit</li><li><b>1.4</b> Aufbau einer geeigneten Organisationsstruktur für das Informationssicherheitsmanagement</li><li><b>1.5</b> Bereitstellung von finanziellen, personellen und zeitlichen Ressourcen</li><li><b>1.6</b> Einbindung aller Mitarbeitenden in den Sicherheitsprozess</li> </ul><b>2.</b> Erstellung einer Sicherheitskonzeption<br> <b>3.</b> Umsetzung der Sicherheitskonzeption<br> <b>4.</b> Aufrechterhaltung der Informationssicherheit im laufenden Betrieb und kontinuierliche Verbesserung",
+      },
+      {
+        cardNumber: 234,
+        img: "",
+        front:
+          "Welche Themen sind für einen TÜV geprüften IT-Sicherheitsbeauftragten für die IT-Sicherheit im Unternehmen von Bedeutung?",
+        back: "Als TÜV geprüfter IT-Sicherheitsbeauftragter (Information Security-Officer) sind folgende Themen für die IT-Sicherheit in Unternehmen von Bedeutung:<ul><li>Informationssicherheit und Informationssicherheitsmanagement</li><li>IS-Management-System nach ISO 27001</li><li>IS-Management-System nach BSI IT-Grundschutz</li><li>Konzepte der Informationssicherheit</li><li>Aktuelle Themenbereiche und Konzepte der Informationssicherheit</li><li>Sicherheitsmaßnahmen/Konzepte im Hinblick auf Organisation, Infrastruktur, Netzwerksicherheit, Systemsicherheit und Anwendungssicherheit</li></ul>",
+      },
+      {
+        cardNumber: 235,
+        img: "",
+        front: "Welches sind die Inhalte einer Zertifizierung nach ISO 27001?",
+        back: "Gesetzliche, regulatorische und vertragliche Regelungen eingeschlossen, definiert die ISO 27001 die Anforderungen, die an den Aufbau, die Einführung, Umsetzung, betriebliche Überwachung und Dokumentation des Information Security Management Systems gestellt werden. Dabei werden vorhandene Risiken eines Unternehmens identifiziert, analysiert und durch qualifizierte Maßnahmen behoben. Das betrifft neben Hackerangriffen auch andere Störungen, die zu ungeplanten Unterbrechungen von Prozessen führen oder gar das Unternehmen zum Stillstand bringen können.<br> Die ISO 27001 ist nicht auf IT-Prozesse beschränkt. Sie berücksichtigt auch Aspekte der Infrastruktur, wie Organisation, Personal und Gebäude. Die Datensicherheit im Unternehmen hat sich zu einem immer bedeutsameren Wettbewerbsfaktor entwickelt. Das gilt insbesondere für Betreiber Kritischer Infrastrukturen (KRITIS), die laut BSI-Gesetz dazu verpflichtet sind, ein Mindestmaß an IT-Sicherheit zu gewährleisten.",
+      },
+      {
+        cardNumber: 236,
+        img: "",
+        front: "Was sind die Vorteile einer Zertifizierung nach ISO 27001?",
+        back: "Folgende Vorteile ergeben sich für ein nach ISO 27001 zertifiziertes Unternehmen:<ul><li>Ein wirksamer Schutz von Informationen, Daten und Geschäftsprozessen des Unternehmens wird dadurch gewährleistet.</li><li>Die Zertifizierung ist ein Vertrauensnachweis gegenüber Kunden, Geschäftspartnern und Investoren.</li><li>Die IT-Prozesse und Geschäftsprozesse werden kontinuierlich verbessert (PDCA-Zyklus).</li><li>Durch die Vermeidung von Sicherheitsvorfällen werden die Kosten gemindert.</li><li>Durch die Beseitigung von Schwachstellen beim Umgang mit Daten wird eine Risiko- und Chancenoptimierung erreicht.</li><li>Das Sicherheitsbewusstsein der Mitarbeiter kann gefördert werden.</li></ul>",
+      },
+      {
+        cardNumber: 237,
+        img: "",
+        front:
+          "Welche Kriterien müssen erfüllt sein, um die Warenannahme zu verweigern?",
+        back: "Jeder kann die Annahme einer Sendung verweigern, wenn <ul><li>diese nicht richtig adressiert wurde</li><li>das Paket Transportschäden aufweist oder</li><li>die Anzahl der zu liefernden Packstücke mit der Bestellung nicht übereinstimmt.</li></ul> Bei Transportschäden oder Falschlieferungen ist der Händler verpflichtet, kostenneutral die Ware erneut in einwandfreier und richtiger Anzahl zu liefern.<br><br><b>Wichtig</b>: Wenn jemand im Auftrag eines Unternehmens Ware aufgrund von Mängeln ablehnt, muss der Mangel sofort beim Lieferanten angezeigt werden.",
       },
     ],
   },
