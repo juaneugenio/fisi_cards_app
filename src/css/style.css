@@ -3,8 +3,8 @@
   --bg-body: #02182b;
   --bg-container: #2c3b4d;
   --bg-card-front: #1b2632;
-  --bg-card-back: #a35139;
-  --text-header: #ffb162;
+  --bg-card-back: #cae9ff;
+  --text-header: #53909f;
   --text-main: #eee9df;
   --primary-hover: #63579e;
 }
@@ -19,7 +19,14 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   background: var(--bg-body);
@@ -114,7 +121,7 @@ h1 {
 }
 /* Accesibilidad: Indicador visual de foco para navegación por teclado */
 .flashcard:focus {
-  outline: 3px solid #0197F6;
+  outline: 3px solid #0197f6;
   outline-offset: 2px;
 }
 .flashcard:hover {
@@ -339,7 +346,7 @@ pre > code {
   box-sizing: border-box;
 }
 .input-field:focus {
-  border: 1.5px solid #0197F6;
+  border: 1.5px solid #0197f6;
   background: var(--text-main);
 }
 .btn-login {

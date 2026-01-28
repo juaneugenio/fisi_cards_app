@@ -632,10 +632,10 @@ export const flashcardsData = [
       },
       {
         cardNumber: 231,
-        img: "",
+        img: "src/img/img-231.jpg",
         front:
           "Welcher Schutzbedarf bzw. welche Schutzziele gelten für einen Router nach BSI IT-Grundschutz?",
-        back: '<img src="src/img/img-231.jpg" alt="schutzziele-router-img" class="flashcard-img">',
+        back: "",
       },
       {
         cardNumber: 232,
